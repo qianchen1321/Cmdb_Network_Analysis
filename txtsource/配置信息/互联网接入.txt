@@ -1,0 +1,671 @@
+﻿<LianTong_SW>dis int br
+Bridge-Aggregation1
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 441a-fa96-f699
+Description: TO_SW02
+Bandwidth: 2000000 kbps
+2Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1
+Port link-type: Trunk
+ VLAN Passing:   1(default vlan), 6, 65, 70, 80, 90, 100, 110, 170, 180, 190
+ VLAN permitted: 1(default vlan), 2-4094
+ Trunk port encapsulation: IEEE 802.1q
+Last clearing of counters: Never
+Last 300 seconds input:  2567 packets/sec 839278 bytes/sec 0%
+Last 300 seconds output:  3153 packets/sec 1930531 bytes/sec 0%
+Input (total):  162141536275 packets, 43051881737589 bytes
+        160484668388 unicasts, 1634394124 broadcasts, 22473763 multicasts, 0 pauses
+Input (normal):  162141536274 packets, - bytes
+        160484668388 unicasts, 1634394124 broadcasts, 22473763 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 171349972695 packets, 76371339366358 bytes
+        169327452646 unicasts, 1598552994 broadcasts, 423967055 multicasts, 0 pauses
+Output (normal): 171349972695 packets, - bytes
+        169327452646 unicasts, 1598552994 broadcasts, 423967055 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+Bridge-Aggregation2
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 441a-fa96-f69b
+Description: TO_F5-LTM-1
+Bandwidth: 2000000 kbps
+2Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1
+Port link-type: Trunk
+ VLAN Passing:   1(default vlan), 6, 65, 70, 80, 90, 100, 110, 170, 180, 190
+ VLAN permitted: 1(default vlan), 2-4094
+ Trunk port encapsulation: IEEE 802.1q
+Last clearing of counters: Never
+Last 300 seconds input:  10622 packets/sec 6274575 bytes/sec 2%
+Last 300 seconds output:  10088 packets/sec 6254830 bytes/sec 2%
+Input (total):  423809112826 packets, 126488258831649 bytes
+        423808537511 unicasts, 113799 broadcasts, 461516 multicasts, 0 pauses
+Input (normal):  423809112817 packets, - bytes
+        423808537510 unicasts, 113799 broadcasts, 461516 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 420200069635 packets, 126750749666098 bytes
+        416563301943 unicasts, 3210462703 broadcasts, 426304989 multicasts, 0 pauses
+Output (normal): 420200069633 packets, - bytes
+        416563301942 unicasts, 3210462703 broadcasts, 426304989 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+Bridge-Aggregation3
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 441a-fa96-f69d
+Description: TO_F5-GTM-1
+Bandwidth: 2000000 kbps
+2Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1
+Port link-type: Trunk
+ VLAN Passing:   1(default vlan), 6, 65, 70, 80, 90, 100, 110, 170, 180, 190
+ VLAN permitted: 1(default vlan), 2-4094
+ Trunk port encapsulation: IEEE 802.1q
+Last clearing of counters: Never
+Last 300 seconds input:  16 packets/sec 1829 bytes/sec 0%
+Last 300 seconds output:  31 packets/sec 5003 bytes/sec 0%
+Input (total):  630399265 packets, 65187573168 bytes
+        630347847 unicasts, 29806 broadcasts, 21612 multicasts, 0 pauses
+Input (normal):  630399265 packets, - bytes
+        630347847 unicasts, 29806 broadcasts, 21612 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 4173898276 packets, 400514290798 bytes
+        536569441 unicasts, 3210554968 broadcasts, 426773867 multicasts, 0 pauses
+Output (normal): 4173898276 packets, - bytes
+        536569441 unicasts, 3210554968 broadcasts, 426773867 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+<LianTong_SW>   dis ospf peer
+OSPF is not configured.
+<LianTong_SW>dis ip int br
+*down: administratively down
+(s): spoofing  (l): loopback
+Interface           Physical Protocol IP address      VPN instance Description  
+Vlan6               up       up       192.168.6.75    --           --
+<LianTong_SW>dis ip routing
+
+Destinations : 12       Routes : 12
+
+Destination/Mask   Proto   Pre Cost        NextHop         Interface
+0.0.0.0/32         Direct  0   0           127.0.0.1       InLoop0
+127.0.0.0/8        Direct  0   0           127.0.0.1       InLoop0
+127.0.0.0/32       Direct  0   0           127.0.0.1       InLoop0
+127.0.0.1/32       Direct  0   0           127.0.0.1       InLoop0
+127.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+192.168.6.0/24     Direct  0   0           192.168.6.75    Vlan6
+192.168.6.0/32     Direct  0   0           192.168.6.75    Vlan6
+192.168.6.75/32    Direct  0   0           127.0.0.1       InLoop0
+192.168.6.255/32   Direct  0   0           192.168.6.75    Vlan6
+224.0.0.0/4        Direct  0   0           0.0.0.0         NULL0
+224.0.0.0/24       Direct  0   0           0.0.0.0         NULL0
+255.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+<LianTong_SW>dis arp
+  Type: S-Static   D-Dynamic   O-Openflow   R-Rule   M-Multiport  I-Invalid
+IP address      MAC address    VLAN/VSI   Interface/Link ID        Aging Type 
+192.168.6.7     62ec-ba03-0304 6          GE1/0/36                 920   D    
+192.168.6.10    0050-56b8-96dd 6          GE1/0/36                 1196  D    
+192.168.6.11    286e-d488-c678 6          GE1/0/36                 758   D    
+192.168.6.12    f010-9079-dfd7 6          GE1/0/36                 758   D    
+192.168.6.14    0001-d7e6-2b81 6          GE1/0/36                 414   D    
+192.168.6.18    a08c-fdea-ac73 6          GE1/0/36                 292   D    
+192.168.6.20    f010-9079-dfe3 6          GE1/0/36                 758   D    
+192.168.6.24    8465-695b-1541 6          GE1/0/36                 758   D    
+192.168.6.40    b22c-12a0-5700 6          GE1/0/36                 54    D    
+192.168.6.41    3221-b1b3-4ba1 6          GE1/0/36                 1129  D    
+192.168.6.56    0050-56b8-aa18 6          GE1/0/36                 1182  D    
+192.168.6.57    0050-5695-053b 6          GE1/0/36                 758   D    
+192.168.6.58    0050-5695-cd42 6          GE1/0/36                 758   D    
+192.168.6.59    f010-9079-dfd8 6          GE1/0/36                 1187  D    
+192.168.6.63    f010-9079-dfe4 6          GE1/0/36                 1060  D    
+192.168.6.64    0050-5695-f070 6          GE1/0/36                 758   D    
+192.168.6.65    0050-5695-6d9a 6          GE1/0/36                 758   D    
+192.168.6.66    0050-5695-6d9a 6          GE1/0/36                 1153  D    
+192.168.6.67    0050-5695-bdb9 6          GE1/0/36                 1153  D    
+192.168.6.74    0050-56b4-1d2a 6          GE1/0/36                 758   D    
+192.168.6.90    0060-b941-6404 6          GE1/0/36                 1074  D    
+192.168.6.95    8894-714c-1cd8 6          GE1/0/36                 758   D    
+192.168.6.96    50eb-1a79-2e73 6          GE1/0/36                 758   D    
+192.168.6.97    50eb-1a7c-9094 6          GE1/0/36                 1066  D    
+192.168.6.98    0027-f8d2-14dd 6          GE1/0/36                 670   D    
+192.168.6.99    0027-f8d2-7465 6          GE1/0/36                 758   D    
+192.168.6.100   446a-2edb-a171 6          GE1/0/36                 579   D    
+192.168.6.101   4077-a9c6-5e92 6          GE1/0/36                 743   D    
+192.168.6.102   3080-9b34-f1aa 6          GE1/0/36                 744   D    
+192.168.6.106   5cdd-702a-4aa1 6          GE1/0/36                 232   D    
+192.168.6.113   286e-d488-b3ce 6          GE1/0/36                 770   D    
+192.168.6.114   286e-d488-b3ce 6          GE1/0/36                 1200  D    
+192.168.6.115   286e-d488-bd0d 6          GE1/0/36                 758   D    
+192.168.6.116   286e-d488-b3ca 6          GE1/0/36                 758   D    
+192.168.6.119   286e-d488-b3cb 6          GE1/0/36                 1156  D    
+192.168.6.120   286e-d488-b3cb 6          GE1/0/36                 1154  D    
+192.168.6.121   286e-d488-bd0a 6          GE1/0/36                 1189  D    
+192.168.6.138   0800-1bff-7460 6          GE1/0/36                 1149  D    
+192.168.6.146   0894-ef15-aac7 6          GE1/0/36                 255   D    
+192.168.6.149   0894-ef3c-9c62 6          GE1/0/36                 1107  D    
+192.168.6.155   e04f-4372-dd4e 6          GE1/0/36                 1061  D    
+192.168.6.159   0894-ef10-97fc 6          GE1/0/36                 243   D    
+192.168.6.160   8465-695b-1542 6          GE1/0/36                 1189  D    
+192.168.6.165   943b-b0bc-765c 6          GE1/0/36                 718   D    
+192.168.6.166   286e-d488-c69e 6          GE1/0/36                 1081  D    
+192.168.6.167   286e-d488-c69b 6          GE1/0/36                 758   D    
+192.168.6.168   286e-d488-c69a 6          GE1/0/36                 758   D    
+192.168.6.172   8018-44e3-8cde 6          GE1/0/36                 969   D    
+192.168.6.173   8018-44e3-814e 6          GE1/0/36                 1170  D    
+192.168.6.177   000c-2933-7004 6          GE1/0/36                 758   D    
+192.168.6.178   00e0-ed89-f052 6          GE1/0/36                 1097  D    
+192.168.6.194   0050-56b4-aba0 6          GE1/0/36                 1120  D    
+192.168.6.195   0050-56b4-4e94 6          GE1/0/36                 1120  D    
+192.168.6.196   0050-56b4-e120 6          GE1/0/36                 1125  D    
+192.168.6.201   4077-a9c5-fcb2 6          GE1/0/36                 750   D    
+192.168.6.202   4077-a9c6-3372 6          GE1/0/36                 746   D    
+192.168.6.203   3080-9b35-0e2a 6          GE1/0/36                 744   D    
+192.168.6.204   3080-9b35-0a0a 6          GE1/0/36                 745   D    
+192.168.6.205   3080-9b34-f26a 6          GE1/0/36                 746   D    
+192.168.6.206   000c-29f4-ab3d 6          GE1/0/36                 758   D    
+192.168.6.208   0050-56ae-1b67 6          GE1/0/36                 977   D    
+192.168.6.225   0050-56b8-38ca 6          GE1/0/36                 758   D    
+192.168.6.226   0050-56b8-3f08 6          GE1/0/36                 758   D    
+192.168.6.227   0050-56b8-3926 6          GE1/0/36                 758   D    
+192.168.6.237   0800-1bff-f312 6          GE1/0/36                 1188  D    
+192.168.6.250   7057-bf1f-445e 6          GE1/0/36                 745   D    
+192.168.6.254   5098-b8bd-c968 6          GE1/0/36                 1176  D    
+<LianTong_SW>    dis acl a
+Basic IPv4 ACL 2000, 7 rules,
+ACL's step is 5, start ID is 0
+ rule 10 permit source 192.168.6.18 0 (54 times matched)
+ rule 11 permit source 192.168.6.208 0 (1407712 times matched)
+ rule 12 permit source 192.168.6.56 0
+ rule 20 permit source 192.168.6.166 0
+ rule 21 permit source 192.168.6.167 0
+ rule 22 permit source 192.168.6.168 0
+ rule 50 deny (21 times matched)
+
+<LianTong_SW>
+<LianTong_SW>dis mac-address
+MAC Address      VLAN ID    State            Port/Nickname            Aging
+441a-fa96-f639   1          Learned          BAGG1                    Y
+441a-fa96-f63a   1          Learned          BAGG1                    Y
+000c-2933-7004   6          Learned          GE1/0/36                 Y
+000c-29f4-ab3d   6          Learned          GE1/0/36                 Y
+0027-f8d2-14dd   6          Learned          GE1/0/36                 Y
+0027-f8d2-7465   6          Learned          GE1/0/36                 Y
+0050-566c-70b4   6          Learned          GE1/0/36                 Y
+0050-5695-6d9a   6          Learned          GE1/0/36                 Y
+0050-5695-bdb9   6          Learned          GE1/0/36                 Y
+0050-56ae-1b67   6          Learned          GE1/0/36                 Y
+0050-56b4-4e94   6          Learned          GE1/0/36                 Y
+0050-56b4-aba0   6          Learned          GE1/0/36                 Y
+0050-56b4-e120   6          Learned          GE1/0/36                 Y
+0050-56b8-38ca   6          Learned          GE1/0/36                 Y
+0050-56b8-3926   6          Learned          GE1/0/36                 Y
+0050-56b8-3f08   6          Learned          GE1/0/36                 Y
+0050-56b8-96dd   6          Learned          GE1/0/36                 Y
+0050-56b8-aa18   6          Learned          GE1/0/36                 Y
+0060-1661-68ec   6          Learned          GE1/0/36                 Y
+0060-1661-6904   6          Learned          GE1/0/36                 Y
+0060-16ab-1136   6          Learned          GE1/0/36                 Y
+0060-b941-6404   6          Learned          GE1/0/36                 Y
+0094-a191-d102   6          Learned          GE1/0/36                 Y
+0094-a192-4602   6          Learned          GE1/0/36                 Y
+0094-a192-4f02   6          Learned          GE1/0/36                 Y
+00e0-ed89-ef7a   6          Learned          GE1/0/36                 Y
+00e0-ed89-f052   6          Learned          GE1/0/36                 Y
+0800-1bff-7460   6          Learned          GE1/0/36                 Y
+0800-1bff-f312   6          Learned          GE1/0/36                 Y
+0894-ef10-9694   6          Learned          GE1/0/36                 Y
+0894-ef3c-9c62   6          Learned          GE1/0/36                 Y
+0894-ef3c-c7d2   6          Learned          GE1/0/36                 Y
+1418-7749-116c   6          Learned          GE1/0/36                 Y
+2067-7c06-cc1c   6          Learned          GE1/0/36                 Y
+286e-d488-b3ca   6          Learned          GE1/0/36                 Y
+286e-d488-b3cb   6          Learned          GE1/0/36                 Y
+286e-d488-b3ce   6          Learned          GE1/0/36                 Y
+286e-d488-bd09   6          Learned          GE1/0/36                 Y
+286e-d488-bd0a   6          Learned          GE1/0/36                 Y
+286e-d488-bd0d   6          Learned          GE1/0/36                 Y
+286e-d488-c69b   6          Learned          GE1/0/36                 Y
+286e-d488-c69e   6          Learned          GE1/0/36                 Y
+3080-9b34-f1aa   6          Learned          GE1/0/36                 Y
+3080-9b34-f26a   6          Learned          GE1/0/36                 Y
+3080-9b35-0a0a   6          Learned          GE1/0/36                 Y
+3221-b1b3-4ba1   6          Learned          GE1/0/36                 Y
+4077-a9c5-fcb2   6          Learned          GE1/0/36                 Y
+4077-a9c6-5e92   6          Learned          GE1/0/36                 Y
+441a-fa96-f609   6          Learned          BAGG1                    Y
+441a-fa97-bc6d   6          Learned          GE1/0/36                 Y
+488e-ef7c-07bb   6          Learned          GE1/0/36                 Y
+488e-ef7c-07ed   6          Learned          GE1/0/36                 Y
+488e-ef7c-0859   6          Learned          GE1/0/36                 Y
+488e-efb3-7ec3   6          Learned          GE1/0/36                 Y
+488e-efb9-e843   6          Learned          GE1/0/36                 Y
+48d5-391e-9f41   6          Learned          GE1/0/36                 Y
+5098-b8bd-c968   6          Learned          GE1/0/36                 Y
+50eb-1a79-2e73   6          Learned          GE1/0/36                 Y
+50eb-1a7c-9094   6          Learned          GE1/0/36                 Y
+62ec-ba03-0304   6          Learned          GE1/0/36                 Y
+7057-bf1f-4438   6          Learned          GE1/0/36                 Y
+7057-bff9-eb0c   6          Learned          GE1/0/36                 Y
+7057-bff9-eba8   6          Learned          GE1/0/36                 Y
+8018-44e3-814e   6          Learned          GE1/0/36                 Y
+8018-44e3-8cde   6          Learned          GE1/0/36                 Y
+8465-695b-1541   6          Learned          GE1/0/36                 Y
+8465-695b-1542   6          Learned          GE1/0/36                 Y
+8894-714c-1cd8   6          Learned          GE1/0/36                 Y
+943b-b0bc-765c   6          Learned          GE1/0/36                 Y
+a08c-fdea-ac73   6          Learned          GE1/0/36                 Y
+ac1f-6b4e-9f3e   6          Learned          GE1/0/36                 Y
+ac1f-6bb9-5476   6          Learned          GE1/0/36                 Y
+ac1f-6bb9-9cf8   6          Learned          GE1/0/36                 Y
+ac1f-6bb9-a2de   6          Learned          GE1/0/36                 Y
+b22c-12a0-5700   6          Learned          GE1/0/36                 Y
+b405-5d27-a5c3   6          Learned          GE1/0/36                 Y
+b499-ba60-57b6   6          Learned          GE1/0/36                 Y
+b499-ba60-57bc   6          Learned          GE1/0/36                 Y
+d4c9-ef08-6afc   6          Learned          GE1/0/36                 Y
+e04f-4306-dac0   6          Learned          GE1/0/36                 Y
+e04f-4306-fd08   6          Learned          GE1/0/36                 Y
+e04f-4306-fe8c   6          Learned          GE1/0/36                 Y
+e04f-4372-dd4e   6          Learned          GE1/0/36                 Y
+e04f-4372-ee1a   6          Learned          GE1/0/36                 Y
+f010-9079-dfd7   6          Learned          GE1/0/36                 Y
+f010-9079-dfd8   6          Learned          GE1/0/36                 Y
+f010-9079-dfe3   6          Learned          GE1/0/36                 Y
+f010-9079-dfe4   6          Learned          GE1/0/36                 Y
+f875-884a-a710   6          Learned          GE1/0/36                 Y
+0000-5e00-0129   65         Learned          BAGG1                    Y
+0094-a192-4604   65         Learned          BAGG2                    Y
+3400-a30d-e1bf   65         Learned          BAGG1                    Y
+0094-a191-d10c   70         Learned          BAGG1                    Y
+0094-a192-4385   70         Learned          BAGG3                    Y
+0094-a192-460c   70         Learned          BAGG2                    Y
+0094-a192-4f05   70         Learned          BAGG1                    Y
+0000-5e00-0164   80         Learned          GE1/0/8                  Y
+0094-a191-d105   80         Learned          BAGG1                    Y
+0094-a192-4605   80         Learned          BAGG2                    Y
+4c09-b4f1-2a80   80         Learned          GE1/0/1                  Y
+707b-e82d-14bc   80         Learned          GE1/0/1                  Y
+0094-a192-4607   90         Learned          BAGG2                    Y
+0819-a698-9201   90         Learned          BAGG1                    Y
+0094-a191-d10b   110        Learned          BAGG1                    Y
+0094-a192-460b   110        Learned          BAGG2                    Y
+943b-b0bc-9cbf   110        Learned          GE1/0/38                 Y
+0094-a191-d10d   170        Learned          BAGG1                    Y
+0094-a192-4386   170        Learned          BAGG3                    Y
+0094-a192-460d   170        Learned          BAGG2                    Y
+0094-a192-4f06   170        Learned          BAGG1                    Y
+0094-a191-d106   180        Learned          BAGG1                    Y
+0094-a192-4606   180        Learned          BAGG2                    Y
+4843-5ac5-0916   180        Learned          GE1/0/46                 Y
+e468-a3a6-b050   180        Learned          GE1/0/46                 Y
+0094-a191-d108   190        Learned          BAGG1                    Y
+0094-a192-4608   190        Learned          BAGG2                    Y
+0819-a698-9201   190        Learned          BAGG1                    Y
+d8ae-908c-332b   190        Learned          BAGG1                    Y
+<LianTong_SW>            dis cu 
+#
+ version 7.1.070, Release 6126P20
+#
+ sysname LianTong_SW
+#
+ clock timezone bjtime add 08:00:00
+#
+ telnet server enable
+ telnet server acl 2000
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+ lldp global enable
+#
+ password-recovery enable
+#
+vlan 1         
+#
+vlan 6
+#
+vlan 65
+#
+vlan 70
+ description link_GTM_ipv4
+#
+vlan 80
+ description ISP_LianTong
+#
+vlan 90
+ description ISP_DianXin
+#
+vlan 100
+#
+vlan 110
+ description F5_TO_IPS
+#              
+vlan 170
+ description link_GTM_ipv6
+#
+vlan 180
+ description ISP_LianTong_ipv6
+#
+vlan 190
+ description ISP_DianXin_ipv6
+#
+ stp instance 0 priority 0
+ stp timer-factor 10
+ stp bpdu-protection
+ stp global enable
+#
+interface Bridge-Aggregation1
+ description TO_SW02
+ port link-type trunk
+ port trunk permit vlan all
+#              
+interface Bridge-Aggregation2
+ description TO_F5-LTM-1
+ port link-type trunk
+ port trunk permit vlan all
+#
+interface Bridge-Aggregation3
+ description TO_F5-GTM-1
+ port link-type trunk
+ port trunk permit vlan all
+#
+interface NULL0
+#
+interface Vlan-interface6
+ ip address 192.168.6.75 255.255.255.0
+#
+interface GigabitEthernet1/0/1
+ description TO ISP_LianTong
+ port access vlan 80
+#              
+interface GigabitEthernet1/0/2
+ description TO F5-A_1.3
+ port access vlan 80
+#
+interface GigabitEthernet1/0/3
+ description TO F5-A_1.4
+ port access vlan 90
+#
+interface GigabitEthernet1/0/4
+ port access vlan 80
+#
+interface GigabitEthernet1/0/5
+ port access vlan 80
+#
+interface GigabitEthernet1/0/6
+ port access vlan 80
+#
+interface GigabitEthernet1/0/7
+ port access vlan 80
+#
+interface GigabitEthernet1/0/8
+ port access vlan 80
+#
+interface GigabitEthernet1/0/9
+ port access vlan 80
+#
+interface GigabitEthernet1/0/10
+ port access vlan 80
+#
+interface GigabitEthernet1/0/11
+ port access vlan 80
+#
+interface GigabitEthernet1/0/12
+ port access vlan 80
+#
+interface GigabitEthernet1/0/13
+ port access vlan 100
+#              
+interface GigabitEthernet1/0/14
+ port access vlan 100
+#
+interface GigabitEthernet1/0/15
+ port access vlan 100
+#
+interface GigabitEthernet1/0/16
+ port access vlan 100
+#
+interface GigabitEthernet1/0/17
+ port access vlan 100
+#
+interface GigabitEthernet1/0/18
+ port access vlan 100
+#
+interface GigabitEthernet1/0/19
+ port access vlan 100
+#
+interface GigabitEthernet1/0/20
+ port access vlan 100
+#
+interface GigabitEthernet1/0/21
+ port access vlan 100
+#
+interface GigabitEthernet1/0/22
+ port access vlan 100
+#
+interface GigabitEthernet1/0/23
+ port access vlan 100
+#
+interface GigabitEthernet1/0/24
+ port access vlan 100
+#
+interface GigabitEthernet1/0/25
+#
+interface GigabitEthernet1/0/26
+#
+interface GigabitEthernet1/0/27
+#
+interface GigabitEthernet1/0/28
+#
+interface GigabitEthernet1/0/29
+#
+interface GigabitEthernet1/0/30
+ port access vlan 180
+#
+interface GigabitEthernet1/0/31
+#
+interface GigabitEthernet1/0/32
+#
+interface GigabitEthernet1/0/33
+#
+interface GigabitEthernet1/0/34
+#
+interface GigabitEthernet1/0/35
+#
+interface GigabitEthernet1/0/36
+ port access vlan 6
+#
+interface GigabitEthernet1/0/37
+ description TO F5-A_1.1
+ port access vlan 110
+#
+interface GigabitEthernet1/0/38
+ description TO IPS-01_G1/0/1
+ port access vlan 110
+#
+interface GigabitEthernet1/0/39
+#
+interface GigabitEthernet1/0/40
+#
+interface GigabitEthernet1/0/41
+ port access vlan 180
+#
+interface GigabitEthernet1/0/42
+#              
+interface GigabitEthernet1/0/43
+#
+interface GigabitEthernet1/0/44
+#
+interface GigabitEthernet1/0/45
+ description ISP_TEST
+ port access vlan 180
+#
+interface GigabitEthernet1/0/46
+ description ISP_LianTong_ipv6
+ port access vlan 180
+#
+interface GigabitEthernet1/0/47
+ description TO_SW02_G1/0/47
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 1
+#
+interface GigabitEthernet1/0/48
+ description TO_SW02_G1/0/48
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 1
+#
+interface GigabitEthernet1/0/49
+ description TO_F5-LTM-1_1.0
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 2
+#
+interface GigabitEthernet1/0/50
+ description TO_F5-LTM-1_2.0
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 2
+#
+interface GigabitEthernet1/0/51
+ description TO_F5-GTM-1_1.0
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 3
+#
+interface GigabitEthernet1/0/52
+ description TO_F5-GTM-1_2.0
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 3
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 0     
+ user-role network-admin
+#
+line vty 0 4
+ authentication-mode scheme
+ user-role network-admin
+ user-role network-operator
+ protocol inbound ssh
+ idle-timeout 20 0
+ screen-length 20
+ history-command max-size 100
+#
+line vty 5 63
+ authentication-mode scheme
+ user-role network-operator
+ idle-timeout 20 0
+ screen-length 20
+ history-command max-size 100
+#
+ snmp-agent    
+ snmp-agent local-engineid 800063A280441AFA96F66900000001
+ snmp-agent community read snake!@#123 acl 2000
+ snmp-agent sys-info version v2c v3 
+#
+ ssh server enable
+ ssh server acl 2000
+#
+ ntp-service enable
+ ntp-service unicast-server 192.168.6.10
+#
+acl number 2000
+ rule 10 permit source 192.168.6.18 0
+ rule 11 permit source 192.168.6.208 0
+ rule 12 permit source 192.168.6.56 0
+ rule 20 permit source 192.168.6.166 0
+ rule 21 permit source 192.168.6.167 0
+ rule 22 permit source 192.168.6.168 0
+ rule 50 deny
+#              
+radius scheme system
+ user-name-format without-domain
+#
+domain system
+#
+ aaa session-limit telnet 10
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#              
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user admin class manage
+ password hash $h$6$WK0G2HWdSYFkcZeS$w2hPpFpn7RPqo2YIzf/IDcY/qgfW7xTW7EgQ/NfYMQGAQeigoHf5eJ7JnM7M5ljxb0XcD/TRx0E0AKC4MUVgJQ==
+ service-type ssh
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+local-user snake class manage
+ password hash $h$6$tkqtEsETUhZt47qy$c4Z0MkxfZ/12ZyRRgsthshAfGlywpczbPb5a9PgApAP62LDk7TuZZES/Pn1PUhBoFxaMdZqKSEUSoTrX0Q0pgw==
+ service-type telnet ssh
+ authorization-attribute user-role network-admin
+#
+return

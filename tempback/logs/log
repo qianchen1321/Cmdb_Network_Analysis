@@ -1,0 +1,30 @@
+2022-04-19 18:46:56,828 - DEBUG: wrapper for test
+2022-04-19 18:46:56,828 - DEBUG: test call (3, 4, 6){}
+2022-04-19 18:46:56,829 - DEBUG: main test 3 3
+2022-04-19 18:46:56,829 - WARNING: main test 4 4
+2022-04-19 18:46:56,829 - INFO: main test 5 7
+2022-04-19 18:46:56,829 - DEBUG: test return 13
+2022-04-19 18:46:56,831 - INFO: main even 1 0
+2022-04-19 18:46:56,831 - INFO: main odd 1 1
+2022-04-19 18:46:56,832 - INFO: main even 1 2
+2022-04-19 18:46:56,832 - INFO: main odd 1 3
+2022-04-19 18:46:56,832 - INFO: main even 1 4
+2022-04-19 18:46:56,833 - INFO: main odd 1 5
+2022-04-19 18:46:56,833 - INFO: main even 1 6
+2022-04-19 18:46:56,833 - INFO: main odd 1 7
+2022-04-19 18:46:56,834 - INFO: main even 1 8
+2022-04-19 18:46:56,834 - INFO: main odd 1 9
+2022-04-19 18:46:57,099 - DEBUG: wrapper for test
+2022-04-19 18:46:57,099 - INFO: main even 1 0
+2022-04-19 18:46:57,100 - INFO: main odd 1 1
+2022-04-19 18:46:57,101 - INFO: main even 1 2
+2022-04-19 18:46:57,102 - INFO: main odd 1 3
+2022-04-19 18:46:57,103 - INFO: main even 1 4
+2022-04-19 18:46:57,103 - INFO: main odd 1 5
+2022-04-19 18:46:57,104 - INFO: main even 1 6
+2022-04-19 18:46:57,104 - INFO: main odd 1 7
+2022-04-19 18:46:57,105 - INFO: main even 1 8
+2022-04-19 18:46:57,106 - INFO: main odd 1 9
+2022-04-19 18:46:57,114 - DEBUG: wrapper for test
+2022-04-19 18:46:57,130 - DEBUG: wrapper for test
+2022-04-19 18:46:57,154 - DEBUG: wrapper for test

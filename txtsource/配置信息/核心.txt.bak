@@ -1,0 +1,1475 @@
+﻿<QRCHERY-CORE-SW>dis int br
+Brief information on interfaces in route mode:
+Link: ADM - administratively down; Stby - standby
+Protocol: (s) - spoofing
+Interface            Link Protocol Primary IP      Description                
+GE1/2/0/4            UP   UP       10.10.210.2     yidongzhuanxian
+GE2/2/0/4            UP   UP       10.10.220.2     CNC_to_hefei_service
+InLoop0              UP   UP(s)    --              
+Loop200              UP   UP(s)    --              
+MGE1/0/0/0           DOWN DOWN     192.168.6.160   Management
+MGE1/0/0/1           DOWN DOWN     --              
+NULL0                UP   UP(s)    --              
+REG0                 UP   --       --              
+RAGG1                UP   UP       10.10.10.2      TO_InternetHJ-SW
+RAGG2                UP   UP       192.168.168.21  TO_BanGongHJ-SW
+RAGG101              UP   UP       192.168.168.1   TO_ShengChanSW
+XGE1/3/0/1           UP   UP       --              TO_ShengChanSW-1_10GE1/1/0/
+XGE1/3/0/2           UP   UP       --              
+XGE1/3/0/3           UP   UP       --              link_BanGongHJ-SW1-G1/0/26
+XGE2/3/0/1           UP   UP       --              
+XGE2/3/0/2           UP   UP       --              
+XGE2/3/0/3           UP   UP       --              link_BanGongHJ-SW2-G2/0/26
+Vlan50               UP   UP       10.10.50.2      link_BangongServer-FW
+Vlan56               UP   UP       10.10.22.2      link_Test-FW
+Vlan80               UP   UP       10.10.80.1      link_EXT-FW
+Vlan140              UP   UP       10.10.41.1      link_ZaiBei-juniperFW
+Vlan999              UP   UP       3.1.1.1         
+
+Brief information on interfaces in bridge mode:
+Link: ADM - administratively down; Stby - standby
+Speed: (a) - auto
+Duplex: (a)/A - auto; H - half; F - full
+Type: A - access; T - trunk; H - hybrid
+Interface            Link Speed   Duplex Type PVID Description                
+GE1/2/0/1            UP   1G(a)   F(a)   A    80   TO_EXT-FW-1
+GE1/2/0/2            UP   1G(a)   F(a)   A    50   TO-bangongServer-fw2
+GE1/2/0/3            DOWN auto    A      A    1    
+GE1/2/0/5            DOWN auto    A      A    1    
+GE1/2/0/6            DOWN auto    A      A    1    mirroring_beijing_office_la
+GE1/2/0/7            UP   1G(a)   F(a)   A    1    mirroring_wuhu_office_lan
+GE1/2/0/8            DOWN auto    A      A    1    
+GE1/2/0/9            DOWN auto    A      A    1    
+GE1/2/0/10           DOWN auto    A      A    1    
+GE1/2/0/11           DOWN auto    A      A    1    
+GE1/2/0/12           DOWN auto    A      A    1    
+GE1/2/0/13           DOWN auto    A      A    1    
+GE1/2/0/14           DOWN auto    A      A    1    
+GE1/2/0/15           UP   1G(a)   F(a)   A    1    mirroring_hefei_net
+GE1/2/0/16           UP   1G(a)   F(a)   A    1    mirroring_ASP_10NET_lan
+GE1/2/0/17           DOWN auto    A      A    1    
+GE1/2/0/18           DOWN auto    A      A    1    
+GE1/2/0/19           DOWN auto    A      A    1    
+GE1/2/0/20           DOWN auto    A      A    1    
+GE1/2/0/21           DOWN auto    A      A    1    
+GE1/2/0/22           DOWN auto    A      A    1    
+GE1/2/0/23           DOWN auto    A      A    1    
+GE1/2/0/24           DOWN auto    A      A    1    
+GE2/2/0/1            UP   1G(a)   F(a)   A    80   TO_EXT-FW-2
+GE2/2/0/2            UP   1G(a)   F(a)   A    50   TO-bangongServer-fw2
+GE2/2/0/3            DOWN auto    A      A    1    
+GE2/2/0/5            UP   1G(a)   F(a)   A    140  link_ZaibeiJuniper
+GE2/2/0/6            UP   1G(a)   F(a)   A    56   link_Test-FW
+GE2/2/0/7            DOWN auto    A      A    1    mirroring_beijing_ser_lan
+GE2/2/0/8            DOWN auto    A      A    1    
+GE2/2/0/9            DOWN auto    A      A    1    
+GE2/2/0/10           DOWN auto    A      A    1    
+GE2/2/0/11           DOWN auto    A      A    1    
+GE2/2/0/12           DOWN auto    A      A    1    
+GE2/2/0/13           DOWN auto    A      A    1    
+GE2/2/0/14           DOWN auto    A      A    1    
+GE2/2/0/15           DOWN auto    A      A    1    
+GE2/2/0/16           DOWN auto    A      A    1    
+GE2/2/0/17           DOWN auto    A      A    1    
+GE2/2/0/18           DOWN auto    A      A    1    
+GE2/2/0/19           DOWN auto    A      A    1    
+GE2/2/0/20           DOWN auto    A      A    1    
+GE2/2/0/21           DOWN auto    A      A    1    
+GE2/2/0/22           DOWN auto    A      A    1    
+GE2/2/0/23           DOWN auto    A      A    1    
+GE2/2/0/24           DOWN auto    A      A    1    
+XGE1/2/0/25          DOWN auto    A      A    1    
+XGE1/2/0/26          DOWN auto    A      A    1    
+XGE1/2/0/27          DOWN auto    A      A    1    
+XGE1/2/0/28          UP   10G(a)  F(a)   --   --   
+XGE1/3/0/4           DOWN auto    A      A    1    
+XGE1/3/0/5           DOWN auto    A      A    1    
+XGE1/3/0/6           DOWN auto    A      A    1    
+XGE1/3/0/7           DOWN auto    A      A    1    
+XGE1/3/0/8           DOWN auto    A      A    1    
+XGE1/3/0/9           DOWN auto    A      A    1    
+XGE1/3/0/10          DOWN auto    A      A    1    
+XGE1/3/0/11          DOWN auto    A      A    1    
+XGE1/3/0/12          DOWN auto    A      A    1    
+XGE1/3/0/13          DOWN auto    A      A    1    
+XGE1/3/0/14          DOWN auto    A      A    1    
+XGE1/3/0/15          DOWN auto    A      A    1    
+XGE1/3/0/16          DOWN auto    A      A    1    
+XGE1/3/0/17          DOWN auto    A      A    1    
+XGE1/3/0/18          DOWN auto    A      A    1    
+XGE1/3/0/19          DOWN auto    A      A    1    
+XGE1/3/0/20          DOWN auto    A      A    1    
+XGE1/3/0/21          DOWN auto    A      A    1    
+XGE1/3/0/22          DOWN auto    A      A    1    
+XGE1/3/0/23          DOWN auto    A      A    1    
+XGE1/3/0/24          DOWN auto    A      A    1    
+XGE1/3/0/25          DOWN auto    A      A    1    
+XGE1/3/0/26          DOWN auto    A      A    1    
+XGE1/3/0/27          DOWN auto    A      A    1    
+XGE1/3/0/28          DOWN auto    A      A    1    
+XGE1/3/0/29          DOWN auto    A      A    1    
+XGE1/3/0/30          DOWN auto    A      A    1    
+XGE1/3/0/31          DOWN auto    A      A    1    
+XGE1/3/0/32          DOWN auto    A      A    1    
+XGE1/3/0/33          DOWN auto    A      A    1    
+XGE1/3/0/34          DOWN auto    A      A    1    
+XGE1/3/0/35          DOWN auto    A      A    1    
+XGE1/3/0/36          DOWN auto    A      A    1    
+XGE1/3/0/37          DOWN auto    A      A    1    
+XGE1/3/0/38          DOWN auto    A      A    1    
+XGE1/3/0/39          DOWN auto    A      A    1    
+XGE1/3/0/40          DOWN auto    A      A    1    
+XGE1/3/0/41          DOWN auto    A      A    1    
+XGE1/3/0/42          DOWN auto    A      A    1    
+XGE1/3/0/43          DOWN auto    A      A    1    
+XGE1/3/0/44          DOWN auto    A      A    1    
+XGE1/3/0/45          DOWN auto    A      A    1    
+XGE1/3/0/46          DOWN auto    A      A    1    
+XGE1/3/0/47          UP   10G(a)  F(a)   A    999  bfd-mad
+XGE1/3/0/48          UP   10G(a)  F(a)   --   --   
+XGE2/2/0/25          DOWN auto    A      A    1    
+XGE2/2/0/26          DOWN auto    A      A    1    
+XGE2/2/0/27          DOWN auto    A      A    1    
+XGE2/2/0/28          UP   10G(a)  F(a)   --   --   
+XGE2/3/0/4           DOWN auto    A      A    1    
+XGE2/3/0/5           DOWN auto    A      A    1    
+XGE2/3/0/6           DOWN auto    A      A    1    
+XGE2/3/0/7           DOWN auto    A      A    1    
+XGE2/3/0/8           DOWN auto    A      A    1    
+XGE2/3/0/9           DOWN auto    A      A    1    
+XGE2/3/0/10          DOWN auto    A      A    1    
+XGE2/3/0/11          DOWN auto    A      A    1    
+XGE2/3/0/12          DOWN auto    A      A    1    
+XGE2/3/0/13          DOWN auto    A      A    1    
+XGE2/3/0/14          DOWN auto    A      A    1    
+XGE2/3/0/15          DOWN auto    A      A    1    
+XGE2/3/0/16          DOWN auto    A      A    1    
+XGE2/3/0/17          DOWN auto    A      A    1    
+XGE2/3/0/18          DOWN auto    A      A    1    
+XGE2/3/0/19          DOWN auto    A      A    1    
+XGE2/3/0/20          DOWN auto    A      A    1    
+XGE2/3/0/21          DOWN auto    A      A    1    
+XGE2/3/0/22          DOWN auto    A      A    1    
+XGE2/3/0/23          DOWN auto    A      A    1    
+XGE2/3/0/24          DOWN auto    A      A    1    
+XGE2/3/0/25          DOWN auto    A      A    1    
+XGE2/3/0/26          DOWN auto    A      A    1    
+XGE2/3/0/27          DOWN auto    A      A    1    
+XGE2/3/0/28          DOWN auto    A      A    1    
+XGE2/3/0/29          DOWN auto    A      A    1    
+XGE2/3/0/30          DOWN auto    A      A    1    
+XGE2/3/0/31          DOWN auto    A      A    1    
+XGE2/3/0/32          DOWN auto    A      A    1    
+XGE2/3/0/33          DOWN auto    A      A    1    
+XGE2/3/0/34          DOWN auto    A      A    1    
+XGE2/3/0/35          DOWN auto    A      A    1    
+XGE2/3/0/36          DOWN auto    A      A    1    
+XGE2/3/0/37          DOWN auto    A      A    1    
+XGE2/3/0/38          DOWN auto    A      A    1    
+XGE2/3/0/39          DOWN auto    A      A    1    
+XGE2/3/0/40          DOWN auto    A      A    1    
+XGE2/3/0/41          DOWN auto    A      A    1    
+XGE2/3/0/42          DOWN auto    A      A    1    
+XGE2/3/0/43          DOWN auto    A      A    1    
+XGE2/3/0/44          DOWN auto    A      A    1    
+XGE2/3/0/45          DOWN auto    A      A    1    
+XGE2/3/0/46          DOWN auto    A      A    1    
+XGE2/3/0/47          UP   10G(a)  F(a)   A    999  bfd-mad
+XGE2/3/0/48          UP   10G(a)  F(a)   --   --   
+
+<QRCHERY-CORE-SW>      dis ospf peer
+
+         OSPF Process 1 with Router ID 192.168.168.21
+               Neighbor Brief Information
+
+ Area: 0.0.0.0        
+ Router ID       Address         Pri Dead-Time  State             Interface
+ 192.168.168.2   192.168.168.2   1   39         Full/ -           RAGG101
+ 192.168.168.5   10.10.10.1      1   39         Full/ -           RAGG1
+ 192.168.168.22  192.168.168.22  1   38         Full/ -           RAGG2
+<QRCHERY-CORE-SW>dis ip int br
+*down: administratively down
+(s): spoofing  (l): loopback
+Interface           Physical Protocol IP address      VPN instance Description  
+GE1/2/0/4           up       up       10.10.210.2     --           yidongzhua...
+GE2/2/0/4           up       up       10.10.220.2     --           CNC_to_hef...
+Loop200             up       up(s)    --              --           --
+MGE1/0/0/0          down     down     192.168.6.160   Management   Management
+MGE1/0/0/1          down     down     --              --           --
+RAGG1               up       up       10.10.10.2      --           TO_Interne...
+RAGG2               up       up       192.168.168.21  --           TO_BanGong...
+RAGG101             up       up       192.168.168.1   --           TO_ShengCh...
+XGE1/3/0/1          up       up       --              --           TO_ShengCh...
+XGE1/3/0/2          up       up       --              --           --
+XGE1/3/0/3          up       up       --              --           link_BanGo...
+XGE2/3/0/1          up       up       --              --           --
+XGE2/3/0/2          up       up       --              --           --
+XGE2/3/0/3          up       up       --              --           link_BanGo...
+Vlan50              up       up       10.10.50.2      --           link_Bango...
+Vlan56              up       up       10.10.22.2      --           link_Test-FW
+Vlan80              up       up       10.10.80.1      --           link_EXT-FW
+Vlan140             up       up       10.10.41.1      --           link_ZaiBe...
+Vlan999             up       up       3.1.1.1         --           --
+<QRCHERY-CORE-SW>        dis ip routing
+
+Destinations : 135      Routes : 136
+
+Destination/Mask   Proto   Pre Cost        NextHop         Interface
+0.0.0.0/0          Static  60  0           10.10.50.1      Vlan50
+0.0.0.0/32         Direct  0   0           127.0.0.1       InLoop0
+2.0.0.0/16         O_ASE1  150 3           192.168.168.2   RAGG101
+2.0.7.0/24         O_ASE1  150 3           192.168.168.2   RAGG101
+2.1.0.0/16         O_ASE1  150 3           192.168.168.2   RAGG101
+3.1.1.0/30         Direct  0   0           3.1.1.1         Vlan999
+3.1.1.0/32         Direct  0   0           3.1.1.1         Vlan999
+3.1.1.1/32         Direct  0   0           127.0.0.1       InLoop0
+3.1.1.3/32         Direct  0   0           3.1.1.1         Vlan999
+9.128.47.0/24      Static  60  0           10.10.80.2      Vlan80
+10.1.1.0/24        Static  60  0           10.10.50.1      Vlan50
+10.1.3.0/24        Static  60  0           10.10.50.1      Vlan50
+10.1.4.0/24        Static  60  0           10.10.50.1      Vlan50
+10.1.5.0/24        Static  60  0           10.10.50.1      Vlan50
+10.1.8.0/24        Static  60  0           10.10.50.1      Vlan50
+10.2.14.237/32     Static  60  0           10.10.50.1      Vlan50
+10.10.10.0/29      Direct  0   0           10.10.10.2      RAGG1
+10.10.10.0/32      Direct  0   0           10.10.10.2      RAGG1
+10.10.10.2/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.10.7/32      Direct  0   0           10.10.10.2      RAGG1
+10.10.22.0/24      Direct  0   0           10.10.22.2      Vlan56
+10.10.22.0/32      Direct  0   0           10.10.22.2      Vlan56
+10.10.22.2/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.22.255/32    Direct  0   0           10.10.22.2      Vlan56
+10.10.40.0/24      O_ASE1  150 2           10.10.10.1      RAGG1
+10.10.41.0/30      Direct  0   0           10.10.41.1      Vlan140
+10.10.41.0/32      Direct  0   0           10.10.41.1      Vlan140
+10.10.41.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.41.3/32      Direct  0   0           10.10.41.1      Vlan140
+10.10.50.0/30      Direct  0   0           10.10.50.2      Vlan50
+10.10.50.0/32      Direct  0   0           10.10.50.2      Vlan50
+10.10.50.2/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.50.3/32      Direct  0   0           10.10.50.2      Vlan50
+10.10.80.0/29      Direct  0   0           10.10.80.1      Vlan80
+10.10.80.0/32      Direct  0   0           10.10.80.1      Vlan80
+10.10.80.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.80.7/32      Direct  0   0           10.10.80.1      Vlan80
+10.10.210.0/30     Direct  0   0           10.10.210.2     GE1/2/0/4
+10.10.210.0/32     Direct  0   0           10.10.210.2     GE1/2/0/4
+10.10.210.2/32     Direct  0   0           127.0.0.1       InLoop0
+10.10.210.3/32     Direct  0   0           10.10.210.2     GE1/2/0/4
+10.10.220.0/30     Direct  0   0           10.10.220.2     GE2/2/0/4
+10.10.220.0/32     Direct  0   0           10.10.220.2     GE2/2/0/4
+10.10.220.2/32     Direct  0   0           127.0.0.1       InLoop0
+10.10.220.3/32     Direct  0   0           10.10.220.2     GE2/2/0/4
+10.64.250.0/24     Static  60  0           10.10.50.1      Vlan50
+                                           10.10.80.2      Vlan80
+10.69.8.0/24       Static  60  0           10.10.80.2      Vlan80
+10.111.121.0/24    Static  60  0           10.10.50.1      Vlan50
+10.180.10.0/24     Static  60  0           10.10.80.2      Vlan80
+10.180.200.0/24    Static  60  0           10.10.80.2      Vlan80
+10.238.81.76/32    Static  60  0           10.10.80.2      Vlan80
+10.238.243.189/32  Static  60  0           10.10.80.2      Vlan80
+10.238.250.206/32  Static  60  0           10.10.80.2      Vlan80
+11.64.18.160/32    Static  60  0           10.10.80.2      Vlan80
+12.9.1.0/24        Static  60  0           10.10.80.2      Vlan80
+12.9.1.5/32        Static  60  0           10.10.80.2      Vlan80
+12.9.1.8/32        Static  60  0           10.10.80.2      Vlan80
+12.10.1.0/24       Static  60  0           10.10.80.2      Vlan80
+19.10.250.0/24     Static  60  0           10.10.80.2      Vlan80
+19.64.223.216/30   Static  60  0           10.10.80.2      Vlan80
+19.64.246.0/24     Static  60  0           10.10.80.2      Vlan80
+19.64.250.0/24     Static  60  0           10.10.80.2      Vlan80
+38.63.138.123/32   Static  60  0           10.10.80.2      Vlan80
+38.238.238.28/32   Static  60  0           10.10.80.2      Vlan80
+38.238.250.84/32   Static  60  0           10.10.80.2      Vlan80
+38.238.250.126/32  Static  60  0           10.10.80.2      Vlan80
+38.238.250.157/32  Static  60  0           10.10.80.2      Vlan80
+38.238.250.206/32  Static  60  0           10.10.80.2      Vlan80
+100.1.1.0/24       Static  60  0           10.10.50.1      Vlan50
+127.0.0.0/8        Direct  0   0           127.0.0.1       InLoop0
+127.0.0.0/32       Direct  0   0           127.0.0.1       InLoop0
+127.0.0.1/32       Direct  0   0           127.0.0.1       InLoop0
+127.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+172.16.10.0/24     Static  60  0           10.10.80.2      Vlan80
+172.16.11.0/24     Static  60  0           10.10.80.2      Vlan80
+172.16.13.0/24     Static  60  0           10.10.80.2      Vlan80
+172.18.0.0/16      Static  60  0           10.10.22.1      Vlan56
+172.19.0.0/22      O_ASE1  150 2           10.10.10.1      RAGG1
+172.31.0.0/16      Static  60  0           10.10.80.2      Vlan80
+188.188.188.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.1.0/24     O_INTRA 10  2           192.168.168.22  RAGG2
+192.168.2.0/24     O_INTRA 10  2           192.168.168.22  RAGG2
+192.168.3.0/24     Static  60  0           10.10.22.1      Vlan56
+192.168.4.0/24     O_INTRA 10  2           192.168.168.2   RAGG101
+192.168.5.0/24     O_INTRA 10  2           192.168.168.22  RAGG2
+192.168.6.0/24     O_INTRA 10  2           192.168.168.22  RAGG2
+192.168.8.1/32     Static  60  0           10.10.80.2      Vlan80
+192.168.10.0/24    O_INTRA 10  2           192.168.168.2   RAGG101
+192.168.11.0/24    Static  60  0           10.10.22.1      Vlan56
+192.168.12.0/24    O_ASE1  150 2           10.10.10.1      RAGG1
+192.168.13.0/24    Static  60  0           10.10.22.1      Vlan56
+192.168.14.0/24    O_ASE1  150 2           10.10.10.1      RAGG1
+192.168.15.0/24    O_INTRA 10  2           192.168.168.2   RAGG101
+192.168.17.0/24    Static  60  0           10.10.22.1      Vlan56
+192.168.39.0/24    Static  60  0           10.10.80.2      Vlan80
+192.168.40.0/24    Static  60  0           10.10.41.2      Vlan140
+192.168.41.0/24    Static  60  0           10.10.41.2      Vlan140
+192.168.50.0/24    Static  60  0           10.10.50.1      Vlan50
+192.168.60.0/24    Static  60  0           10.10.41.2      Vlan140
+192.168.90.0/24    O_ASE1  150 2           10.10.10.1      RAGG1
+192.168.92.0/24    Static  60  0           10.10.80.2      Vlan80
+192.168.94.0/24    Static  60  0           10.10.80.2      Vlan80
+192.168.95.0/24    Static  60  0           10.10.80.2      Vlan80
+192.168.96.0/24    Static  60  0           10.10.80.2      Vlan80
+192.168.97.0/24    Static  60  0           10.10.80.2      Vlan80
+192.168.98.0/24    Static  60  0           10.10.80.2      Vlan80
+192.168.99.0/24    Static  60  0           10.10.220.1     GE2/2/0/4
+192.168.100.0/24   Static  60  0           10.10.22.1      Vlan56
+192.168.168.0/30   Direct  0   0           192.168.168.1   RAGG101
+192.168.168.0/32   Direct  0   0           192.168.168.1   RAGG101
+192.168.168.1/32   Direct  0   0           127.0.0.1       InLoop0
+192.168.168.3/32   Direct  0   0           192.168.168.1   RAGG101
+192.168.168.4/30   O_ASE1  150 2           10.10.10.1      RAGG1
+192.168.168.20/30  Direct  0   0           192.168.168.21  RAGG2
+192.168.168.20/32  Direct  0   0           192.168.168.21  RAGG2
+192.168.168.21/32  Direct  0   0           127.0.0.1       InLoop0
+192.168.168.23/32  Direct  0   0           192.168.168.21  RAGG2
+192.168.192.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.192.122/32 Static  60  0           10.10.80.2      Vlan80
+192.168.192.123/32 Static  60  0           10.10.80.2      Vlan80
+192.168.192.149/32 Static  60  0           10.10.80.2      Vlan80
+192.168.200.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.201.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.202.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.203.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.205.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.208.0/24   Static  60  0           10.10.80.2      Vlan80
+192.168.210.0/24   Static  60  0           10.10.210.1     GE1/2/0/4
+192.168.211.0/24   Static  60  0           10.10.210.1     GE1/2/0/4
+192.168.212.0/24   Static  60  0           10.10.220.1     GE2/2/0/4
+192.168.216.0/24   Static  60  0           10.10.210.1     GE1/2/0/4
+192.168.221.0/24   Static  60  0           10.10.22.1      Vlan56
+224.0.0.0/4        Direct  0   0           0.0.0.0         NULL0
+224.0.0.0/24       Direct  0   0           0.0.0.0         NULL0
+255.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+<QRCHERY-CORE-SW>   dis arp
+  Type: S-Static   D-Dynamic   O-Openflow   R-Rule   M-Multiport  I-Invalid
+IP address      MAC address    VLAN/VSI   Interface                Aging Type 
+192.168.168.22  5098-b8bd-c96b --         RAGG2                    855   D    
+10.10.10.1      943b-b0bc-9ccc --         RAGG1                    888   D    
+192.168.168.2   943b-b0bc-7680 --         RAGG101                  778   D    
+10.10.80.2      0000-5e00-0102 80         GE1/2/0/1                1189  D    
+10.10.80.3      0010-f37e-6140 80         GE1/2/0/1                1189  D    
+10.10.210.1     9428-2e9a-3d9f --         GE1/2/0/4                1062  D    
+10.10.80.4      0010-f37d-6ff6 80         GE2/2/0/1                1186  D    
+10.10.22.1      0010-f37e-5989 56         GE2/2/0/6                1196  D    
+10.10.220.1     9428-2e9a-3e38 --         GE2/2/0/4                187   D    
+10.10.50.1      0000-5e00-0164 50         GE2/2/0/2                789   D    
+<QRCHERY-CORE-SW>dis acl a
+Basic IPv4 ACL 2000, 8 rules,
+ACL's step is 5, start ID is 0
+ rule 10 permit source 192.168.6.18 0 (1042 times matched)
+ rule 11 permit source 192.168.6.56 0
+ rule 12 permit source 192.168.6.208 0 (2087260 times matched)
+ rule 15 permit source 192.168.10.0 0.0.0.255
+ rule 16 permit source 192.168.6.166 0
+ rule 17 permit source 192.168.6.167 0
+ rule 18 permit source 192.168.6.168 0
+ rule 20 deny (25 times matched)
+
+Basic IPv4 ACL 2001, 4 rules,
+vty-acl
+ACL's step is 5, start ID is 0
+ rule 5 permit source 192.168.6.18 0
+ rule 10 permit source 192.168.5.234 0
+ rule 15 permit source 192.168.6.56 0
+ rule 20 deny (4 times matched)
+
+Basic IPv4 ACL 2008, 2 rules,
+snmp-acl
+ACL's step is 5, start ID is 0
+ rule 5 permit source 192.168.6.208 0
+ rule 10 deny
+
+Advanced IPv4 ACL 3001, 13 rules,
+ACL's step is 5, start ID is 0
+ rule 0 deny ip source 192.168.5.0 0.0.0.255 destination 192.168.1.0 0.0.0.255
+ rule 2 deny ip source 192.168.5.0 0.0.0.255 destination 192.168.3.0 0.0.0.255
+ rule 3 deny ip source 192.168.5.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 5 deny ip source 192.168.1.0 0.0.0.255 destination 192.168.3.0 0.0.0.255
+ rule 6 deny ip source 192.168.1.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 7 deny ip source 192.168.1.0 0.0.0.255 destination 192.168.5.0 0.0.0.255
+ rule 9 deny ip source 192.168.2.0 0.0.0.255 destination 192.168.3.0 0.0.0.255
+ rule 10 deny ip source 192.168.2.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 12 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.1.0 0.0.0.255
+ rule 13 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.2.0 0.0.0.255
+ rule 14 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 15 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.5.0 0.0.0.255
+ rule 20 permit ip
+
+Advanced IPv4 ACL 3009, 41 rules,
+beijing-acl
+ACL's step is 5, start ID is 0
+ rule 0 deny tcp destination-port eq 135
+ rule 5 deny udp destination-port eq 135
+ rule 10 deny tcp destination-port eq 139
+ rule 15 deny udp destination-port eq netbios-ssn
+ rule 20 deny tcp destination-port eq 445
+ rule 25 deny udp destination-port eq 445
+ rule 30 deny tcp destination-port eq 137
+ rule 35 deny udp destination-port eq netbios-ns
+ rule 40 deny tcp destination-port eq 1434
+ rule 45 permit ip source 10.10.200.0 0.0.0.255 destination 192.168.4.4 0
+ rule 50 permit ip source 192.168.4.4 0 destination 10.10.200.0 0.0.0.255
+ rule 55 permit tcp source 192.168.200.0 0.0.0.255 destination 192.168.4.4 0 destination-port eq 1521
+ rule 60 permit ip source 10.10.200.0 0.0.0.255 destination 192.168.4.12 0
+ rule 65 permit ip source 10.10.200.0 0.0.0.255 destination 192.168.4.11 0
+ rule 70 permit ip source 192.168.200.0 0.0.0.255 destination 192.168.4.11 0
+ rule 75 permit ip source 192.168.200.0 0.0.0.255 destination 192.168.4.12 0
+ rule 80 permit icmp source 192.168.200.0 0.0.0.255 destination 192.168.4.4 0
+ rule 85 permit tcp destination 192.168.4.4 0 destination-port eq 1521
+ rule 90 permit ip source 192.168.4.4 0
+ rule 95 deny ip source 192.168.208.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 100 deny ip source 192.168.200.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 105 deny ip source 192.168.201.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 110 deny ip source 192.168.202.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 115 deny ip source 192.168.203.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 120 deny ip source 192.168.205.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 125 deny ip source 192.168.208.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 130 deny ip source 192.168.200.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 135 deny ip source 192.168.201.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 140 deny ip source 192.168.202.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 145 deny ip source 192.168.203.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 150 deny ip source 192.168.205.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 155 deny ip source 192.168.208.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 160 deny ip source 192.168.200.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 165 deny ip source 192.168.201.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 170 deny ip source 192.168.202.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 175 deny ip source 192.168.203.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 180 deny ip source 192.168.205.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 185 deny ip destination 192.168.4.0 0.0.0.255
+ rule 190 deny ip destination 192.168.10.0 0.0.0.255
+ rule 195 deny ip destination 192.168.15.0 0.0.0.255
+ rule 200 permit ip
+
+Advanced IPv4 ACL 3333, 35 rules,
+fangbingdu
+ACL's step is 5, start ID is 0
+ rule 0 deny tcp destination-port eq 135
+ rule 2 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.80 0 destination-port eq www
+ rule 3 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.80 0 destination-port eq 443
+ rule 4 permit ip source 192.168.0.0 0.0.255.255 destination 192.168.10.190 0
+ rule 5 deny udp destination-port eq 135
+ rule 6 permit tcp source 192.168.211.213 0 destination 192.168.10.85 0 destination-port eq 1521
+ rule 7 permit ip destination 192.168.10.160 0
+ rule 8 permit tcp destination 192.168.10.97 0 destination-port eq 8443
+ rule 9 permit tcp destination 192.168.10.81 0 destination-port eq 6080
+ rule 10 deny tcp destination-port eq 139
+ rule 12 deny ip source 192.168.210.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 13 deny ip source 192.168.211.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 14 deny ip source 192.168.216.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 15 deny udp destination-port eq netbios-ssn
+ rule 17 permit ip source 192.168.212.109 0 destination 192.168.6.168 0
+ rule 18 permit ip source 192.168.212.109 0 destination 192.168.6.167 0
+ rule 19 permit ip source 192.168.212.109 0 destination 192.168.6.166 0
+ rule 20 deny tcp destination-port eq 445
+ rule 21 deny ip source 192.168.212.0 0.0.0.255 destination 192.168.6.0 0.0.0.255
+ rule 22 deny ip source 192.168.210.0 0.0.0.255 destination 192.168.6.0 0.0.0.255
+ rule 25 deny udp destination-port eq 445
+ rule 30 deny tcp destination-port eq 137
+ rule 35 deny udp destination-port eq netbios-ns
+ rule 37 deny tcp source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255 destination-port eq telnet
+ rule 38 deny tcp source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255 destination-port eq 3389
+ rule 39 deny tcp source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255 destination-port eq 22
+ rule 40 deny tcp destination-port eq 1434
+ rule 41 permit ip source 192.168.211.0 0.0.0.255 destination 192.168.6.166 0
+ rule 42 permit ip source 192.168.211.0 0.0.0.255 destination 192.168.6.167 0
+ rule 43 permit ip source 192.168.211.0 0.0.0.255 destination 192.168.6.168 0
+ rule 44 deny ip source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255
+ rule 45 permit ip
+ rule 50 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.101 0 destination-port eq 8002
+ rule 51 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.71 0 destination-port eq 8001
+ rule 100 deny ip source 192.168.212.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+
+<QRCHERY-CORE-SW>     dis mac-address
+MAC Address      VLAN ID    State            Port/Nickname            Aging
+1866-da70-6991   1          Learned          GE1/2/0/15               Y
+0000-5e00-0102   80         Learned          GE1/2/0/1                Y
+0010-f37e-6140   80         Learned          GE1/2/0/1                Y
+0000-5e00-0164   50         Learned          GE2/2/0/2                Y
+0010-f37e-5989   56         Learned          GE2/2/0/6                Y
+0010-f37d-6ff6   80         Learned          GE2/2/0/1                Y
+bc98-89b7-aa08   140        Learned          GE2/2/0/5                Y
+<QRCHERY-CORE-SW>dis cu 
+#
+ version 7.1.070, Release 7585P07
+#
+mdc Admin id 1
+#
+ sysname QRCHERY-CORE-SW
+#
+ clock timezone bjtime add 08:00:00
+#
+ip vpn-instance Management
+ route-distinguisher 100:1
+ vpn-target 100:1 import-extcommunity
+ vpn-target 100:1 export-extcommunity
+#
+ forward-path-detection enable
+#
+ irf mac-address persistent always
+ irf auto-update enable
+ irf auto-merge enable
+ undo irf link-delay
+ irf member 1 priority 10
+ irf member 2 priority 1
+ irf mode normal
+#
+track 3 nqa entry hefei office1 reaction 2
+#
+track 4 nqa entry hefei1 video1 reaction 2
+#
+ospf 1
+ import-route direct type 1
+ import-route static type 1
+ area 0.0.0.0
+  network 10.10.10.2 0.0.0.0
+  network 192.168.168.1 0.0.0.0
+  network 192.168.168.21 0.0.0.0
+#
+ dhcp enable
+#
+ mirroring-group 1 local
+ mirroring-group 2 local
+ mirroring-group 3 local
+ mirroring-group 5 local
+ mirroring-group 6 local
+#
+ lldp global enable
+#
+ system-working-mode standard
+ xbar chassis 1 load-balance
+ xbar chassis 2 load-balance
+ password-recovery enable
+#
+vlan 1
+#
+vlan 50
+ name link_BangongServer-FW
+#
+vlan 56
+ name link_Test-FW
+#
+vlan 80
+ name link_EXT-FW
+#
+vlan 140
+ name link_ZaiBei-juniperFW
+#
+vlan 999
+ name bfd-mad
+#
+irf-port 1/1
+ port group interface Ten-GigabitEthernet1/2/0/28 mode enhanced
+ port group interface Ten-GigabitEthernet1/3/0/48 mode enhanced
+#
+irf-port 2/2
+ port group interface Ten-GigabitEthernet2/2/0/28 mode enhanced
+ port group interface Ten-GigabitEthernet2/3/0/48 mode enhanced
+#
+traffic classifier 10net operator and
+ if-match acl 2000
+#
+traffic classifier 50net operator and
+#
+traffic behavior 10net
+ redirect next-hop 10.10.10.1
+#
+qos policy 10net
+ classifier 10net behavior 10net
+#
+ stp instance 0 priority 0
+ stp global enable
+#
+ftth
+#
+nqa entry hefei office1
+ type icmp-echo
+  destination ip 10.10.220.1
+  frequency 10000
+  reaction 2 checked-element probe-fail threshold-type consecutive 2 action-type trigger-only
+#
+nqa entry hefei1 video1
+ type icmp-echo
+  destination ip 10.10.210.1
+  frequency 10000
+  reaction 2 checked-element probe-fail threshold-type consecutive 2 action-type trigger-only
+#
+ nqa schedule hefei office1 start-time now lifetime forever
+ nqa schedule hefei1 video1 start-time now lifetime forever
+#
+interface Route-Aggregation1
+ description TO_InternetHJ-SW
+ ip address 10.10.10.2 255.255.255.248
+ ospf network-type p2p
+#
+interface Route-Aggregation2
+ description TO_BanGongHJ-SW
+ ip address 192.168.168.21 255.255.255.252
+ ospf network-type p2p
+#
+interface Route-Aggregation101
+ description TO_ShengChanSW
+ ip address 192.168.168.1 255.255.255.252
+ ospf network-type p2p
+#
+interface NULL0
+ ip address 10.10.50.2 255.255.255.252
+#
+interface LoopBack200
+ ip address 10.10.50.2 255.255.255.252
+#
+interface Vlan-interf50
+ ip address 10.10.50.2 255.255.255.252
+#
+interface Vlan-interface56
+ description link_Test-FW
+ ip address 10.10.22.2 255.255.255.0
+#              
+interface Vlan-interface80
+ description link_EXT-FWace50
+ description link_BangongServer-FW
+ ip address 10.10.80.1 255.255.255.248
+#
+interface Vlan-interface140
+ description link_ZaiBei-juniperFW
+ ip address 10.10.41.1 255.255.255.252
+#
+interface Vlan-interface999
+ mad bfd enable
+ mad ip address 3.1.1.1 255.255.255.252 member 1
+ mad ip address 3.1.1.2 255.255.255.252 member 2
+#
+interface GigabitEthernet1/2/0/4
+ port link-mode route
+ description yidongzhuanxian
+ ip address 10.10.210.2 255.255.255.252
+ packet-filter 3333 inbound
+ mirroring-group 6 mirroring-port both
+#
+interface GigabitEthernet2/2/0/4
+ port link-mode route
+ description CNC_to_hefei_service
+ ip address 10.10.220.2 255.255.255.252
+ packet-filter 3333 inbound
+ mirroring-group 6 mirroring-port both
+#
+interface GigabitEthernet1/2/0/1
+ port link-mode bridge
+ description TO_EXT-FW-1
+ port access vlan 80
+ mirroring-group 5 mirroring-port both
+#
+interface GigabitEthernet1/2/0/2
+ port link-mode bridge
+ description TO-bangongServer-fw2
+ port access vlan 50
+ undo stp enable
+#
+interface GigabitEthernet1/2/0/3
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/5
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/6
+ port link-mode bridge
+ description mirroring_beijing_office_lan
+ mirroring-group 1 monitor-port
+#
+interface GigabitEthernet1/2/0/7
+ port link-mode bridge
+ description mirroring_wuhu_office_lan
+ mirroring-group 2 monitor-port
+#
+interface GigabitEthernet1/2/0/8
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/9
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/10
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/11
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/12
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/13
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/14
+ port link-mode bridge
+#              
+interface GigabitEthernet1/2/0/15
+ port link-mode bridge
+ description mirroring_hefei_net
+ mirroring-group 6 monitor-port
+#
+interface GigabitEthernet1/2/0/16
+ port link-mode bridge
+ description mirroring_ASP_10NET_lan
+ mirroring-group 5 monitor-port
+#
+interface GigabitEthernet1/2/0/17
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/18
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/19
+ port link-mode bridge
+#              
+interface GigabitEthernet1/2/0/20
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/21
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/22
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/23
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/24
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/1
+ port link-mode bridge
+ description TO_EXT-FW-2
+ port access vlan 80
+ mirroring-group 5 mirroring-port both
+#
+interface GigabitEthernet2/2/0/2
+ port link-mode bridge
+ description TO-bangongServer-fw2
+ port access vlan 50
+ undo stp enable
+#
+interface GigabitEthernet2/2/0/3
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/5
+ port link-mode bridge
+ description link_ZaibeiJuniper
+ port access vlan 140
+#
+interface GigabitEthernet2/2/0/6
+ port link-mode bridge
+ description link_Test-FW
+ port access vlan 56
+ undo stp enable
+#
+interface GigabitEthernet2/2/0/7
+ port link-mode bridge
+ description mirroring_beijing_ser_lan
+ mirroring-group 3 monitor-port
+#
+interface GigabitEthernet2/2/0/8
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/9
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/10
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/11
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/12
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/13
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/14
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/15
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/16
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/17
+ port link-mode bridge
+#              
+interface GigabitEthernet2/2/0/18
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/19
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/20
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/21
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/22
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/23
+ port link-mode bridge
+ stp edged-port
+#              
+interface GigabitEthernet2/2/0/24
+ port link-mode bridge
+#
+interface M-GigabitEthernet1/0/0/0
+ description Management
+ ip binding vpn-instance Management
+ ip address 192.168.6.160 255.255.255.0
+#
+interface M-GigabitEthernet1/0/0/1
+#
+interface Ten-GigabitEthernet1/3/0/1
+ port link-mode route
+ description TO_ShengChanSW-1_10GE1/1/0/1
+ mirroring-group 5 mirroring-port both
+ qos apply policy 10net inbound 
+ port link-aggregation group 101
+#
+interface Ten-GigabitEthernet1/3/0/2
+ port link-mode route
+ port link-aggregation group 1
+#
+interface Ten-GigabitEthernet1/3/0/3
+ port link-mode route
+ description link_BanGongHJ-SW1-G1/0/26
+ packet-filter 3001 inbound
+ mirroring-group 2 mirroring-port both
+ port link-aggregation group 2
+#
+interface Ten-GigabitEthernet2/3/0/1
+ port link-mode route
+ mirroring-group 5 mirroring-port both
+ qos apply policy 10net inbound 
+ port link-aggregation group 101
+#
+interface Ten-GigabitEthernet2/3/0/2
+ port link-mode route
+ port link-aggregation group 1
+#              
+interface Ten-GigabitEthernet2/3/0/3
+ port link-mode route
+ description link_BanGongHJ-SW2-G2/0/26
+ packet-filter 3001 inbound
+ mirroring-group 2 mirroring-port both
+ port link-aggregation group 2
+#
+interface Ten-GigabitEthernet1/2/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/2/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/2/0/27
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/4
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet1/3/0/5
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/6
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/7
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/8
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/9
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/10
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/11
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/12
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/13
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/14
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/15
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/16
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/17
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/18
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/19
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/20
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/21
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/22
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/23
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet1/3/0/24
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/27
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/28
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/31
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/32
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/33
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/34
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/35
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/36
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/37
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/38
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/39
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/40
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/41
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/42
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet1/3/0/43
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/44
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/45
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/46
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/3/0/47
+ port link-mode bridge
+ description bfd-mad
+ port access vlan 999
+ undo stp enable
+#
+interface Ten-GigabitEthernet2/2/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/2/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/2/0/27
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/4
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/5
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/6
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/7
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/8
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/9
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/10
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/11
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/12
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/13
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet2/3/0/14
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/15
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/16
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/17
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/18
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/19
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/20
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/21
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/22
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/23
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/24
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/27
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/28
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/31
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/32
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet2/3/0/33
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/34
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/35
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/36
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/37
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/38
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/39
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/40
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/41
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/42
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/43
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/44
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/45
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/46
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/3/0/47
+ port link-mode bridge
+ description bfd-mad
+ port access vlan 999
+ undo stp enable
+#
+interface Ten-GigabitEthernet1/2/0/28
+#
+interface Ten-GigabitEthernet1/3/0/48
+#
+interface Ten-GigabitEthernet2/2/0/28
+#
+interface Ten-GigabitEthernet2/3/0/48
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 1/0 2/1
+ user-role network-admin
+#
+line vty 0 63
+ authentication-mode scheme
+ user-role network-admin
+ user-role network-operator
+ protocol inbound ssh
+ idle-timeout 20 0
+ screen-length 20
+ history-command max-size 100
+#              
+ ip route-static 0.0.0.0 0 10.10.50.1
+ ip route-static 9.128.47.0 24 10.10.80.2
+ ip route-static 10.1.1.0 24 10.10.50.1
+ ip route-static 10.1.3.0 24 10.10.50.1
+ ip route-static 10.1.4.0 24 10.10.50.1
+ ip route-static 10.1.5.0 24 10.10.50.1
+ ip route-static 10.1.8.0 24 10.10.50.1
+ ip route-static 10.2.14.237 32 10.10.50.1
+ ip route-static 10.64.250.0 24 10.10.50.1
+ ip route-static 10.64.250.0 24 10.10.80.2
+ ip route-static 10.69.8.0 24 10.10.80.2
+ ip route-static 10.111.121.0 24 10.10.50.1
+ ip route-static 10.180.10.0 24 10.10.80.2
+ ip route-static 10.180.200.0 24 10.10.80.2
+ ip route-static 10.238.81.76 32 10.10.80.2
+ ip route-static 10.238.243.189 32 10.10.80.2
+ ip route-static 10.238.250.206 32 10.10.80.2
+ ip route-static 11.64.18.160 32 10.10.80.2
+ ip route-static 12.9.1.0 24 10.10.80.2
+ ip route-static 12.9.1.5 32 10.10.80.2
+ ip route-static 12.9.1.8 32 10.10.80.2
+ ip route-static 12.10.1.0 24 10.10.80.2
+ ip route-static 19.10.250.0 24 10.10.80.2
+ ip route-static 19.64.223.216 30 10.10.80.2
+ ip route-static 19.64.246.0 24 10.10.80.2
+ ip route-static 19.64.250.0 24 10.10.80.2
+ ip route-static 38.63.138.123 32 10.10.80.2
+ ip route-static 38.238.238.28 32 10.10.80.2
+ ip route-static 38.238.250.84 32 10.10.80.2
+ ip route-static 38.238.250.126 32 10.10.80.2
+ ip route-static 38.238.250.157 32 10.10.80.2
+ ip route-static 38.238.250.206 32 10.10.80.2
+ ip route-static 58.58.19.0 24 10.10.55.1
+ ip route-static 100.1.1.0 24 10.10.50.1
+ ip route-static 172.16.10.0 24 10.10.80.2
+ ip route-static 172.16.11.0 24 10.10.80.2
+ ip route-static 172.16.13.0 24 10.10.80.2
+ ip route-static 172.18.0.0 16 10.10.22.1
+ ip route-static 172.31.0.0 16 10.10.80.2
+ ip route-static 188.188.188.0 24 10.10.80.2
+ ip route-static 192.168.3.0 24 10.10.22.1
+ ip route-static 192.168.8.1 32 10.10.80.2
+ ip route-static 192.168.11.0 24 10.10.22.1
+ ip route-static 192.168.13.0 24 10.10.22.1
+ ip route-static 192.168.17.0 24 10.10.22.1
+ ip route-static 192.168.30.0 24 10.10.21.1
+ ip route-static 192.168.39.0 24 10.10.80.2
+ ip route-static 192.168.40.0 24 10.10.41.2
+ ip route-static 192.168.41.0 24 10.10.41.2
+ ip route-static 192.168.50.0 24 10.10.50.1
+ ip route-static 192.168.60.0 24 10.10.41.2
+ ip route-static 192.168.92.0 24 10.10.80.2
+ ip route-static 192.168.94.0 24 10.10.80.2
+ ip route-static 192.168.95.0 24 10.10.80.2
+ ip route-static 192.168.96.0 24 10.10.80.2
+ ip route-static 192.168.97.0 24 10.10.80.2
+ ip route-static 192.168.98.0 24 10.10.80.2
+ ip route-static 192.168.99.0 24 10.10.220.1 track 3
+ ip route-static 192.168.99.0 24 10.10.210.1 preference 100
+ ip route-static 192.168.100.0 24 10.10.22.1
+ ip route-static 192.168.192.0 24 10.10.80.2
+ ip route-static 192.168.192.122 32 10.10.80.2
+ ip route-static 192.168.192.123 32 10.10.80.2
+ ip route-static 192.168.192.149 32 10.10.80.2
+ ip route-static 192.168.200.0 24 10.10.80.2
+ ip route-static 192.168.201.0 24 10.10.80.2
+ ip route-static 192.168.202.0 24 10.10.80.2
+ ip route-static 192.168.203.0 24 10.10.80.2
+ ip route-static 192.168.205.0 24 10.10.80.2
+ ip route-static 192.168.208.0 24 10.10.80.2
+ ip route-static 192.168.210.0 24 10.10.210.1 track 4
+ ip route-static 192.168.210.0 24 10.10.220.1 preference 100
+ ip route-static 192.168.211.0 24 10.10.210.1 track 4
+ ip route-static 192.168.211.0 24 10.10.220.1 preference 100
+ ip route-static 192.168.212.0 24 10.10.220.1 track 3
+ ip route-static 192.168.212.0 24 10.10.210.1 preference 100
+ ip route-static 192.168.216.0 24 10.10.210.1 track 4
+ ip route-static 192.168.216.0 24 10.10.220.1 preference 100
+ ip route-static 192.168.221.0 24 10.10.22.1
+#
+ info-center loghost 192.168.6.227
+#
+ snmp-agent
+ snmp-agent local-engineid 800063A280A4FA7687F40100000001
+ snmp-agent community write cipher $c$3$oa56y2BzIe0i0jzTznESs96l/uTVjGfswQzEtJ8M acl 2008
+ snmp-agent community read cipher $c$3$qzt59qni7qdZairoFjQhruRXSixzup5NeyXICnqo acl 2000
+ snmp-agent sys-info version all 
+#
+ ssh server enable
+ ssh server acl 2000
+#
+ ntp-service enable
+ ntp-service unicast-server 192.168.6.10
+#
+acl number 2000
+ rule 10 permit source 192.168.6.18 0
+ rule 11 permit source 192.168.6.56 0
+ rule 12 permit source 192.168.6.208 0
+ rule 15 permit source 192.168.10.0 0.0.0.255
+ rule 16 permit source 192.168.6.166 0
+ rule 17 permit source 192.168.6.167 0
+ rule 18 permit source 192.168.6.168 0
+ rule 20 deny
+#
+acl number 2001
+ description vty-acl
+ rule 5 permit source 192.168.6.18 0
+ rule 10 permit source 192.168.5.234 0
+ rule 15 permit source 192.168.6.56 0
+ rule 20 deny
+#
+acl number 2008
+ description snmp-acl
+ rule 5 permit source 192.168.6.208 0
+ rule 10 deny
+#
+acl number 3001
+ rule 0 deny ip source 192.168.5.0 0.0.0.255 destination 192.168.1.0 0.0.0.255
+ rule 2 deny ip source 192.168.5.0 0.0.0.255 destination 192.168.3.0 0.0.0.255
+ rule 3 deny ip source 192.168.5.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 5 deny ip source 192.168.1.0 0.0.0.255 destination 192.168.3.0 0.0.0.255
+ rule 6 deny ip source 192.168.1.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 7 deny ip source 192.168.1.0 0.0.0.255 destination 192.168.5.0 0.0.0.255
+ rule 9 deny ip source 192.168.2.0 0.0.0.255 destination 192.168.3.0 0.0.0.255
+ rule 10 deny ip source 192.168.2.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 12 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.1.0 0.0.0.255
+ rule 13 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.2.0 0.0.0.255
+ rule 14 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 15 deny ip source 192.168.3.0 0.0.0.255 destination 192.168.5.0 0.0.0.255
+ rule 20 permit ip
+#
+acl number 3009
+ description beijing-acl
+ rule 0 deny tcp destination-port eq 135
+ rule 5 deny udp destination-port eq 135
+ rule 10 deny tcp destination-port eq 139
+ rule 15 deny udp destination-port eq netbios-ssn
+ rule 20 deny tcp destination-port eq 445
+ rule 25 deny udp destination-port eq 445
+ rule 30 deny tcp destination-port eq 137
+ rule 35 deny udp destination-port eq netbios-ns
+ rule 40 deny tcp destination-port eq 1434
+ rule 45 permit ip source 10.10.200.0 0.0.0.255 destination 192.168.4.4 0
+ rule 50 permit ip source 192.168.4.4 0 destination 10.10.200.0 0.0.0.255
+ rule 55 permit tcp source 192.168.200.0 0.0.0.255 destination 192.168.4.4 0 destination-port eq 1521
+ rule 60 permit ip source 10.10.200.0 0.0.0.255 destination 192.168.4.12 0
+ rule 65 permit ip source 10.10.200.0 0.0.0.255 destination 192.168.4.11 0
+ rule 70 permit ip source 192.168.200.0 0.0.0.255 destination 192.168.4.11 0
+ rule 75 permit ip source 192.168.200.0 0.0.0.255 destination 192.168.4.12 0
+ rule 80 permit icmp source 192.168.200.0 0.0.0.255 destination 192.168.4.4 0
+ rule 85 permit tcp destination 192.168.4.4 0 destination-port eq 1521
+ rule 90 permit ip source 192.168.4.4 0
+ rule 95 deny ip source 192.168.208.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 100 deny ip source 192.168.200.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 105 deny ip source 192.168.201.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 110 deny ip source 192.168.202.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 115 deny ip source 192.168.203.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 120 deny ip source 192.168.205.0 0.0.0.255 destination 192.168.4.0 0.0.0.255
+ rule 125 deny ip source 192.168.208.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 130 deny ip source 192.168.200.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 135 deny ip source 192.168.201.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 140 deny ip source 192.168.202.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 145 deny ip source 192.168.203.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 150 deny ip source 192.168.205.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 155 deny ip source 192.168.208.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 160 deny ip source 192.168.200.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 165 deny ip source 192.168.201.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 170 deny ip source 192.168.202.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 175 deny ip source 192.168.203.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 180 deny ip source 192.168.205.0 0.0.0.255 destination 192.168.14.0 0.0.0.255
+ rule 185 deny ip destination 192.168.4.0 0.0.0.255
+ rule 190 deny ip destination 192.168.10.0 0.0.0.255
+ rule 195 deny ip destination 192.168.15.0 0.0.0.255
+ rule 200 permit ip
+#
+acl number 3333
+ description fangbingdu
+ rule 0 deny tcp destination-port eq 135
+ rule 2 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.80 0 destination-port eq www
+ rule 3 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.80 0 destination-port eq 443
+ rule 4 permit ip source 192.168.0.0 0.0.255.255 destination 192.168.10.190 0
+ rule 5 deny udp destination-port eq 135
+ rule 6 permit tcp source 192.168.211.213 0 destination 192.168.10.85 0 destination-port eq 1521
+ rule 7 permit ip destination 192.168.10.160 0
+ rule 8 permit tcp destination 192.168.10.97 0 destination-port eq 8443
+ rule 9 permit tcp destination 192.168.10.81 0 destination-port eq 6080
+ rule 10 deny tcp destination-port eq 139
+ rule 12 deny ip source 192.168.210.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 13 deny ip source 192.168.211.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 14 deny ip source 192.168.216.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+ rule 15 deny udp destination-port eq netbios-ssn
+ rule 17 permit ip source 192.168.212.109 0 destination 192.168.6.168 0
+ rule 18 permit ip source 192.168.212.109 0 destination 192.168.6.167 0
+ rule 19 permit ip source 192.168.212.109 0 destination 192.168.6.166 0
+ rule 20 deny tcp destination-port eq 445
+ rule 21 deny ip source 192.168.212.0 0.0.0.255 destination 192.168.6.0 0.0.0.255
+ rule 22 deny ip source 192.168.210.0 0.0.0.255 destination 192.168.6.0 0.0.0.255
+ rule 25 deny udp destination-port eq 445
+ rule 30 deny tcp destination-port eq 137
+ rule 35 deny udp destination-port eq netbios-ns
+ rule 37 deny tcp source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255 destination-port eq telnet
+ rule 38 deny tcp source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255 destination-port eq 3389
+ rule 39 deny tcp source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255 destination-port eq 22
+ rule 40 deny tcp destination-port eq 1434
+ rule 41 permit ip source 192.168.211.0 0.0.0.255 destination 192.168.6.166 0
+ rule 42 permit ip source 192.168.211.0 0.0.0.255 destination 192.168.6.167 0
+ rule 43 permit ip source 192.168.211.0 0.0.0.255 destination 192.168.6.168 0
+ rule 44 deny ip source 192.168.211.0 0.0.0.255 destination 192.168.6.0 0.0.0.255
+ rule 45 permit ip
+ rule 50 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.101 0 destination-port eq 8002
+ rule 51 permit tcp source 192.168.212.0 0.0.0.255 destination 192.168.10.71 0 destination-port eq 8001
+ rule 100 deny ip source 192.168.212.0 0.0.0.255 destination 192.168.10.0 0.0.0.255
+#
+ header login %
+%Warning: Unauthorized access are forbidden!!!
+Your behavior will be recorded.
+All right reserved.%
+#
+ super password role network-admin hash $h$6$karLpLG6xzzbtqQf$R5dLOTH+fu3iINdP2+1dixQr0XNpXeXeckgZIxf2u0DmgYqQT3ls1ffrUfpMVOkxrhi1LLGzvLH7XGU0XohBiw==
+#
+domain system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#              
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user admin class manage
+ password hash $h$6$qkgtQpqaWfwUMFC3$bcvh2AIxPvAXat5bhXHZlnH1b4h36MUHwKRNKlW8K+Mmu+XOSua6QLo2bdUPqcCkIr7daVHTGm2/sdH1pMwzdg==
+ service-type telnet ssh terminal
+ authorization-attribute user-role network-admin
+#
+local-user snake class manage
+ password hash $h$6$qXD6QPxJ9H8NiNO1$ZzpzA9O9gcMa+G4Hs544G6bDlwXWqlQJL1verQRa5po//hX7BqS5dcMz4DrykAeJ9AzgpJwP/qVgbdghqliQkg==
+ service-type ssh terminal
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+ ftp server enable
+ ftp server acl 2001
+#              
+return

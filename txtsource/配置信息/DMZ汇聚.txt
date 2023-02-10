@@ -1,0 +1,967 @@
+﻿<QRCHERY-InternetHJ-SW>dis int br
+Bridge-Aggregation4
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 943b-b0bc-9cce
+Description: Link_QRCHERY-DMZ-FW1
+Bandwidth: 20000000 kbps
+20Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1
+Port link-type: Trunk
+ VLAN Passing:   1(default vlan), 111-114, 999
+ VLAN permitted: 1(default vlan), 2-4094
+ Trunk port encapsulation: IEEE 802.1q
+Last clearing of counters: Never
+Last 300 seconds input:  33246 packets/sec 12004666 bytes/sec 0%
+Last 300 seconds output:  33303 packets/sec 12044952 bytes/sec 0%
+Input (total):  983395879987 packets, 267212549625482 bytes
+        983393163479 unicasts, 63 broadcasts, 2716445 multicasts, 0 pauses
+Input (normal):  983395879968 packets, - bytes
+        983393163477 unicasts, 63 broadcasts, 2716445 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 988683226579 packets, 270278799154319 bytes
+        985696436000 unicasts, 2955550742 broadcasts, 31239837 multicasts, 0 pauses
+Output (normal): 988683226574 packets, - bytes
+        985696435998 unicasts, 2955550742 broadcasts, 31239837 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+Bridge-Aggregation6
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 943b-b0bc-9cd1
+Description: Link_QRCHERY-DMZ-FW2
+Bandwidth: 20000000 kbps
+20Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1
+Port link-type: Trunk
+ VLAN Passing:   1(default vlan), 111-114, 999
+ VLAN permitted: 1(default vlan), 2-4094
+ Trunk port encapsulation: IEEE 802.1q
+Last clearing of counters: Never
+Last 300 seconds input:  0 packets/sec 22 bytes/sec 0%
+Last 300 seconds output:  0 packets/sec 98 bytes/sec 0%
+Input (total):  2716457 packets, 882848525 bytes
+        0 unicasts, 0 broadcasts, 2716457 multicasts, 0 pauses
+Input (normal):  2716457 packets, - bytes
+        0 unicasts, 0 broadcasts, 2716457 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 2986883807 packets, 205027269409 bytes
+        93308 unicasts, 2955550702 broadcasts, 31239797 multicasts, 0 pauses
+Output (normal): 2986883807 packets, - bytes
+        93308 unicasts, 2955550702 broadcasts, 31239797 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+<QRCHERY-InternetHJ-SW>             dis ospf peer
+
+         OSPF Process 2 with Router ID 192.168.168.5
+               Neighbor Brief Information
+
+ Area: 0.0.0.0        
+ Router ID       Address         Pri Dead-Time  State             Interface
+ 192.168.168.21  10.10.10.2      1   32         Full/ -           RAGG1
+<QRCHERY-InternetHJ-SW>dis ip int br
+*down: administratively down
+(s): spoofing  (l): loopback
+Interface           Physical Protocol IP address      VPN instance Description  
+MGE0/0/0            up       up       192.168.6.163   --           --
+MGE0/0/1            down     down     --              --           --
+RAGG1               up       up       10.10.10.1      --           vrf-trust
+RAGG3               up       up       192.168.168.17  vrf-dmz      Link_QRCHE...
+XGE1/0/1            up       up       --              --           Link_QRCHE...
+XGE1/0/3            up       up       --              --           Link_QRCHE...
+XGE2/0/1            up       up       --              --           Link_QRCHE...
+XGE2/0/3            up       up       --              --           --
+Vlan1               up       up       --              --           --
+Vlan111             up       up       192.168.168.5   --           vrf-trust
+Vlan112             up       up       192.168.168.9   vrf-dmz      vrf-dmz
+Vlan113             up       up       192.168.168.13  vrf-untrust  vrf-untrust
+Vlan114             up       up       10.10.40.2      vrf-untrust  vrf-untrust
+Vlan999             up       up       3.3.3.1         --           --
+<QRCHERY-InternetHJ-SW>dis ip routing
+
+Destinations : 117      Routes : 117
+
+Destination/Mask   Proto   Pre Cost        NextHop         Interface
+0.0.0.0/0          Static  60  0           192.168.168.6   Vlan111
+0.0.0.0/32         Direct  0   0           127.0.0.1       InLoop0
+2.0.0.0/16         O_ASE1  150 4           10.10.10.2      RAGG1
+2.0.7.0/24         O_ASE1  150 4           10.10.10.2      RAGG1
+2.1.0.0/16         O_ASE1  150 4           10.10.10.2      RAGG1
+3.3.3.0/30         Direct  0   0           3.3.3.1         Vlan999
+3.3.3.0/32         Direct  0   0           3.3.3.1         Vlan999
+3.3.3.1/32         Direct  0   0           127.0.0.1       InLoop0
+3.3.3.3/32         Direct  0   0           3.3.3.1         Vlan999
+9.128.47.0/24      O_ASE1  150 2           10.10.10.2      RAGG1
+10.1.1.0/24        O_ASE1  150 2           10.10.10.2      RAGG1
+10.1.3.0/24        O_ASE1  150 2           10.10.10.2      RAGG1
+10.1.4.0/24        O_ASE1  150 2           10.10.10.2      RAGG1
+10.1.5.0/24        O_ASE1  150 2           10.10.10.2      RAGG1
+10.1.8.0/24        O_ASE1  150 2           10.10.10.2      RAGG1
+10.2.14.237/32     O_ASE1  150 2           10.10.10.2      RAGG1
+10.10.10.0/29      Direct  0   0           10.10.10.1      RAGG1
+10.10.10.0/32      Direct  0   0           10.10.10.1      RAGG1
+10.10.10.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.10.7/32      Direct  0   0           10.10.10.1      RAGG1
+10.10.22.0/24      O_ASE1  150 2           10.10.10.2      RAGG1
+10.10.40.0/24      Static  60  0           192.168.168.6   Vlan111
+10.10.41.0/30      O_ASE1  150 2           10.10.10.2      RAGG1
+10.10.50.0/30      O_ASE1  150 2           10.10.10.2      RAGG1
+10.10.80.0/29      O_ASE1  150 2           10.10.10.2      RAGG1
+10.10.210.0/30     O_ASE1  150 2           10.10.10.2      RAGG1
+10.10.220.0/30     O_ASE1  150 2           10.10.10.2      RAGG1
+10.64.250.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+10.69.8.0/24       O_ASE1  150 2           10.10.10.2      RAGG1
+10.111.121.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+10.180.10.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+10.180.200.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+10.238.81.76/32    O_ASE1  150 2           10.10.10.2      RAGG1
+10.238.243.189/32  O_ASE1  150 2           10.10.10.2      RAGG1
+10.238.250.206/32  O_ASE1  150 2           10.10.10.2      RAGG1
+11.64.18.160/32    O_ASE1  150 2           10.10.10.2      RAGG1
+12.9.1.0/24        O_ASE1  150 2           10.10.10.2      RAGG1
+12.9.1.5/32        O_ASE1  150 2           10.10.10.2      RAGG1
+12.9.1.8/32        O_ASE1  150 2           10.10.10.2      RAGG1
+12.10.1.0/24       O_ASE1  150 2           10.10.10.2      RAGG1
+19.10.250.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+19.64.223.216/30   O_ASE1  150 2           10.10.10.2      RAGG1
+19.64.246.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+19.64.250.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+38.63.138.123/32   O_ASE1  150 2           10.10.10.2      RAGG1
+38.238.238.28/32   O_ASE1  150 2           10.10.10.2      RAGG1
+38.238.250.84/32   O_ASE1  150 2           10.10.10.2      RAGG1
+38.238.250.126/32  O_ASE1  150 2           10.10.10.2      RAGG1
+38.238.250.157/32  O_ASE1  150 2           10.10.10.2      RAGG1
+38.238.250.206/32  O_ASE1  150 2           10.10.10.2      RAGG1
+100.1.1.0/24       O_ASE1  150 2           10.10.10.2      RAGG1
+127.0.0.0/8        Direct  0   0           127.0.0.1       InLoop0
+127.0.0.0/32       Direct  0   0           127.0.0.1       InLoop0
+127.0.0.1/32       Direct  0   0           127.0.0.1       InLoop0
+127.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+172.16.10.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+172.16.11.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+172.16.13.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+172.18.0.0/16      O_ASE1  150 2           10.10.10.2      RAGG1
+172.19.0.0/22      Static  60  0           192.168.168.6   Vlan111
+172.31.0.0/16      O_ASE1  150 2           10.10.10.2      RAGG1
+188.188.188.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.1.0/24     O_INTRA 10  3           10.10.10.2      RAGG1
+192.168.2.0/24     O_INTRA 10  3           10.10.10.2      RAGG1
+192.168.3.0/24     O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.4.0/24     O_INTRA 10  3           10.10.10.2      RAGG1
+192.168.5.0/24     O_INTRA 10  3           10.10.10.2      RAGG1
+192.168.6.0/24     Direct  0   0           192.168.6.163   MGE0/0/0
+192.168.6.0/32     Direct  0   0           192.168.6.163   MGE0/0/0
+192.168.6.163/32   Direct  0   0           127.0.0.1       InLoop0
+192.168.6.255/32   Direct  0   0           192.168.6.163   MGE0/0/0
+192.168.8.1/32     O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.10.0/24    O_INTRA 10  3           10.10.10.2      RAGG1
+192.168.11.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.12.0/24    Static  60  0           192.168.168.6   Vlan111
+192.168.13.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.14.0/24    Static  60  0           192.168.168.6   Vlan111
+192.168.15.0/24    O_INTRA 10  3           10.10.10.2      RAGG1
+192.168.17.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.39.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.40.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.41.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.50.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.60.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.90.0/24    Static  60  0           192.168.168.6   Vlan111
+192.168.92.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.94.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.95.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.96.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.97.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.98.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.99.0/24    O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.100.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.168.0/30   O_INTRA 10  2           10.10.10.2      RAGG1
+192.168.168.4/30   Direct  0   0           192.168.168.5   Vlan111
+192.168.168.4/32   Direct  0   0           192.168.168.5   Vlan111
+192.168.168.5/32   Direct  0   0           127.0.0.1       InLoop0
+192.168.168.7/32   Direct  0   0           192.168.168.5   Vlan111
+192.168.168.20/30  O_INTRA 10  2           10.10.10.2      RAGG1
+192.168.192.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.192.122/32 O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.192.123/32 O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.192.149/32 O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.200.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.201.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.202.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.203.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.205.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.208.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.210.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.211.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.212.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.216.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+192.168.221.0/24   O_ASE1  150 2           10.10.10.2      RAGG1
+224.0.0.0/4        Direct  0   0           0.0.0.0         NULL0
+224.0.0.0/24       Direct  0   0           0.0.0.0         NULL0
+255.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+<QRCHERY-InternetHJ-SW>            dis arp
+  Type: S-Static   D-Dynamic   O-Openflow   R-Rule   M-Multiport  I-Invalid
+IP address      MAC address    VLAN/VSI   Interface/Link ID        Aging Type 
+10.10.10.2      a4fa-7687-f401 --         RAGG1                    702   D    
+192.168.168.6   3080-9bbf-281c 111        BAGG4                    949   D    
+192.168.168.10  3080-9bbf-281c 112        BAGG4                    953   D    
+192.168.168.14  3080-9bbf-281c 113        BAGG4                    953   D    
+192.168.168.18  244c-0789-d611 --         RAGG3                    410   D    
+192.168.6.1     9c8e-9936-e920 --         MGE0/0/0                 888   D    
+192.168.6.2     9c8e-9936-d972 --         MGE0/0/0                 278   D    
+192.168.6.7     62ec-ba03-0304 --         MGE0/0/0                 1158  D    
+192.168.6.10    0050-56b8-96dd --         MGE0/0/0                 1143  D    
+192.168.6.11    286e-d488-c678 --         MGE0/0/0                 165   D    
+192.168.6.12    f010-9079-dfd7 --         MGE0/0/0                 1075  D    
+192.168.6.18    a08c-fdea-ac73 --         MGE0/0/0                 530   D    
+192.168.6.24    8465-695b-1541 --         MGE0/0/0                 597   D    
+192.168.6.40    b22c-12a0-5700 --         MGE0/0/0                 288   D    
+192.168.6.41    3221-b1b3-4ba1 --         MGE0/0/0                 1136  D    
+192.168.6.55    90fb-a691-0781 --         MGE0/0/0                 923   D    
+192.168.6.56    0050-56b8-aa18 --         MGE0/0/0                 1166  D    
+192.168.6.57    0050-5695-053b --         MGE0/0/0                 1177  D    
+192.168.6.59    f010-9079-dfd8 --         MGE0/0/0                 255   D    
+192.168.6.65    0050-5695-6d9a --         MGE0/0/0                 1050  D    
+192.168.6.66    0050-5695-6d9a --         MGE0/0/0                 1151  D    
+192.168.6.67    0050-5695-bdb9 --         MGE0/0/0                 1151  D    
+192.168.6.68    0060-169b-38d8 --         MGE0/0/0                 1081  D    
+192.168.6.69    0060-16ab-1136 --         MGE0/0/0                 157   D    
+192.168.6.77    2067-7c06-cc1c --         MGE0/0/0                 313   D    
+192.168.6.90    0060-b941-6404 --         MGE0/0/0                 1012  D    
+192.168.6.95    8894-714c-1cd8 --         MGE0/0/0                 697   D    
+192.168.6.98    0027-f8d2-14dd --         MGE0/0/0                 909   D    
+192.168.6.99    0027-f8d2-7465 --         MGE0/0/0                 697   D    
+192.168.6.100   446a-2edb-a171 --         MGE0/0/0                 726   D    
+192.168.6.101   4077-a9c6-5e92 --         MGE0/0/0                 543   D    
+192.168.6.102   3080-9b34-f1aa --         MGE0/0/0                 540   D    
+192.168.6.106   5cdd-702a-4aa1 --         MGE0/0/0                 501   D    
+192.168.6.107   ecd6-8a7a-1a6e --         MGE0/0/0                 149   D    
+192.168.6.108   ecd6-8a7a-1bd6 --         MGE0/0/0                 1050  D    
+192.168.6.109   44a8-423f-9e7c --         MGE0/0/0                 450   D    
+192.168.6.112   0050-5695-68a8 --         MGE0/0/0                 367   D    
+192.168.6.113   286e-d488-b3ce --         MGE0/0/0                 1003  D    
+192.168.6.114   286e-d488-b3ce --         MGE0/0/0                 1200  D    
+192.168.6.115   286e-d488-bd0d --         MGE0/0/0                 82    D    
+192.168.6.116   286e-d488-b3ca --         MGE0/0/0                 995   D    
+192.168.6.118   286e-d488-bd09 --         MGE0/0/0                 387   D    
+192.168.6.119   286e-d488-b3cb --         MGE0/0/0                 1034  D    
+192.168.6.120   286e-d488-b3cb --         MGE0/0/0                 1152  D    
+192.168.6.121   286e-d488-bd0a --         MGE0/0/0                 1188  D    
+192.168.6.122   488e-ef7c-07ed --         MGE0/0/0                 1125  D    
+192.168.6.123   488e-ef7c-07bb --         MGE0/0/0                 1149  D    
+192.168.6.124   488e-ef7c-0859 --         MGE0/0/0                 977   D    
+192.168.6.131   0050-56b8-5883 --         MGE0/0/0                 744   D    
+192.168.6.138   0800-1bff-7460 --         MGE0/0/0                 1200  D    
+192.168.6.140   e04f-4306-2f16 --         MGE0/0/0                 267   D    
+192.168.6.141   e04f-4306-3492 --         MGE0/0/0                 291   D    
+192.168.6.142   40f2-e9de-55a2 --         MGE0/0/0                 471   D    
+192.168.6.144   0050-566c-70b4 --         MGE0/0/0                 278   D    
+192.168.6.145   0894-ef3c-c7d2 --         MGE0/0/0                 483   D    
+192.168.6.146   0894-ef15-aac7 --         MGE0/0/0                 493   D    
+192.168.6.147   98be-942b-1522 --         MGE0/0/0                 368   D    
+192.168.6.148   0894-ef3d-bc76 --         MGE0/0/0                 510   D    
+192.168.6.149   0894-ef3c-9c62 --         MGE0/0/0                 479   D    
+192.168.6.153   e04f-4306-dac0 --         MGE0/0/0                 296   D    
+192.168.6.154   e04f-4306-fd08 --         MGE0/0/0                 303   D    
+192.168.6.155   e04f-4372-dd4e --         MGE0/0/0                 523   D    
+192.168.6.156   0894-ef10-9694 --         MGE0/0/0                 518   D    
+192.168.6.157   e04f-4306-fe8c --         MGE0/0/0                 291   D    
+192.168.6.158   e04f-4372-ee1a --         MGE0/0/0                 1088  D    
+192.168.6.159   0894-ef10-97fc --         MGE0/0/0                 481   D    
+192.168.6.160   8465-695b-1542 --         MGE0/0/0                 321   D    
+192.168.6.166   286e-d488-c69e --         MGE0/0/0                 1199  D    
+192.168.6.167   286e-d488-c69b --         MGE0/0/0                 712   D    
+192.168.6.168   286e-d488-c69a --         MGE0/0/0                 1186  D    
+192.168.6.172   8018-44e3-8cde --         MGE0/0/0                 408   D    
+192.168.6.173   8018-44e3-814e --         MGE0/0/0                 264   D    
+192.168.6.174   8018-44e3-842a --         MGE0/0/0                 413   D    
+192.168.6.178   00e0-ed89-f052 --         MGE0/0/0                 1150  D    
+192.168.6.182   ac1f-6bb9-5476 --         MGE0/0/0                 958   D    
+192.168.6.187   000c-29ae-8434 --         MGE0/0/0                 1095  D    
+192.168.6.194   0050-56b4-aba0 --         MGE0/0/0                 1058  D    
+192.168.6.195   0050-56b4-4e94 --         MGE0/0/0                 1058  D    
+192.168.6.196   0050-56b4-e120 --         MGE0/0/0                 1065  D    
+192.168.6.201   4077-a9c5-fcb2 --         MGE0/0/0                 533   D    
+192.168.6.202   4077-a9c6-3372 --         MGE0/0/0                 543   D    
+192.168.6.203   3080-9b35-0e2a --         MGE0/0/0                 548   D    
+192.168.6.204   3080-9b35-0a0a --         MGE0/0/0                 549   D    
+192.168.6.205   3080-9b34-f26a --         MGE0/0/0                 536   D    
+192.168.6.206   000c-29f4-ab3d --         MGE0/0/0                 1035  D    
+192.168.6.208   0050-56ae-1b67 --         MGE0/0/0                 611   D    
+192.168.6.215   7057-bff9-eba8 --         MGE0/0/0                 1200  D    
+192.168.6.216   7057-bff9-eb0c --         MGE0/0/0                 1200  D    
+192.168.6.222   00e0-4c1f-7e06 --         MGE0/0/0                 288   D    
+192.168.6.226   0050-56b8-3f08 --         MGE0/0/0                 313   D    
+192.168.6.227   0050-56b8-3926 --         MGE0/0/0                 310   D    
+192.168.6.233   0060-1661-6904 --         MGE0/0/0                 1197  D    
+192.168.6.236   b499-ba60-57b6 --         MGE0/0/0                 339   D    
+192.168.6.237   0800-1bff-f312 --         MGE0/0/0                 1178  D    
+192.168.6.240   0050-5695-1b19 --         MGE0/0/0                 502   D    
+192.168.6.250   7057-bf1f-445e --         MGE0/0/0                 714   D    
+192.168.6.254   5098-b8bd-c968 --         MGE0/0/0                 1163  D    
+10.10.40.1      0094-a192-460b 114        XGE1/0/4                 953   D    
+10.10.40.3      0094-a192-460b 114        XGE1/0/4                 1054  D    
+10.10.40.4      0094-a191-d10b 114        XGE1/0/4                 1077  D    
+<QRCHERY-InternetHJ-SW>            dis acl a
+Basic IPv4 ACL 2000, 3 rules,
+ACL's step is 5, start ID is 0
+ rule 10 permit source 192.168.6.18 0 (47 times matched)
+ rule 11 permit source 192.168.6.56 0
+ rule 12 permit source 192.168.6.208 0
+
+Basic IPv4 ACL 2001, 4 rules,
+vty-acl
+ACL's step is 5, start ID is 0
+ rule 5 permit source 192.168.6.18 0
+ rule 10 permit source 192.168.5.234 0
+ rule 15 permit source 192.168.6.56 0
+ rule 20 deny
+
+Basic IPv4 ACL 2008, 2 rules,
+snmp-acl
+ACL's step is 5, start ID is 0
+ rule 5 permit source 192.168.6.208 0
+ rule 10 deny
+               
+<QRCHERY-InternetHJ-SW>   dis mac-address
+MAC Address      VLAN ID    State            Port/Nickname            Aging
+3080-9bbf-281c   111        Learned          BAGG4                    Y
+3080-9bbf-281c   112        Learned          BAGG4                    Y
+3080-9bbf-281c   113        Learned          BAGG4                    Y
+0094-a191-d10b   114        Learned          XGE1/0/4                 Y
+0094-a192-460b   114        Learned          XGE1/0/4                 Y
+<QRCHERY-InternetHJ-SW>dis cu 
+#
+ version 7.1.070, Release 2612P06
+#
+ sysname QRCHERY-InternetHJ-SW
+#
+ clock timezone bjtime add 08:00:00
+#
+ip vpn-instance vrf-dmz
+ route-distinguisher 112:1
+ vpn-target 112:1 import-extcommunity
+ vpn-target 112:1 export-extcommunity
+#
+ip vpn-instance vrf-trust
+ route-distinguisher 111:1
+ vpn-target 111:1 import-extcommunity
+ vpn-target 111:1 export-extcommunity
+#
+ip vpn-instance vrf-untrust
+ route-distinguisher 113:1
+ vpn-target 113:1 import-extcommunity
+ vpn-target 113:1 export-extcommunity
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 10
+ irf member 2 priority 5
+ irf member 1 description DMZ-SW-1
+ irf member 2 description DMZ-SW-2
+#
+ospf 2
+ default-route-advertise always
+ import-route direct type 1
+ import-route static type 1
+ area 0.0.0.0
+  network 10.10.10.1 0.0.0.0
+#
+ lldp global enable
+#              
+ system-working-mode standard
+ hardware-resource switch-mode 0
+ hardware-resource routing-mode ipv6-64
+ hardware-resource vxlan l2gw
+ password-recovery enable
+#
+vlan 1
+#
+vlan 111
+ name QRCHERY-DMZ-FW_vrf-trust
+#
+vlan 112
+ name QRCHERY-DMZ-FW_vrf-dmz
+#
+vlan 113
+ name QRCHERY-DMZ-FW_vrf-untrust
+#
+vlan 114
+ name QRCHERY-IPS_vrf-untrust
+#
+vlan 999
+ name bfd-mad
+#
+irf-port 1/1
+ port group interface Ten-GigabitEthernet1/0/47
+ port group interface Ten-GigabitEthernet1/0/48
+#
+irf-port 2/2
+ port group interface Ten-GigabitEthernet2/0/47
+ port group interface Ten-GigabitEthernet2/0/48
+#
+ stp instance 0 priority 8192
+ stp timer-factor 10
+ stp bpdu-protection
+ stp global enable
+#
+interface Bridge-Aggregation4
+ description Link_QRCHERY-DMZ-FW1
+ port link-type trunk
+ port trunk permit vlan all
+#
+interface Bridge-Aggregation6
+ description Link_QRCHERY-DMZ-FW2
+ port link-type trunk
+ port trunk permit vlan all
+#
+interface Route-Aggregation1
+ description vrf-trust
+ ip address 10.10.10.1 255.255.255.248
+ ospf network-type p2p
+#
+interface Route-Aggregation3
+ description Link_QRCHERY-DMZHJ-SW1&2
+ ip binding vpn-instance vrf-dmz
+ ip address 192.168.168.17 255.255.255.252
+#
+interface NULL0
+#
+interface Vlan-interface1
+ dhcp client identifier ascii 943bb0bc8ed6-VLAN0001
+#
+interface Vlan-interface111
+ description vrf-trust
+ ip address 192.168.168.5 255.255.255.252
+#
+interface Vlan-interface112
+ description vrf-dmz
+ ip binding vpn-instance vrf-dmz
+ ip address 192.168.168.9 255.255.255.252
+#
+interface Vlan-interface113
+ description vrf-untrust
+ ip binding vpn-instance vrf-untrust
+ ip address 192.168.168.13 255.255.255.252
+#
+interface Vlan-interface114
+ description vrf-untrust
+ ip binding vpn-instance vrf-untrust
+ ip address 10.10.40.2 255.255.255.0
+#
+interface Vlan-interface999
+ mad bfd enable
+ mad ip address 3.3.3.1 255.255.255.252 member 1
+ mad ip address 3.3.3.2 255.255.255.252 member 2
+#
+interface FortyGigE1/0/49
+ port link-mode bridge
+#
+interface FortyGigE1/0/50
+ port link-mode bridge
+#
+interface FortyGigE1/0/51
+ port link-mode bridge
+#
+interface FortyGigE1/0/52
+ port link-mode bridge
+#
+interface FortyGigE1/0/53
+ port link-mode bridge
+#
+interface FortyGigE1/0/54
+ port link-mode bridge
+#
+interface FortyGigE2/0/49
+ port link-mode bridge
+#
+interface FortyGigE2/0/50
+ port link-mode bridge
+#
+interface FortyGigE2/0/51
+ port link-mode bridge
+#
+interface FortyGigE2/0/52
+ port link-mode bridge
+#
+interface FortyGigE2/0/53
+ port link-mode bridge
+#
+interface FortyGigE2/0/54
+ port link-mode bridge
+#
+interface M-GigabitEthernet0/0/0
+ ip address 192.168.6.163 255.255.255.0
+ dhcp client identifier hex 02943bb0bc8ed6
+#
+interface M-GigabitEthernet0/0/1
+ dhcp client identifier hex 02943bb0bc8ed6
+#
+interface Ten-GigabitEthernet1/0/1
+ port link-mode route
+ description Link_QRCHERY-CORE-SW1_G1/3/0/2
+ port link-aggregation group 1
+#              
+interface Ten-GigabitEthernet1/0/3
+ port link-mode route
+ description Link_QRCHERY-DMZ-SW1_10GE1/0/33
+ port link-aggregation group 3
+#
+interface Ten-GigabitEthernet2/0/1
+ port link-mode route
+ description Link_QRCHERY-CORE-S2_G2/3/0/2
+ port link-aggregation group 1
+#
+interface Ten-GigabitEthernet2/0/3
+ port link-mode route
+ port link-aggregation group 3
+#
+interface Ten-GigabitEthernet1/0/2
+ port link-mode bridge
+ description Link_QRCHERY-InternetFW1_G1/0/24
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 4
+#
+interface Ten-GigabitEthernet1/0/4
+ port link-mode bridge
+ description Link_WAF-XX
+ port access vlan 114
+#
+interface Ten-GigabitEthernet1/0/5
+ port link-mode bridge
+ description link_InternetFW-2_G2/0/24
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 6
+#
+interface Ten-GigabitEthernet1/0/6
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/7
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/8
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/9
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/10
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/11
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/12
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/13
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet1/0/14
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/15
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/16
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/17
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/18
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/19
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/20
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/21
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/22
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/23
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/24
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/27
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/28
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/31
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/32
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet1/0/33
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/34
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/35
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/36
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/37
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/38
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/39
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/40
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/41
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/42
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/43
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/44
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 12 14
+#              
+interface Ten-GigabitEthernet1/0/45
+ port link-mode bridge
+ port access vlan 999
+ undo stp enable
+#
+interface Ten-GigabitEthernet1/0/46
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/2
+ port link-mode bridge
+ description Link_QRCHERY-InternetFW1_G1/0/25
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 4
+#
+interface Ten-GigabitEthernet2/0/4
+ port link-mode bridge
+ description Link_WAF-XX
+ port access vlan 114
+#
+interface Ten-GigabitEthernet2/0/5
+ port link-mode bridge
+ description link_InternetFW-2_G2/0/25
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 6
+#
+interface Ten-GigabitEthernet2/0/6
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/7
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/8
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/9
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/10
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/11
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/12
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/13
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/14
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/15
+ port link-mode bridge
+ speed 1000    
+ duplex full
+#
+interface Ten-GigabitEthernet2/0/16
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/17
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/18
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/19
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/20
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/21
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/22
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/23
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/24
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/27
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet2/0/28
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/31
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/32
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/33
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/34
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/35
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/36
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/37
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/38
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/39
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/40
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/41
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/42
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/43
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/44
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 12 14
+#
+interface Ten-GigabitEthernet2/0/45
+ port link-mode bridge
+ port access vlan 999
+ undo stp enable
+#
+interface Ten-GigabitEthernet2/0/46
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/47
+#
+interface Ten-GigabitEthernet1/0/48
+#
+interface Ten-GigabitEthernet2/0/47
+#
+interface Ten-GigabitEthernet2/0/48
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 0 1
+ user-role network-admin
+#
+line vty 0 63
+ authentication-mode scheme
+ user-role network-admin
+ user-role network-operator
+ protocol inbound ssh
+ idle-timeout 20 0
+ screen-length 20
+ history-command max-size 100
+#
+ ip route-static 0.0.0.0 0 192.168.168.6
+ ip route-static 10.10.40.0 24 192.168.168.6
+ ip route-static 172.19.0.0 22 192.168.168.6
+ ip route-static 192.168.12.0 24 192.168.168.6
+ ip route-static 192.168.14.0 24 192.168.168.6
+ ip route-static 192.168.90.0 24 192.168.168.6
+ ip route-static vpn-instance vrf-dmz 0.0.0.0 0 192.168.168.10
+ ip route-static vpn-instance vrf-dmz 172.19.0.0 22 192.168.168.18
+ ip route-static vpn-instance vrf-dmz 192.168.12.0 24 192.168.168.18
+ ip route-static vpn-instance vrf-dmz 192.168.14.0 24 192.168.168.18
+ ip route-static vpn-instance vrf-untrust 0.0.0.0 0 10.10.40.1
+ ip route-static vpn-instance vrf-untrust 2.0.0.0 16 192.168.168.14
+ ip route-static vpn-instance vrf-untrust 2.1.0.0 16 192.168.168.14
+ ip route-static vpn-instance vrf-untrust 10.10.10.0 29 192.168.168.14
+ ip route-static vpn-instance vrf-untrust 172.19.0.0 22 192.168.168.14
+ ip route-static vpn-instance vrf-untrust 192.168.0.0 16 192.168.168.14
+ ip route-static vpn-instance vrf-untrust 192.168.12.0 24 192.168.168.14
+ ip route-static vpn-instance vrf-untrust 192.168.14.0 24 192.168.168.14
+ ip route-static vpn-instance vrf-untrust 192.168.90.0 24 10.10.40.1
+#
+ info-center loghost 192.168.6.227
+#
+ snmp-agent
+ snmp-agent local-engineid 800063A280943BB0BC8ED700000001
+ snmp-agent community write cipher $c$3$963vjzoezPCx25HvYGXUcVs6ezbog2OZMdGVv556 acl 2008
+ snmp-agent community read cipher $c$3$cJXojIMulCVIKMwm7x/qsc+y1YWxewheiBbKAy2E acl 2000
+ snmp-agent sys-info version all 
+#
+ ssh server enable
+ ssh server acl 2000
+#
+ ntp-service enable
+ ntp-service unicast-server 192.168.6.10
+#
+acl number 2000
+ rule 10 permit source 192.168.6.18 0
+ rule 11 permit source 192.168.6.56 0
+ rule 12 permit source 192.168.6.208 0
+#
+acl number 2001
+ description vty-acl
+ rule 5 permit source 192.168.6.18 0
+ rule 10 permit source 192.168.5.234 0
+ rule 15 permit source 192.168.6.56 0
+ rule 20 deny
+#
+acl number 2008
+ description snmp-acl
+ rule 5 permit source 192.168.6.208 0
+ rule 10 deny
+#
+radius scheme system
+ user-name-format without-domain
+#
+domain system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#              
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user admin class manage
+ password hash $h$6$AKkqtcp9XQad3y0l$LF/tpaIkm9w72RWTjf+4N7IizWUVTIyyjz7somZ34x2PVYaqHAqvmBRAPa0nxfzR2atIygyYsWFOVi4akDWIyA==
+ service-type telnet ssh terminal
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+local-user snake class manage
+ password hash $h$6$bmpi11FeiW5NVFJr$UaDBSbBIuobFntWKs2Ski4kFz/++6lKs9ePfewR1YpiwG1q/XtuGJfKIeTei5qgDi9g0XfA/S77iumSfE1HghA==
+ service-type ssh terminal
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+return

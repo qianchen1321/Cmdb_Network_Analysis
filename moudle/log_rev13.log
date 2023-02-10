@@ -1,0 +1,17 @@
+rev13back_Logger [openfile.py 50] 
+interface Route-Aggregation1
+ description TO_InternetHJ-SW
+ ip address 10.10.10.2 255.255.255.248
+ ospf network-type p2p
+#
+interface Route-Aggregation2
+ description TO_BanGongHJ-SW
+ ip address 192.168.168.21 255.255.255.252
+ ospf network-type p2p
+#
+interface Route-Aggregation101
+ description TO_ShengChanSW
+ ip address 192.168.168.1 255.255.255.252
+ ospf network-type p2p
+#
+

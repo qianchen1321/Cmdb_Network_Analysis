@@ -1,0 +1,900 @@
+﻿<asp-sw>dis int br
+Brief information on interfaces in route mode:
+Link: ADM - administratively down; Stby - standby
+Protocol: (s) - spoofing
+Interface            Link Protocol Primary IP      Description                
+GE1/0/13             UP   UP       --              TO_asp-rh1_G0/0
+GE1/0/14             UP   UP       --              TO_asp-rh2_G0/0
+GE1/0/15             UP   UP       --              TO_asp-rt1_G0/0
+GE1/0/16             UP   UP       --              TO_asp-rt2_G0/0
+GE1/0/23             UP   UP       192.168.6.82    MGT
+GE2/0/13             UP   UP       --              TO_asp-rh1_G0/1
+GE2/0/14             UP   UP       --              TO_asp-rh2_G0/1
+GE2/0/15             UP   UP       --              TO_asp-rt1_G0/1
+GE2/0/16             UP   UP       --              TO_asp-rt2_G0/1
+InLoop0              UP   UP(s)    --              
+Loop10               UP   UP(s)    --              
+MGE0/0/0             DOWN DOWN     --              
+NULL0                UP   UP(s)    --              
+REG0                 UP   --       --              
+RAGG1                UP   UP       10.10.82.1      TO_asp-rh1
+RAGG2                UP   UP       10.10.83.1      TO_asp-rh2
+RAGG3                UP   UP       10.10.84.1      TO_asp-rt1
+RAGG4                UP   UP       10.10.85.1      TO_asp-rt2
+Vlan81               UP   UP       10.10.81.1      TO_asp-fw
+Vlan999              UP   UP       10.10.86.1      MAD
+
+Brief information on interfaces in bridge mode:
+Link: ADM - administratively down; Stby - standby
+Speed: (a) - auto
+Duplex: (a)/A - auto; H - half; F - full
+Type: A - access; T - trunk; H - hybrid
+Interface            Link Speed   Duplex Type PVID Description                
+FGE1/0/33            DOWN auto    A      A    1    
+FGE1/0/34            DOWN auto    A      A    1    
+FGE2/0/33            DOWN auto    A      A    1    
+FGE2/0/34            DOWN auto    A      A    1    
+GE1/0/1              UP   1G(a)   F(a)   A    81   TO_asp-fw01
+GE1/0/2              DOWN auto    A      A    81   
+GE1/0/3              DOWN auto    A      A    1    
+GE1/0/4              DOWN auto    A      A    1    
+GE1/0/5              DOWN auto    A      A    1    
+GE1/0/6              UP   1G(a)   F(a)   A    1    
+GE1/0/7              DOWN auto    A      A    1    
+GE1/0/8              DOWN auto    A      A    1    
+GE1/0/9              DOWN auto    A      A    1    
+GE1/0/10             DOWN auto    A      A    1    
+GE1/0/11             DOWN auto    A      A    1    
+GE1/0/12             DOWN auto    A      A    1    
+GE1/0/17             DOWN auto    A      A    1    
+GE1/0/18             DOWN auto    A      A    1    
+GE1/0/19             DOWN auto    A      A    1    
+GE1/0/20             DOWN auto    A      A    1    
+GE1/0/21             DOWN auto    A      A    1    
+GE1/0/22             DOWN auto    A      A    1    
+GE1/0/24             UP   1G(a)   F(a)   A    999  
+GE1/0/25             DOWN auto    A      A    1    
+GE1/0/26             DOWN auto    A      A    1    
+GE1/0/27             DOWN auto    A      A    1    
+GE1/0/28             DOWN auto    A      A    1    
+GE2/0/1              UP   1G(a)   F(a)   A    81   TO_asp-fw02
+GE2/0/2              DOWN auto    A      A    1    
+GE2/0/3              DOWN auto    A      A    1    
+GE2/0/4              DOWN auto    A      A    1    
+GE2/0/5              DOWN auto    A      A    1    
+GE2/0/6              DOWN auto    A      A    1    
+GE2/0/7              DOWN auto    A      A    1    
+GE2/0/8              DOWN auto    A      A    1    
+GE2/0/9              DOWN auto    A      A    1    
+GE2/0/10             DOWN auto    A      A    1    
+GE2/0/11             DOWN auto    A      A    1    
+GE2/0/12             DOWN auto    A      A    1    
+GE2/0/17             DOWN auto    A      A    1    
+GE2/0/18             DOWN auto    A      A    1    
+GE2/0/19             DOWN auto    A      A    1    
+GE2/0/20             DOWN auto    A      A    1    
+GE2/0/21             DOWN auto    A      A    1    
+GE2/0/22             DOWN auto    A      A    1    
+GE2/0/23             DOWN auto    A      A    1    
+GE2/0/24             UP   1G(a)   F(a)   A    999  
+GE2/0/25             DOWN auto    A      A    1    
+GE2/0/26             DOWN auto    A      A    1    
+GE2/0/27             DOWN auto    A      A    1    
+GE2/0/28             DOWN auto    A      A    1    
+XGE1/0/29            DOWN auto    A      A    1    
+XGE1/0/30            DOWN auto    A      A    1    
+XGE1/0/31            UP   10G(a)  F(a)   --   --   IRF TO_asp-sw02_T2/0/31
+XGE1/0/32            UP   10G(a)  F(a)   --   --   IRF TO_asp-sw02_T2/0/32
+XGE2/0/29            DOWN auto    A      A    1    
+XGE2/0/30            DOWN auto    A      A    1    
+XGE2/0/31            UP   10G(a)  F(a)   --   --   IRF TO_asp-sw01_T1/0/31
+XGE2/0/32            UP   10G(a)  F(a)   --   --   IRF TO_asp-sw01_T1/0/32
+
+<asp-sw> dis ospf peer
+
+         OSPF Process 100 with Router ID 192.168.6.82
+               Neighbor Brief Information
+
+ Area: 0.0.0.0        
+ Router ID       Address         Pri Dead-Time  State             Interface
+ 192.168.6.83    10.10.82.2      1   30         Full/ -           RAGG1
+ 192.168.6.84    10.10.83.2      1   32         Full/ -           RAGG2
+ 192.168.6.85    10.10.84.2      1   32         Full/ -           RAGG3
+ 192.168.6.86    10.10.85.2      1   36         Full/ -           RAGG4
+<asp-sw>dis ip int br
+*down: administratively down
+(s): spoofing  (l): loopback
+Interface           Physical Protocol IP address      VPN instance Description  
+GE1/0/13            up       up       --              --           TO_asp-rh1...
+GE1/0/14            up       up       --              --           TO_asp-rh2...
+GE1/0/15            up       up       --              --           TO_asp-rt1...
+GE1/0/16            up       up       --              --           TO_asp-rt2...
+GE1/0/23            up       up       192.168.6.82    mgmt         MGT
+GE2/0/13            up       up       --              --           TO_asp-rh1...
+GE2/0/14            up       up       --              --           TO_asp-rh2...
+GE2/0/15            up       up       --              --           TO_asp-rt1...
+GE2/0/16            up       up       --              --           TO_asp-rt2...
+Loop10              up       up(s)    --              --           --
+MGE0/0/0            down     down     --              --           --
+RAGG1               up       up       10.10.82.1      --           TO_asp-rh1
+RAGG2               up       up       10.10.83.1      --           TO_asp-rh2
+RAGG3               up       up       10.10.84.1      --           TO_asp-rt1
+RAGG4               up       up       10.10.85.1      --           TO_asp-rt2
+Vlan81              up       up       10.10.81.1      --           TO_asp-fw
+Vlan999             up       up       10.10.86.1      --           MAD
+<asp-sw>dis ip routing
+
+Destinations : 147      Routes : 152
+
+Destination/Mask   Proto   Pre Cost        NextHop         Interface
+0.0.0.0/32         Direct  0   0           127.0.0.1       InLoop0
+2.0.0.0/16         Static  60  0           10.10.81.2      Vlan81
+9.128.46.192/28    Static  60  0           10.10.81.2      Vlan81
+9.128.47.0/24      O_ASE2  150 10          10.10.82.2      RAGG1
+9.128.62.200/30    O_ASE2  150 1           10.10.82.2      RAGG1
+10.5.219.160/30    O_ASE2  150 1           10.10.84.2      RAGG3
+10.5.220.160/30    O_ASE2  150 1           10.10.85.2      RAGG4
+10.10.81.0/29      Direct  0   0           10.10.81.1      Vlan81
+10.10.81.0/32      Direct  0   0           10.10.81.1      Vlan81
+10.10.81.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.81.7/32      Direct  0   0           10.10.81.1      Vlan81
+10.10.82.0/30      Direct  0   0           10.10.82.1      RAGG1
+10.10.82.0/32      Direct  0   0           10.10.82.1      RAGG1
+10.10.82.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.82.3/32      Direct  0   0           10.10.82.1      RAGG1
+10.10.83.0/30      Direct  0   0           10.10.83.1      RAGG2
+10.10.83.0/32      Direct  0   0           10.10.83.1      RAGG2
+10.10.83.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.83.3/32      Direct  0   0           10.10.83.1      RAGG2
+10.10.84.0/30      Direct  0   0           10.10.84.1      RAGG3
+10.10.84.0/32      Direct  0   0           10.10.84.1      RAGG3
+10.10.84.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.84.3/32      Direct  0   0           10.10.84.1      RAGG3
+10.10.85.0/30      Direct  0   0           10.10.85.1      RAGG4
+10.10.85.0/32      Direct  0   0           10.10.85.1      RAGG4
+10.10.85.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.85.3/32      Direct  0   0           10.10.85.1      RAGG4
+10.10.86.0/30      Direct  0   0           10.10.86.1      Vlan999
+10.10.86.0/32      Direct  0   0           10.10.86.1      Vlan999
+10.10.86.1/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.86.3/32      Direct  0   0           10.10.86.1      Vlan999
+10.10.94.0/30      O_INTRA 10  2           10.10.84.2      RAGG3
+10.10.95.0/30      O_INTRA 10  2           10.10.85.2      RAGG4
+10.10.96.0/30      O_ASE2  150 1           10.10.84.2      RAGG3
+10.10.98.0/30      O_INTRA 10  2           10.10.84.2      RAGG3
+10.10.180.0/30     O_ASE2  150 1           10.10.85.2      RAGG4
+10.10.200.0/30     O_ASE2  150 1           10.10.84.2      RAGG3
+10.10.201.0/30     O_ASE2  150 1           10.10.85.2      RAGG4
+10.69.8.0/24       O_ASE1  150 12          10.10.84.2      RAGG3
+10.180.10.0/24     O_ASE1  150 11          10.10.85.2      RAGG4
+10.180.200.0/24    O_ASE1  150 11          10.10.85.2      RAGG4
+10.238.81.76/32    O_ASE1  150 12          10.10.84.2      RAGG3
+                                           10.10.85.2      RAGG4
+10.238.243.189/32  O_ASE1  150 12          10.10.84.2      RAGG3
+10.238.250.206/32  O_ASE1  150 12          10.10.84.2      RAGG3
+12.9.1.1/32        O_ASE1  150 12          10.10.84.2      RAGG3
+12.9.1.5/32        O_ASE1  150 12          10.10.84.2      RAGG3
+12.9.1.8/32        O_ASE1  150 12          10.10.84.2      RAGG3
+12.9.1.10/32       O_ASE1  150 11          10.10.85.2      RAGG4
+12.9.1.11/32       O_ASE1  150 11          10.10.85.2      RAGG4
+12.9.1.17/32       O_ASE1  150 12          10.10.84.2      RAGG3
+12.9.1.18/32       O_ASE1  150 12          10.10.84.2      RAGG3
+12.9.1.19/32       O_ASE1  150 12          10.10.84.2      RAGG3
+12.9.1.20/32       O_ASE1  150 12          10.10.84.2      RAGG3
+12.10.1.1/32       O_ASE1  150 11          10.10.85.2      RAGG4
+12.10.1.2/32       O_ASE1  150 11          10.10.85.2      RAGG4
+19.10.250.0/24     O_ASE1  150 12          10.10.84.2      RAGG3
+19.64.223.216/29   Static  60  0           10.10.81.2      Vlan81
+19.64.223.216/32   O_ASE1  150 12          10.10.84.2      RAGG3
+19.64.249.108/30   O_INTRA 10  2           10.10.84.2      RAGG3
+19.64.250.0/24     O_ASE1  150 12          10.10.84.2      RAGG3
+20.10.10.0/24      O_ASE2  150 1           10.10.84.2      RAGG3
+30.10.20.0/30      O_INTRA 10  2           10.10.84.2      RAGG3
+30.10.30.0/30      O_INTRA 10  2           10.10.84.2      RAGG3
+30.30.100.0/24     O_INTRA 10  2           10.10.84.2      RAGG3
+30.30.100.4/30     O_INTRA 10  2           10.10.84.2      RAGG3
+30.30.101.4/30     O_ASE2  150 1           10.10.84.2      RAGG3
+38.30.249.0/30     O_INTRA 10  2           10.10.84.2      RAGG3
+38.63.138.123/32   O_ASE1  150 12          10.10.84.2      RAGG3
+38.238.238.28/32   O_ASE1  150 12          10.10.84.2      RAGG3
+38.238.250.84/32   O_ASE1  150 12          10.10.84.2      RAGG3
+                                           10.10.85.2      RAGG4
+38.238.250.126/32  O_ASE1  150 12          10.10.84.2      RAGG3
+                                           10.10.85.2      RAGG4
+38.238.250.157/32  O_ASE1  150 12          10.10.84.2      RAGG3
+                                           10.10.85.2      RAGG4
+38.238.250.206/32  O_ASE1  150 12          10.10.84.2      RAGG3
+114.255.18.83/32   O_ASE2  150 10          10.10.82.2      RAGG1
+127.0.0.0/8        Direct  0   0           127.0.0.1       InLoop0
+127.0.0.0/32       Direct  0   0           127.0.0.1       InLoop0
+127.0.0.1/32       Direct  0   0           127.0.0.1       InLoop0
+127.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+166.166.166.0/24   Static  60  0           10.10.81.2      Vlan81
+172.16.10.0/24     O_ASE1  150 11          10.10.84.2      RAGG3
+172.16.11.0/24     O_ASE1  150 11          10.10.84.2      RAGG3
+172.16.13.0/24     O_ASE1  150 11          10.10.84.2      RAGG3
+172.19.0.0/16      Static  60  0           10.10.81.2      Vlan81
+172.24.0.0/24      Static  60  0           10.10.81.2      Vlan81
+172.25.0.0/24      Static  60  0           10.10.81.2      Vlan81
+172.31.0.0/16      O_ASE1  150 11          10.10.84.2      RAGG3
+                                           10.10.85.2      RAGG4
+188.188.188.0/24   O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.1.0/24     Static  60  0           10.10.81.2      Vlan81
+192.168.2.0/24     Static  60  0           10.10.81.2      Vlan81
+192.168.3.0/24     Static  60  0           10.10.81.2      Vlan81
+192.168.4.0/24     Static  60  0           10.10.81.2      Vlan81
+192.168.5.0/24     Static  60  0           10.10.81.2      Vlan81
+192.168.6.0/24     Static  60  0           10.10.81.2      Vlan81
+192.168.6.18/32    Static  60  0           10.10.81.2      Vlan81
+192.168.6.208/32   Static  60  0           10.10.81.2      Vlan81
+192.168.6.227/32   Static  60  0           10.10.81.2      Vlan81
+192.168.10.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.10.34/32   Static  60  0           10.10.81.2      Vlan81
+192.168.10.70/32   Static  60  0           10.10.81.2      Vlan81
+192.168.10.71/32   Static  60  0           10.10.81.2      Vlan81
+192.168.10.72/32   Static  60  0           10.10.81.2      Vlan81
+192.168.10.73/32   Static  60  0           10.10.81.2      Vlan81
+192.168.10.74/32   Static  60  0           10.10.81.2      Vlan81
+192.168.10.101/32  Static  60  0           10.10.81.2      Vlan81
+192.168.10.102/32  Static  60  0           10.10.81.2      Vlan81
+192.168.10.124/32  Static  60  0           10.10.81.2      Vlan81
+192.168.10.166/32  Static  60  0           10.10.81.2      Vlan81
+192.168.10.170/32  Static  60  0           10.10.81.2      Vlan81
+192.168.10.202/32  Static  60  0           10.10.81.2      Vlan81
+192.168.10.203/32  Static  60  0           10.10.81.2      Vlan81
+192.168.11.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.11.54/32   Static  60  0           10.10.81.2      Vlan81
+192.168.11.72/32   Static  60  0           10.10.81.2      Vlan81
+192.168.12.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.17.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.20.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.21.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.39.0/24    O_ASE1  150 11          10.10.84.2      RAGG3
+192.168.50.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.50.200/32  Static  60  0           10.10.81.2      Vlan81
+192.168.50.201/32  Static  60  0           10.10.81.2      Vlan81
+192.168.50.202/32  Static  60  0           10.10.81.2      Vlan81
+192.168.50.204/32  Static  60  0           10.10.81.2      Vlan81
+192.168.90.0/24    Static  60  0           10.10.81.2      Vlan81
+192.168.90.102/32  Static  60  0           10.10.81.2      Vlan81
+192.168.92.0/24    O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.94.0/23    O_ASE1  150 12          10.10.85.2      RAGG4
+192.168.96.0/24    O_ASE1  150 11          10.10.84.2      RAGG3
+192.168.98.0/24    O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.192.45/32  O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.192.113/32 O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.192.122/32 O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.192.123/32 O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.192.149/32 O_ASE1  150 12          10.10.84.2      RAGG3
+192.168.200.0/24   O_ASE1  150 11          10.10.84.2      RAGG3
+192.168.201.0/24   O_ASE1  150 11          10.10.85.2      RAGG4
+192.168.202.0/24   O_ASE1  150 11          10.10.84.2      RAGG3
+192.168.203.0/24   O_ASE1  150 11          10.10.85.2      RAGG4
+192.168.205.0/24   O_ASE1  150 11          10.10.84.2      RAGG3
+192.168.208.0/24   O_ASE1  150 11          10.10.85.2      RAGG4
+192.168.210.0/24   Static  60  0           10.10.81.2      Vlan81
+192.168.224.8/30   O_ASE2  150 1           10.10.85.2      RAGG4
+192.168.249.164/30 O_INTRA 10  2           10.10.84.2      RAGG3
+192.168.249.168/30 O_INTRA 10  2           10.10.85.2      RAGG4
+224.0.0.0/4        Direct  0   0           0.0.0.0         NULL0
+224.0.0.0/24       Direct  0   0           0.0.0.0         NULL0
+255.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+<asp-sw> dis arp
+  Type: S-Static   D-Dynamic   O-Openflow   R-Rule   M-Multiport  I-Invalid
+IP address      MAC address    VLAN/VSI   Interface/Link ID        Aging Type 
+10.10.82.2      04d7-a5aa-9fbd --         RAGG1                    88    D    
+10.10.83.2      04d7-a5aa-9c16 --         RAGG2                    321   D    
+192.168.6.7     62ec-ba03-0304 --         GE1/0/23                 981   D    
+192.168.6.11    286e-d488-c678 --         GE1/0/23                 579   D    
+192.168.6.12    f010-9079-dfd7 --         GE1/0/23                 958   D    
+192.168.6.14    0001-d7e6-2b81 --         GE1/0/23                 928   D    
+192.168.6.18    a08c-fdea-ac73 --         GE1/0/23                 1187  D    
+192.168.6.20    f010-9079-dfe3 --         GE1/0/23                 768   D    
+192.168.6.24    8465-695b-1541 --         GE1/0/23                 1078  D    
+192.168.6.41    3221-b1b3-4ba1 --         GE1/0/23                 1110  D    
+192.168.6.56    0050-56b8-aa18 --         GE1/0/23                 1189  D    
+192.168.6.57    0050-5695-053b --         GE1/0/23                 470   D    
+192.168.6.58    0050-5695-cd42 --         GE1/0/23                 366   D    
+192.168.6.59    f010-9079-dfd8 --         GE1/0/23                 530   D    
+192.168.6.63    f010-9079-dfe4 --         GE1/0/23                 779   D    
+192.168.6.64    0050-5695-f070 --         GE1/0/23                 265   D    
+192.168.6.65    0050-5695-6d9a --         GE1/0/23                 265   D    
+192.168.6.66    0050-5695-6d9a --         GE1/0/23                 1186  D    
+192.168.6.67    0050-5695-bdb9 --         GE1/0/23                 1187  D    
+192.168.6.70    f875-884a-a711 --         GE1/0/23                 130   D    
+192.168.6.74    0050-56b4-1d2a --         GE1/0/23                 155   D    
+192.168.6.84    04d7-a5aa-9c11 --         GE1/0/23                 899   D    
+192.168.6.90    0060-b941-6404 --         GE1/0/23                 987   D    
+192.168.6.95    8894-714c-1cd8 --         GE1/0/23                 1078  D    
+192.168.6.96    50eb-1a79-2e73 --         GE1/0/23                 1078  D    
+192.168.6.97    50eb-1a7c-9094 --         GE1/0/23                 971   D    
+192.168.6.98    0027-f8d2-14dd --         GE1/0/23                 1184  D    
+192.168.6.99    0027-f8d2-7465 --         GE1/0/23                 1078  D    
+192.168.6.101   4077-a9c6-5e92 --         GE1/0/23                 917   D    
+192.168.6.102   3080-9b34-f1aa --         GE1/0/23                 901   D    
+192.168.6.106   5cdd-702a-4aa1 --         GE1/0/23                 657   D    
+192.168.6.111   488e-efb9-e843 --         GE1/0/23                 1200  D    
+192.168.6.113   286e-d488-b3ce --         GE1/0/23                 113   D    
+192.168.6.114   286e-d488-b3ce --         GE1/0/23                 1200  D    
+192.168.6.115   286e-d488-bd0d --         GE1/0/23                 1009  D    
+192.168.6.116   286e-d488-b3ca --         GE1/0/23                 76    D    
+192.168.6.119   286e-d488-b3cb --         GE1/0/23                 1129  D    
+192.168.6.120   286e-d488-b3cb --         GE1/0/23                 1188  D    
+192.168.6.121   286e-d488-bd0a --         GE1/0/23                 1162  D    
+192.168.6.130   9418-8249-2ea4 --         GE1/0/23                 906   D    
+192.168.6.132   0409-73ba-8b88 --         GE1/0/23                 412   D    
+192.168.6.138   0800-1bff-7460 --         GE1/0/23                 1167  D    
+192.168.6.146   0894-ef15-aac7 --         GE1/0/23                 769   D    
+192.168.6.149   0894-ef3c-9c62 --         GE1/0/23                 754   D    
+192.168.6.155   e04f-4372-dd4e --         GE1/0/23                 798   D    
+192.168.6.159   0894-ef10-97fc --         GE1/0/23                 756   D    
+192.168.6.160   8465-695b-1542 --         GE1/0/23                 596   D    
+192.168.6.165   943b-b0bc-765c --         GE1/0/23                 861   D    
+192.168.6.166   286e-d488-c69e --         GE1/0/23                 1110  D    
+192.168.6.167   286e-d488-c69b --         GE1/0/23                 910   D    
+192.168.6.168   286e-d488-c69a --         GE1/0/23                 269   D    
+192.168.6.172   8018-44e3-8cde --         GE1/0/23                 683   D    
+192.168.6.173   8018-44e3-814e --         GE1/0/23                 539   D    
+192.168.6.176   000c-29e3-e1a0 --         GE1/0/23                 264   D    
+192.168.6.177   000c-2933-7004 --         GE1/0/23                 1056  D    
+192.168.6.178   00e0-ed89-f052 --         GE1/0/23                 956   D    
+192.168.6.184   000c-2958-9bad --         GE1/0/23                 286   D    
+192.168.6.185   000c-2931-d9b1 --         GE1/0/23                 296   D    
+192.168.6.187   000c-29ae-8434 --         GE1/0/23                 897   D    
+192.168.6.189   ac1f-6b35-aa8a --         GE1/0/23                 394   D    
+192.168.6.191   ac1f-6b35-c182 --         GE1/0/23                 421   D    
+192.168.6.192   000c-2958-9bad --         GE1/0/23                 328   D    
+192.168.6.193   000c-2958-9bad --         GE1/0/23                 644   D    
+192.168.6.194   0050-56b4-aba0 --         GE1/0/23                 1034  D    
+192.168.6.195   0050-56b4-4e94 --         GE1/0/23                 1034  D    
+192.168.6.196   0050-56b4-e120 --         GE1/0/23                 1040  D    
+192.168.6.198   0050-56b4-aba0 --         GE1/0/23                 286   D    
+192.168.6.199   0050-56b4-4e94 --         GE1/0/23                 274   D    
+192.168.6.200   0050-56b4-e120 --         GE1/0/23                 271   D    
+192.168.6.201   4077-a9c5-fcb2 --         GE1/0/23                 914   D    
+192.168.6.202   4077-a9c6-3372 --         GE1/0/23                 916   D    
+192.168.6.203   3080-9b35-0e2a --         GE1/0/23                 925   D    
+192.168.6.204   3080-9b35-0a0a --         GE1/0/23                 928   D    
+192.168.6.205   3080-9b34-f26a --         GE1/0/23                 908   D    
+192.168.6.206   000c-29f4-ab3d --         GE1/0/23                 691   D    
+192.168.6.208   0050-56ae-1b67 --         GE1/0/23                 886   D    
+192.168.6.225   0050-56b8-38ca --         GE1/0/23                 604   D    
+192.168.6.226   0050-56b8-3f08 --         GE1/0/23                 604   D    
+192.168.6.227   0050-56b8-3926 --         GE1/0/23                 604   D    
+192.168.6.230   0050-56b8-f967 --         GE1/0/23                 1056  D    
+192.168.6.237   0800-1bff-f312 --         GE1/0/23                 1143  D    
+192.168.6.250   7057-bf1f-445e --         GE1/0/23                 1067  D    
+192.168.6.254   5098-b8bd-c968 --         GE1/0/23                 1200  D    
+10.10.81.2      0000-5e00-0101 81         GE1/0/1                  1188  D    
+10.10.81.3      0000-5e00-0101 81         GE1/0/1                  1188  D    
+10.10.84.2      9429-2fd5-bc0d --         RAGG3                    238   D    
+10.10.85.2      9429-2fd5-add7 --         RAGG4                    213   D    
+10.10.81.4      0010-f37d-6ff5 81         GE2/0/1                  574   D    
+<asp-sw>         dis acl a
+Basic IPv4 ACL 2000, 6 rules,
+ACL's step is 5, start ID is 0
+ rule 10 permit vpn-instance mgmt source 192.168.6.18 0 (268 times matched)
+ rule 11 permit vpn-instance mgmt source 192.168.6.56 0
+ rule 15 permit vpn-instance mgmt source 192.168.6.166 0
+ rule 16 permit vpn-instance mgmt source 192.168.6.167 0
+ rule 17 permit vpn-instance mgmt source 192.168.6.168 0
+ rule 50 deny (1 times matched)
+
+Basic IPv4 ACL 2100, 2 rules,
+ACL's step is 5, start ID is 0
+ rule 10 permit vpn-instance mgmt source 192.168.6.208 0
+ rule 50 deny
+
+Advanced IPv4 ACL 3000, 8 rules,
+ACL's step is 5, start ID is 0
+ rule 10 permit ip source 192.168.10.71 0 destination 9.128.47.0 0.0.0.255
+ rule 11 permit ip source 192.168.10.72 0 destination 9.128.47.0 0.0.0.255
+ rule 12 permit ip source 192.168.10.73 0 destination 9.128.47.0 0.0.0.255
+ rule 13 permit ip source 192.168.10.74 0 destination 9.128.47.0 0.0.0.255
+ rule 14 permit ip source 172.19.3.201 0 destination 9.128.47.0 0.0.0.255
+ rule 15 permit ip source 172.19.3.202 0 destination 9.128.47.0 0.0.0.255
+ rule 16 permit ip source 172.19.3.203 0 destination 9.128.47.0 0.0.0.255
+ rule 50 deny ip destination 9.128.47.0 0.0.0.255
+
+<asp-sw>  dis mac-address
+MAC Address      VLAN ID    State            Port/Nickname            Aging
+1866-da70-6990   1          Learned          GE1/0/6                  Y
+0000-5e00-0101   81         Learned          GE1/0/1                  Y
+0010-f37e-613f   81         Learned          GE1/0/1                  Y
+<asp-sw>dis cu 
+#
+ version 7.1.070, Release 1118P07
+#
+ sysname asp-sw
+#
+ clock protocol none
+#
+ip vpn-instance mgmt
+#
+ irf mac-address persistent always
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 10
+ irf member 2 priority 8
+#
+ospf 100 router-id 192.168.6.82
+ import-route static
+ area 0.0.0.0
+  network 10.10.81.0 0.0.0.7
+  network 10.10.82.1 0.0.0.0
+  network 10.10.83.1 0.0.0.0
+  network 10.10.84.1 0.0.0.0
+  network 10.10.85.1 0.0.0.0
+#              
+ mirroring-group 6 local
+#
+ lldp global enable
+#
+ password-recovery enable
+#
+vlan 1
+#
+vlan 81
+ description TO_asp-fw
+#
+vlan 999
+ description MAD
+#
+irf-port 1/1
+ port group interface Ten-GigabitEthernet1/0/31
+ port group interface Ten-GigabitEthernet1/0/32
+#
+irf-port 2/2
+ port group interface Ten-GigabitEthernet2/0/31
+ port group interface Ten-GigabitEthernet2/0/32
+#
+ stp global enable
+#
+interface Route-Aggregation1
+ description TO_asp-rh1
+ ip address 10.10.82.1 255.255.255.252
+ ospf network-type p2p
+#
+interface Route-Aggregation2
+ description TO_asp-rh2
+ ip address 10.10.83.1 255.255.255.252
+ ospf network-type p2p
+#
+interface Route-Aggregation3
+ description TO_asp-rt1
+ ip address 10.10.84.1 255.255.255.252
+ ospf network-type p2p
+#
+interface Route-Aggregation4
+ description TO_asp-rt2
+ ip address 10.10.85.1 255.255.255.252
+ ospf network-type p2p
+#
+interface NULL0
+#              
+interface LoopBack10
+#
+interface Vlan-interface81
+ description TO_asp-fw
+ ip address 10.10.81.1 255.255.255.248
+#
+interface Vlan-interface999
+ description MAD
+ mad bfd enable
+ mad ip address 10.10.86.1 255.255.255.252 member 1
+ mad ip address 10.10.86.2 255.255.255.252 member 2
+#
+interface FortyGigE1/0/33
+ port link-mode bridge
+#
+interface FortyGigE1/0/34
+ port link-mode bridge
+#
+interface FortyGigE2/0/33
+ port link-mode bridge
+#
+interface FortyGigE2/0/34
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/13
+ port link-mode route
+ description TO_asp-rh1_G0/0
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 1
+#
+interface GigabitEthernet1/0/14
+ port link-mode route
+ description TO_asp-rh2_G0/0
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 2
+#
+interface GigabitEthernet1/0/15
+ port link-mode route
+ description TO_asp-rt1_G0/0
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 3
+#
+interface GigabitEthernet1/0/16
+ port link-mode route
+ description TO_asp-rt2_G0/0
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 4
+#
+interface GigabitEthernet1/0/23
+ port link-mode route
+ description MGT
+ ip binding vpn-instance mgmt
+ ip address 192.168.6.82 255.255.255.0
+#
+interface GigabitEthernet2/0/13
+ port link-mode route
+ description TO_asp-rh1_G0/1
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 1
+#
+interface GigabitEthernet2/0/14
+ port link-mode route
+ description TO_asp-rh2_G0/1
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 2
+#
+interface GigabitEthernet2/0/15
+ port link-mode route
+ description TO_asp-rt1_G0/1
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 3
+#
+interface GigabitEthernet2/0/16
+ port link-mode route
+ description TO_asp-rt2_G0/1
+ mirroring-group 6 mirroring-port both
+ port link-aggregation group 4
+#
+interface GigabitEthernet1/0/1
+ port link-mode bridge
+ description TO_asp-fw01
+ port access vlan 81
+#
+interface GigabitEthernet1/0/2
+ port link-mode bridge
+ port access vlan 81
+#
+interface GigabitEthernet1/0/3
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/4
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/5
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/6
+ port link-mode bridge
+ mirroring-group 6 monitor-port
+#
+interface GigabitEthernet1/0/7
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/8
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/9
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/10
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/11
+ port link-mode bridge
+#              
+interface GigabitEthernet1/0/12
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/17
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/18
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/19
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/20
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/21
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/22
+ port link-mode bridge
+#
+interface GigabitEthernet1/0/24
+ port link-mode bridge
+ port access vlan 999
+ undo stp enable
+#
+interface GigabitEthernet1/0/25
+ port link-mode bridge
+ combo enable fiber
+#
+interface GigabitEthernet1/0/26
+ port link-mode bridge
+ combo enable copper
+#
+interface GigabitEthernet1/0/27
+ port link-mode bridge
+ combo enable fiber
+#
+interface GigabitEthernet1/0/28
+ port link-mode bridge
+ combo enable copper
+#
+interface GigabitEthernet2/0/1
+ port link-mode bridge
+ description TO_asp-fw02
+ port access vlan 81
+#
+interface GigabitEthernet2/0/2
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/3
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/4
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/5
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/6
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/7
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/8
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/9
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/10
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/11
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/12
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/17
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/18
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/19
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/20
+ port link-mode bridge
+#              
+interface GigabitEthernet2/0/21
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/22
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/23
+ port link-mode bridge
+#
+interface GigabitEthernet2/0/24
+ port link-mode bridge
+ port access vlan 999
+ undo stp enable
+#
+interface GigabitEthernet2/0/25
+ port link-mode bridge
+ combo enable copper
+#
+interface GigabitEthernet2/0/26
+ port link-mode bridge
+ combo enable copper
+#
+interface GigabitEthernet2/0/27
+ port link-mode bridge
+ combo enable copper
+#
+interface GigabitEthernet2/0/28
+ port link-mode bridge
+ combo enable copper
+#
+interface M-GigabitEthernet0/0/0
+#
+interface Ten-GigabitEthernet1/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/31
+ description IRF TO_asp-sw02_T2/0/31
+#
+interface Ten-GigabitEthernet1/0/32
+ description IRF TO_asp-sw02_T2/0/32
+#
+interface Ten-GigabitEthernet2/0/31
+ description IRF TO_asp-sw01_T1/0/31
+#
+interface Ten-GigabitEthernet2/0/32
+ description IRF TO_asp-sw01_T1/0/32
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class usb
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 0 1
+ user-role network-admin
+#
+line vty 0 4
+ authentication-mode scheme
+ user-role network-admin
+ user-role network-operator
+ protocol inbound ssh
+#
+line vty 5 63
+ user-role network-operator
+#
+ ip route-static 2.0.0.0 16 10.10.81.2
+ ip route-static 9.128.46.192 28 10.10.81.2
+ ip route-static 19.64.223.216 29 10.10.81.2
+ ip route-static 166.166.166.0 24 10.10.81.2
+ ip route-static 172.19.0.0 16 10.10.81.2
+ ip route-static 172.24.0.0 24 10.10.81.2
+ ip route-static 172.25.0.0 24 10.10.81.2
+ ip route-static 192.168.1.0 24 10.10.81.2
+ ip route-static 192.168.2.0 24 10.10.81.2
+ ip route-static 192.168.3.0 24 10.10.81.2
+ ip route-static 192.168.4.0 24 10.10.81.2
+ ip route-static 192.168.5.0 24 10.10.81.2
+ ip route-static 192.168.6.0 24 10.10.81.2
+ ip route-static 192.168.6.18 32 10.10.81.2
+ ip route-static 192.168.6.208 32 10.10.81.2
+ ip route-static 192.168.6.227 32 10.10.81.2
+ ip route-static 192.168.10.0 24 10.10.81.2
+ ip route-static 192.168.10.34 32 10.10.81.2
+ ip route-static 192.168.10.70 32 10.10.81.2
+ ip route-static 192.168.10.71 32 10.10.81.2
+ ip route-static 192.168.10.72 32 10.10.81.2
+ ip route-static 192.168.10.73 32 10.10.81.2
+ ip route-static 192.168.10.74 32 10.10.81.2
+ ip route-static 192.168.10.101 32 10.10.81.2
+ ip route-static 192.168.10.102 32 10.10.81.2
+ ip route-static 192.168.10.124 32 10.10.81.2
+ ip route-static 192.168.10.166 32 10.10.81.2
+ ip route-static 192.168.10.170 32 10.10.81.2
+ ip route-static 192.168.10.202 32 10.10.81.2
+ ip route-static 192.168.10.203 32 10.10.81.2
+ ip route-static 192.168.11.0 24 10.10.81.2
+ ip route-static 192.168.11.54 32 10.10.81.2
+ ip route-static 192.168.11.72 32 10.10.81.2
+ ip route-static 192.168.12.0 24 10.10.81.2
+ ip route-static 192.168.17.0 24 10.10.81.2
+ ip route-static 192.168.20.0 24 10.10.81.2
+ ip route-static 192.168.21.0 24 10.10.81.2
+ ip route-static 192.168.50.0 24 10.10.81.2
+ ip route-static 192.168.50.200 32 10.10.81.2
+ ip route-static 192.168.50.201 32 10.10.81.2
+ ip route-static 192.168.50.202 32 10.10.81.2
+ ip route-static 192.168.50.204 32 10.10.81.2
+ ip route-static 192.168.90.0 24 10.10.81.2
+ ip route-static 192.168.90.102 32 10.10.81.2
+ ip route-static 192.168.210.0 24 10.10.81.2
+#
+ info-center synchronous
+ info-center loghost 192.168.6.208
+#
+ snmp-agent
+ snmp-agent local-engineid 800063A2807057BF1F813A00000001
+ snmp-agent community read cipher $c$3$43fji9x62hBxdbYDGB1VOzMC3KNtbooX3+RX acl 2100
+ snmp-agent sys-info version v2c v3 
+#
+ ssh server enable
+ ssh server acl 2000
+#
+acl number 2000
+ rule 10 permit vpn-instance mgmt source 192.168.6.18 0
+ rule 11 permit vpn-instance mgmt source 192.168.6.56 0
+ rule 15 permit vpn-instance mgmt source 192.168.6.166 0
+ rule 16 permit vpn-instance mgmt source 192.168.6.167 0
+ rule 17 permit vpn-instance mgmt source 192.168.6.168 0
+ rule 50 deny
+#
+acl number 2100
+ rule 10 permit vpn-instance mgmt source 192.168.6.208 0
+ rule 50 deny
+#
+acl number 3000
+ rule 10 permit ip source 192.168.10.71 0 destination 9.128.47.0 0.0.0.255
+ rule 11 permit ip source 192.168.10.72 0 destination 9.128.47.0 0.0.0.255
+ rule 12 permit ip source 192.168.10.73 0 destination 9.128.47.0 0.0.0.255
+ rule 13 permit ip source 192.168.10.74 0 destination 9.128.47.0 0.0.0.255
+ rule 14 permit ip source 172.19.3.201 0 destination 9.128.47.0 0.0.0.255
+ rule 15 permit ip source 172.19.3.202 0 destination 9.128.47.0 0.0.0.255
+ rule 16 permit ip source 172.19.3.203 0 destination 9.128.47.0 0.0.0.255
+ rule 50 deny ip destination 9.128.47.0 0.0.0.255
+#
+radius scheme system
+ user-name-format without-domain
+#              
+domain system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#              
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user admin class manage
+ password hash $h$6$8lMRAMFxlrU4wF9I$rG6bdtMA5IwfuX5Mf64WhVnSsJmpWKqrmJhkurHBOsy07kVvU5Ajj0Z1YPUD03DCN+sfQApi66TJA+1K3/RtMg==
+ service-type ssh
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+return

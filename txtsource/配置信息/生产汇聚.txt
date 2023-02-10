@@ -1,0 +1,1329 @@
+﻿<QRCHERY-SC-SW>dis int br
+Bridge-Aggregation2
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 943b-b0bc-7639
+Description: TO_SC-SW-NET10
+Bandwidth: 2000000 kbps
+2Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1000
+Port link-type: Access
+ Tagged VLANs:   None
+ Untagged VLANs: 1000
+Last clearing of counters: Never
+Last 300 seconds input:  9693 packets/sec 4129486 bytes/sec 1%
+Last 300 seconds output:  9376 packets/sec 3224766 bytes/sec 1%
+Input (total):  178567267930 packets, 129258341164005 bytes
+        178347151179 unicasts, 61891424 broadcasts, 158225327 multicasts, 0 pauses
+Input (normal):  178567267898 packets, - bytes
+        178347151169 unicasts, 61891424 broadcasts, 158225327 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 167740984216 packets, 104104385218936 bytes
+        167424733529 unicasts, 81140208 broadcasts, 235110479 multicasts, 0 pauses
+Output (normal): 167740984209 packets, - bytes
+        167424733525 unicasts, 81140208 broadcasts, 235110479 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+Bridge-Aggregation3
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 943b-b0bc-763a
+Description: TO_SC-SW-NET4
+Bandwidth: 2000000 kbps
+2Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1
+Port link-type: Trunk
+ VLAN Passing:   1(default vlan), 10, 15, 40, 160, 999-1000
+ VLAN permitted: 1(default vlan), 2-4094
+ Trunk port encapsulation: IEEE 802.1q
+Last clearing of counters: Never
+Last 300 seconds input:  536 packets/sec 104788 bytes/sec 0%
+Last 300 seconds output:  638 packets/sec 111336 bytes/sec 0%
+Input (total):  65110245168 packets, 65847003403521 bytes
+        65101538628 unicasts, 3432987 broadcasts, 5273553 multicasts, 0 pauses
+Input (normal):  65110245165 packets, - bytes
+        65101538628 unicasts, 3432987 broadcasts, 5273553 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 32130235476 packets, 6203050976630 bytes
+        31159705489 unicasts, 145421793 broadcasts, 825108194 multicasts, 0 pauses
+Output (normal): 32130235476 packets, - bytes
+        31159705489 unicasts, 145421793 broadcasts, 825108194 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+Bridge-Aggregation4
+Current state: UP
+IP packet frame type: Ethernet II, hardware address: 943b-b0bc-7638
+Description: Bridge-Aggregation4 Interface
+Bandwidth: 20000000 kbps
+20Gbps-speed mode, full-duplex mode
+Link speed type is autonegotiation, link duplex type is autonegotiation
+PVID: 1000
+Port link-type: Access
+ Tagged VLANs:   None
+ Untagged VLANs: 1000
+Last clearing of counters: Never
+Last 300 seconds input:  24529 packets/sec 9044052 bytes/sec 0%
+Last 300 seconds output:  26895 packets/sec 14449259 bytes/sec 0%
+Input (total):  690912383694 packets, 341156376543312 bytes
+        690649058811 unicasts, 56781585 broadcasts, 206543298 multicasts, 0 pauses
+Input (normal):  690912383665 packets, - bytes
+        690649058809 unicasts, 56781585 broadcasts, 206543298 multicasts, 0 pauses
+Input:  0 input errors, 0 runts, 0 giants, 0 throttles
+        0 CRC, 0 frame, - overruns, 0 aborts
+        - ignored, - parity errors
+Output (total): 756743346971 packets, 473462693979216 bytes
+        756470697463 unicasts, 85961838 broadcasts, 186687670 multicasts, 0 pauses
+Output (normal): 756743346961 packets, - bytes
+        756470697458 unicasts, 85961838 broadcasts, 186687670 multicasts, 0 pauses
+Output: 0 output errors, - underruns, - buffer failures
+        0 aborts, 0 deferred, 0 collisions, 0 late collisions
+        0 lost carrier, - no carrier
+
+<QRCHERY-SC-SW>               dis ospf peer
+
+         OSPF Process 1 with Router ID 192.168.168.2
+               Neighbor Brief Information
+
+ Area: 0.0.0.0        
+ Router ID       Address         Pri Dead-Time  State             Interface
+ 192.168.168.21  192.168.168.1   1   35         Full/ -           RAGG1
+<QRCHERY-SC-SW>dis ip int br
+*down: administratively down
+(s): spoofing  (l): loopback
+Interface           Physical Protocol IP address      VPN instance Description  
+MGE0/0/0            up       up       192.168.6.165   Management   Management
+MGE0/0/1            down     down     --              --           --
+RAGG1               up       up       192.168.168.2   --           TO_HX-SW
+XGE1/0/1            up       up       --              --           --
+XGE2/0/1            up       up       --              --           --
+Vlan1               up       up       --              --           --
+Vlan15              up       up       192.168.15.254  --           --
+Vlan40              up       up       192.168.4.254   --           --
+Vlan999             up       up       3.3.3.2         --           --
+Vlan1000            up       up       192.168.10.254  --           --
+<QRCHERY-SC-SW>dis ip routing
+
+Destinations : 120      Routes : 120
+
+Destination/Mask   Proto   Pre Cost        NextHop         Interface
+0.0.0.0/0          O_ASE2  150 1           192.168.168.1   RAGG1
+0.0.0.0/32         Direct  0   0           127.0.0.1       InLoop0
+2.0.0.0/16         Static  60  0           192.168.10.140  Vlan1000
+2.0.7.0/24         Static  60  0           192.168.10.109  Vlan1000
+2.1.0.0/16         Static  60  0           192.168.10.140  Vlan1000
+3.3.3.0/30         Direct  0   0           3.3.3.2         Vlan999
+3.3.3.0/32         Direct  0   0           3.3.3.2         Vlan999
+3.3.3.2/32         Direct  0   0           127.0.0.1       InLoop0
+3.3.3.3/32         Direct  0   0           3.3.3.2         Vlan999
+9.128.47.0/24      O_ASE1  150 2           192.168.168.1   RAGG1
+10.1.1.0/24        O_ASE1  150 2           192.168.168.1   RAGG1
+10.1.3.0/24        O_ASE1  150 2           192.168.168.1   RAGG1
+10.1.4.0/24        O_ASE1  150 2           192.168.168.1   RAGG1
+10.1.5.0/24        O_ASE1  150 2           192.168.168.1   RAGG1
+10.1.8.0/24        O_ASE1  150 2           192.168.168.1   RAGG1
+10.2.14.237/32     O_ASE1  150 2           192.168.168.1   RAGG1
+10.10.10.0/29      O_INTRA 10  2           192.168.168.1   RAGG1
+10.10.22.0/24      O_ASE1  150 2           192.168.168.1   RAGG1
+10.10.40.0/24      O_ASE1  150 3           192.168.168.1   RAGG1
+10.10.41.0/30      O_ASE1  150 2           192.168.168.1   RAGG1
+10.10.50.0/30      O_ASE1  150 2           192.168.168.1   RAGG1
+10.10.80.0/29      O_ASE1  150 2           192.168.168.1   RAGG1
+10.10.210.0/30     O_ASE1  150 2           192.168.168.1   RAGG1
+10.10.220.0/30     O_ASE1  150 2           192.168.168.1   RAGG1
+10.64.250.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+10.69.8.0/24       O_ASE1  150 2           192.168.168.1   RAGG1
+10.111.121.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+10.180.10.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+10.180.200.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+10.238.81.76/32    O_ASE1  150 2           192.168.168.1   RAGG1
+10.238.243.189/32  O_ASE1  150 2           192.168.168.1   RAGG1
+10.238.250.206/32  O_ASE1  150 2           192.168.168.1   RAGG1
+11.64.18.160/32    O_ASE1  150 2           192.168.168.1   RAGG1
+12.9.1.0/24        O_ASE1  150 2           192.168.168.1   RAGG1
+12.9.1.5/32        O_ASE1  150 2           192.168.168.1   RAGG1
+12.9.1.8/32        O_ASE1  150 2           192.168.168.1   RAGG1
+12.10.1.0/24       O_ASE1  150 2           192.168.168.1   RAGG1
+19.10.250.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+19.64.223.216/30   O_ASE1  150 2           192.168.168.1   RAGG1
+19.64.246.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+19.64.250.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+38.63.138.123/32   O_ASE1  150 2           192.168.168.1   RAGG1
+38.238.238.28/32   O_ASE1  150 2           192.168.168.1   RAGG1
+38.238.250.84/32   O_ASE1  150 2           192.168.168.1   RAGG1
+38.238.250.126/32  O_ASE1  150 2           192.168.168.1   RAGG1
+38.238.250.157/32  O_ASE1  150 2           192.168.168.1   RAGG1
+38.238.250.206/32  O_ASE1  150 2           192.168.168.1   RAGG1
+100.1.1.0/24       O_ASE1  150 2           192.168.168.1   RAGG1
+127.0.0.0/8        Direct  0   0           127.0.0.1       InLoop0
+127.0.0.0/32       Direct  0   0           127.0.0.1       InLoop0
+127.0.0.1/32       Direct  0   0           127.0.0.1       InLoop0
+127.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+172.16.10.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+172.16.11.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+172.16.13.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+172.18.0.0/16      O_ASE1  150 2           192.168.168.1   RAGG1
+172.19.0.0/22      O_ASE1  150 3           192.168.168.1   RAGG1
+172.31.0.0/16      O_ASE1  150 2           192.168.168.1   RAGG1
+188.188.188.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.1.0/24     O_INTRA 10  3           192.168.168.1   RAGG1
+192.168.2.0/24     O_INTRA 10  3           192.168.168.1   RAGG1
+192.168.3.0/24     O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.4.0/24     Direct  0   0           192.168.4.254   Vlan40
+192.168.4.0/32     Direct  0   0           192.168.4.254   Vlan40
+192.168.4.254/32   Direct  0   0           127.0.0.1       InLoop0
+192.168.4.255/32   Direct  0   0           192.168.4.254   Vlan40
+192.168.5.0/24     O_INTRA 10  3           192.168.168.1   RAGG1
+192.168.6.0/24     O_INTRA 10  3           192.168.168.1   RAGG1
+192.168.8.1/32     O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.10.0/24    Direct  0   0           192.168.10.254  Vlan1000
+192.168.10.0/32    Direct  0   0           192.168.10.254  Vlan1000
+192.168.10.254/32  Direct  0   0           127.0.0.1       InLoop0
+192.168.10.255/32  Direct  0   0           192.168.10.254  Vlan1000
+192.168.11.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.12.0/24    O_ASE1  150 3           192.168.168.1   RAGG1
+192.168.13.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.14.0/24    O_ASE1  150 3           192.168.168.1   RAGG1
+192.168.15.0/24    Direct  0   0           192.168.15.254  Vlan15
+192.168.15.0/32    Direct  0   0           192.168.15.254  Vlan15
+192.168.15.254/32  Direct  0   0           127.0.0.1       InLoop0
+192.168.15.255/32  Direct  0   0           192.168.15.254  Vlan15
+192.168.17.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.39.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.40.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.41.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.50.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.60.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.90.0/24    O_ASE1  150 3           192.168.168.1   RAGG1
+192.168.92.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.94.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.95.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.96.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.97.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.98.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.99.0/24    O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.100.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.168.0/30   Direct  0   0           192.168.168.2   RAGG1
+192.168.168.0/32   Direct  0   0           192.168.168.2   RAGG1
+192.168.168.2/32   Direct  0   0           127.0.0.1       InLoop0
+192.168.168.3/32   Direct  0   0           192.168.168.2   RAGG1
+192.168.168.4/30   O_ASE1  150 3           192.168.168.1   RAGG1
+192.168.168.20/30  O_INTRA 10  2           192.168.168.1   RAGG1
+192.168.192.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.192.122/32 O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.192.123/32 O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.192.149/32 O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.200.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.201.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.202.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.203.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.205.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.208.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.210.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.211.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.212.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.216.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+192.168.221.0/24   O_ASE1  150 2           192.168.168.1   RAGG1
+224.0.0.0/4        Direct  0   0           0.0.0.0         NULL0
+224.0.0.0/24       Direct  0   0           0.0.0.0         NULL0
+255.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+<QRCHERY-SC-SW>        dis arp
+  Type: S-Static   D-Dynamic   O-Openflow   R-Rule   M-Multiport  I-Invalid
+IP address      MAC address    VLAN/VSI   Interface/Link ID        Aging Type 
+192.168.6.7     62ec-ba03-0304 --         MGE0/0/0                 790   D    
+192.168.6.11    286e-d488-c678 --         MGE0/0/0                 240   D    
+192.168.6.12    f010-9079-dfd7 --         MGE0/0/0                 55    D    
+192.168.6.14    0001-d7e6-2b81 --         MGE0/0/0                 737   D    
+192.168.6.18    a08c-fdea-ac73 --         MGE0/0/0                 615   D    
+192.168.6.20    f010-9079-dfe3 --         MGE0/0/0                 399   D    
+192.168.6.24    8465-695b-1541 --         MGE0/0/0                 691   D    
+192.168.6.41    3221-b1b3-4ba1 --         MGE0/0/0                 1054  D    
+192.168.6.56    0050-56b8-aa18 --         MGE0/0/0                 1190  D    
+192.168.6.57    0050-5695-053b --         MGE0/0/0                 85    D    
+192.168.6.58    0050-5695-cd42 --         MGE0/0/0                 841   D    
+192.168.6.59    f010-9079-dfd8 --         MGE0/0/0                 339   D    
+192.168.6.63    f010-9079-dfe4 --         MGE0/0/0                 588   D    
+192.168.6.64    0050-5695-f070 --         MGE0/0/0                 134   D    
+192.168.6.65    0050-5695-6d9a --         MGE0/0/0                 141   D    
+192.168.6.66    0050-5695-6d9a --         MGE0/0/0                 1176  D    
+192.168.6.67    0050-5695-bdb9 --         MGE0/0/0                 1175  D    
+192.168.6.70    f875-884a-a711 --         MGE0/0/0                 529   D    
+192.168.6.71    7c1e-06fe-26a9 --         MGE0/0/0                 262   D    
+192.168.6.72    7c1e-06fe-2603 --         MGE0/0/0                 196   D    
+192.168.6.74    0050-56b4-1d2a --         MGE0/0/0                 762   D    
+192.168.6.75    441a-fa96-f669 --         MGE0/0/0                 1041  D    
+192.168.6.76    441a-fa96-f609 --         MGE0/0/0                 1043  D    
+192.168.6.82    7057-bf1f-8191 --         MGE0/0/0                 671   D    
+192.168.6.83    04d7-a5aa-9fb8 --         MGE0/0/0                 177   D    
+192.168.6.84    04d7-a5aa-9c11 --         MGE0/0/0                 186   D    
+192.168.6.85    80e4-55d8-205e --         MGE0/0/0                 111   D    
+192.168.6.86    9429-2fd4-9516 --         MGE0/0/0                 201   D    
+192.168.6.90    0060-b941-6404 --         MGE0/0/0                 1097  D    
+192.168.6.95    8894-714c-1cd8 --         MGE0/0/0                 860   D    
+192.168.6.96    50eb-1a79-2e73 --         MGE0/0/0                 861   D    
+192.168.6.97    50eb-1a7c-9094 --         MGE0/0/0                 781   D    
+192.168.6.98    0027-f8d2-14dd --         MGE0/0/0                 993   D    
+192.168.6.99    0027-f8d2-7465 --         MGE0/0/0                 861   D    
+192.168.6.100   446a-2edb-a171 --         MGE0/0/0                 804   D    
+192.168.6.101   4077-a9c6-5e92 --         MGE0/0/0                 630   D    
+192.168.6.102   3080-9b34-f1aa --         MGE0/0/0                 633   D    
+192.168.6.106   5cdd-702a-4aa1 --         MGE0/0/0                 463   D    
+192.168.6.111   488e-efb9-e843 --         MGE0/0/0                 1200  D    
+192.168.6.113   286e-d488-b3ce --         MGE0/0/0                 1087  D    
+192.168.6.114   286e-d488-b3ce --         MGE0/0/0                 1193  D    
+192.168.6.115   286e-d488-bd0d --         MGE0/0/0                 384   D    
+192.168.6.116   286e-d488-b3ca --         MGE0/0/0                 205   D    
+192.168.6.119   286e-d488-b3cb --         MGE0/0/0                 1119  D    
+192.168.6.120   286e-d488-b3cb --         MGE0/0/0                 1176  D    
+192.168.6.121   286e-d488-bd0a --         MGE0/0/0                 1152  D    
+192.168.6.138   0800-1bff-7460 --         MGE0/0/0                 1162  D    
+192.168.6.146   0894-ef15-aac7 --         MGE0/0/0                 578   D    
+192.168.6.149   0894-ef3c-9c62 --         MGE0/0/0                 563   D    
+192.168.6.155   e04f-4372-dd4e --         MGE0/0/0                 608   D    
+192.168.6.159   0894-ef10-97fc --         MGE0/0/0                 566   D    
+192.168.6.160   8465-695b-1542 --         MGE0/0/0                 405   D    
+192.168.6.161   3080-9bbf-2820 --         MGE0/0/0                 267   D    
+192.168.6.166   286e-d488-c69e --         MGE0/0/0                 1162  D    
+192.168.6.167   286e-d488-c69b --         MGE0/0/0                 868   D    
+192.168.6.168   286e-d488-c69a --         MGE0/0/0                 451   D    
+192.168.6.172   8018-44e3-8cde --         MGE0/0/0                 492   D    
+192.168.6.173   8018-44e3-814e --         MGE0/0/0                 348   D    
+192.168.6.176   000c-29e3-e1a0 --         MGE0/0/0                 529   D    
+192.168.6.177   000c-2933-7004 --         MGE0/0/0                 313   D    
+192.168.6.178   00e0-ed89-f052 --         MGE0/0/0                 1054  D    
+192.168.6.194   0050-56b4-aba0 --         MGE0/0/0                 1143  D    
+192.168.6.195   0050-56b4-4e94 --         MGE0/0/0                 1143  D    
+192.168.6.196   0050-56b4-e120 --         MGE0/0/0                 1149  D    
+192.168.6.201   4077-a9c5-fcb2 --         MGE0/0/0                 634   D    
+192.168.6.202   4077-a9c6-3372 --         MGE0/0/0                 637   D    
+192.168.6.203   3080-9b35-0e2a --         MGE0/0/0                 642   D    
+192.168.6.204   3080-9b35-0a0a --         MGE0/0/0                 638   D    
+192.168.6.205   3080-9b34-f26a --         MGE0/0/0                 631   D    
+192.168.6.206   000c-29f4-ab3d --         MGE0/0/0                 1125  D    
+192.168.6.208   0050-56ae-1b67 --         MGE0/0/0                 1000  D    
+192.168.6.225   0050-56b8-38ca --         MGE0/0/0                 452   D    
+192.168.6.226   0050-56b8-3f08 --         MGE0/0/0                 448   D    
+192.168.6.227   0050-56b8-3926 --         MGE0/0/0                 449   D    
+192.168.6.237   0800-1bff-f312 --         MGE0/0/0                 1200  D    
+192.168.6.250   7057-bf1f-445e --         MGE0/0/0                 797   D    
+192.168.6.254   5098-b8bd-c968 --         MGE0/0/0                 1184  D    
+192.168.10.85   0050-5695-ad85 1000       XGE1/0/5                 1126  D    
+192.168.10.150  0050-56b4-f6fe 1000       XGE1/0/5                 1132  D    
+192.168.10.11   0050-56b8-1f58 1000       XGE1/0/6                 696   D    
+192.168.10.149  0050-56b4-65e4 1000       XGE1/0/6                 1151  D    
+192.168.10.192  0050-56b4-9465 1000       XGE1/0/6                 1156  D    
+192.168.10.232  0050-56b4-39ea 1000       XGE1/0/6                 832   D    
+192.168.10.247  0050-56b4-3926 1000       XGE1/0/6                 1155  D    
+192.168.10.19   6c92-bf13-5bd0 1000       XGE1/0/3                 1157  D    
+192.168.10.187  5098-b8d6-d15b 1000       XGE1/0/33                1161  D    
+192.168.10.189  5098-b8d6-d15b 1000       XGE1/0/33                1014  D    
+192.168.10.185  5098-b8d5-77bd 1000       XGE1/0/34                1163  D    
+192.168.10.186  5098-b8d5-77bd 1000       XGE1/0/34                1164  D    
+192.168.10.188  5098-b8d5-77bd 1000       XGE1/0/34                366   D    
+192.168.168.1   a4fa-7687-f401 --         RAGG1                    677   D    
+192.168.4.1     d89d-67f5-b4ae 40         BAGG3                    435   D    
+192.168.4.2     d89d-67f5-94cc 40         BAGG3                    866   D    
+192.168.4.3     d89d-67f5-b4ae 40         BAGG3                    648   D    
+192.168.4.4     001f-290d-cd1f 40         BAGG3                    1163  D    
+192.168.4.166   e41f-1365-2940 40         BAGG3                    961   D    
+192.168.10.6    0050-56b4-f1e1 1000       BAGG4                    1015  D    
+192.168.10.10   0050-56b4-6db7 1000       BAGG4                    1200  D    
+192.168.10.12   0050-56b8-c84e 1000       BAGG4                    700   D    
+192.168.10.13   0050-56b8-7fd3 1000       BAGG4                    780   D    
+192.168.10.14   0050-56b4-5eeb 1000       BAGG4                    310   D    
+192.168.10.15   0050-56b8-4817 1000       BAGG4                    1166  D    
+192.168.10.16   0050-56b8-2c71 1000       BAGG4                    794   D    
+192.168.10.17   88df-9e30-b3c2 1000       BAGG4                    871   D    
+192.168.10.18   7485-c419-4109 1000       BAGG4                    1072  D    
+192.168.10.21   0050-56b4-9ea7 1000       BAGG4                    286   D    
+192.168.10.26   0050-56b8-3c14 1000       BAGG4                    774   D    
+192.168.10.27   0050-56b8-f8d2 1000       BAGG4                    969   D    
+192.168.10.28   0050-56b8-b20e 1000       BAGG4                    453   D    
+192.168.10.29   0050-56b8-f136 1000       BAGG4                    678   D    
+192.168.10.31   0050-5695-5a7a 1000       BAGG4                    772   D    
+192.168.10.35   0050-56b4-7a85 1000       BAGG4                    928   D    
+192.168.10.36   0050-56b4-9586 1000       BAGG4                    1015  D    
+192.168.10.37   0050-56b4-09eb 1000       BAGG4                    572   D    
+192.168.10.38   0050-56b4-362f 1000       BAGG4                    574   D    
+192.168.10.40   0050-56b8-2ddf 1000       BAGG4                    169   D    
+192.168.10.41   0050-56b4-35d7 1000       BAGG4                    966   D    
+192.168.10.42   0050-56b4-7884 1000       BAGG4                    206   D    
+192.168.10.43   0050-56b4-58d8 1000       BAGG4                    615   D    
+192.168.10.44   0050-5695-3ea4 1000       BAGG4                    1106  D    
+192.168.10.45   0050-56b4-0ab9 1000       BAGG4                    1079  D    
+192.168.10.49   0050-5695-5626 1000       BAGG4                    185   D    
+192.168.10.50   0050-56b4-76a5 1000       BAGG4                    584   D    
+192.168.10.53   0060-169b-38d9 1000       BAGG4                    1007  D    
+192.168.10.62   286e-d488-c686 1000       BAGG4                    1101  D    
+192.168.10.63   286e-d488-c687 1000       BAGG4                    1101  D    
+192.168.10.64   286e-d488-c688 1000       BAGG4                    1101  D    
+192.168.10.65   286e-d488-c689 1000       BAGG4                    649   D    
+192.168.10.66   286e-d488-c68a 1000       BAGG4                    1106  D    
+192.168.10.67   286e-d488-c68b 1000       BAGG4                    1133  D    
+192.168.10.68   286e-d488-c68c 1000       BAGG4                    1133  D    
+192.168.10.69   0050-56b4-adf1 1000       BAGG4                    1156  D    
+192.168.10.70   0050-56b8-5978 1000       BAGG4                    1199  D    
+192.168.10.71   0050-56b4-58d7 1000       BAGG4                    704   D    
+192.168.10.72   0050-56b8-5efe 1000       BAGG4                    1178  D    
+192.168.10.73   0050-56b8-0463 1000       BAGG4                    996   D    
+192.168.10.74   0050-56b8-5204 1000       BAGG4                    1179  D    
+192.168.10.77   0050-56b8-ce31 1000       BAGG4                    663   D    
+192.168.10.78   0050-56b8-3c09 1000       BAGG4                    291   D    
+192.168.10.79   0050-56b8-7a8e 1000       BAGG4                    679   D    
+192.168.10.80   0050-56b8-6042 1000       BAGG4                    1101  D    
+192.168.10.81   0050-56b8-b59d 1000       BAGG4                    455   D    
+192.168.10.82   0050-56b8-9d8b 1000       BAGG4                    547   D    
+192.168.10.83   0050-56b8-ca10 1000       BAGG4                    50    D    
+192.168.10.84   0050-56b8-5902 1000       BAGG4                    1121  D    
+192.168.10.86   0050-5695-8668 1000       BAGG4                    1198  D    
+192.168.10.89   0050-56b8-d148 1000       BAGG4                    736   D    
+192.168.10.100  0050-56b4-fa16 1000       BAGG4                    1060  D    
+192.168.10.101  0050-56b4-c8c3 1000       BAGG4                    1192  D    
+192.168.10.102  40f2-e995-54c2 1000       BAGG4                    593   D    
+192.168.10.104  0050-56b8-296d 1000       BAGG4                    720   D    
+192.168.10.105  0050-56b8-af39 1000       BAGG4                    599   D    
+192.168.10.106  0050-56b8-c749 1000       BAGG4                    1193  D    
+192.168.10.107  0050-56b8-bd07 1000       BAGG4                    1156  D    
+192.168.10.110  0050-56b8-715d 1000       BAGG4                    1172  D    
+192.168.10.113  0050-56b8-1ac0 1000       BAGG4                    683   D    
+192.168.10.114  0050-56b8-3dc2 1000       BAGG4                    800   D    
+192.168.10.115  0050-56b8-602c 1000       BAGG4                    880   D    
+192.168.10.116  0050-56b8-e925 1000       BAGG4                    1190  D    
+192.168.10.117  0050-56b8-7f06 1000       BAGG4                    872   D    
+192.168.10.119  0050-5695-c491 1000       BAGG4                    813   D    
+192.168.10.120  000e-1e6e-0050 1000       BAGG4                    651   D    
+192.168.10.126  0050-5695-40b0 1000       BAGG4                    137   D    
+192.168.10.127  000e-1e6d-f470 1000       BAGG4                    76    D    
+192.168.10.128  000e-1e6e-0020 1000       BAGG4                    1091  D    
+192.168.10.129  000e-1e6e-0050 1000       BAGG4                    594   D    
+192.168.10.132  0050-56b8-3622 1000       BAGG4                    976   D    
+192.168.10.143  0050-56b4-09fd 1000       BAGG4                    1088  D    
+192.168.10.144  0050-56b4-b773 1000       BAGG4                    1092  D    
+192.168.10.145  0050-56b4-7718 1000       BAGG4                    1168  D    
+192.168.10.146  0050-56b4-95e7 1000       BAGG4                    1094  D    
+192.168.10.147  0050-56b4-d613 1000       BAGG4                    1119  D    
+192.168.10.148  0050-56b4-8a08 1000       BAGG4                    1170  D    
+192.168.10.151  0050-56b4-cd6c 1000       BAGG4                    1133  D    
+192.168.10.152  0050-56b4-fec6 1000       BAGG4                    763   D    
+192.168.10.153  0050-5695-e501 1000       BAGG4                    1036  D    
+192.168.10.154  0050-56b8-ec11 1000       BAGG4                    686   D    
+192.168.10.155  0050-56b4-f1e1 1000       BAGG4                    794   D    
+192.168.10.160  0050-56b8-349f 1000       BAGG4                    1051  D    
+192.168.10.161  0050-56b8-52f7 1000       BAGG4                    248   D    
+192.168.10.165  0050-56b4-fafe 1000       BAGG4                    759   D    
+192.168.10.166  0050-56b8-e8e4 1000       BAGG4                    1152  D    
+192.168.10.172  0050-56b4-3dc2 1000       BAGG4                    1133  D    
+192.168.10.173  0050-56b4-5c9d 1000       BAGG4                    1133  D    
+192.168.10.174  0050-56b4-e251 1000       BAGG4                    765   D    
+192.168.10.178  0050-56b4-dea0 1000       BAGG4                    607   D    
+192.168.10.179  0050-56b8-7065 1000       BAGG4                    1133  D    
+192.168.10.180  0050-56b4-b07e 1000       BAGG4                    299   D    
+192.168.10.181  0050-56b4-fb57 1000       BAGG4                    718   D    
+192.168.10.182  0050-56b4-946a 1000       BAGG4                    686   D    
+192.168.10.190  0050-56b4-87c3 1000       BAGG4                    929   D    
+192.168.10.193  0050-56b4-c624 1000       BAGG4                    1133  D    
+192.168.10.194  0050-56b4-1938 1000       BAGG4                    1133  D    
+192.168.10.195  0050-56b4-e519 1000       BAGG4                    986   D    
+192.168.10.196  0050-56b4-5a15 1000       BAGG4                    139   D    
+192.168.10.197  0050-56b4-d613 1000       BAGG4                    1133  D    
+192.168.10.204  286e-d488-c674 1000       BAGG4                    543   D    
+192.168.10.205  0050-56b4-cd81 1000       BAGG4                    1134  D    
+192.168.10.210  0050-56b4-f41b 1000       BAGG4                    994   D    
+192.168.10.212  0050-56b4-52e7 1000       BAGG4                    746   D    
+192.168.10.214  0050-56b4-8864 1000       BAGG4                    576   D    
+192.168.10.215  0050-56b4-f766 1000       BAGG4                    696   D    
+192.168.10.216  0050-56b4-1319 1000       BAGG4                    996   D    
+192.168.10.217  0050-56b4-5c8e 1000       BAGG4                    767   D    
+192.168.10.218  0050-56b4-4057 1000       BAGG4                    769   D    
+192.168.10.219  0050-56b4-8063 1000       BAGG4                    1133  D    
+192.168.10.221  0050-56b4-52fc 1000       BAGG4                    1133  D    
+192.168.10.222  0050-56b4-3819 1000       BAGG4                    58    D    
+192.168.10.223  0050-56b4-bca9 1000       BAGG4                    608   D    
+192.168.10.224  0050-56b4-b049 1000       BAGG4                    578   D    
+192.168.10.225  0050-56b4-a916 1000       BAGG4                    728   D    
+192.168.10.226  0050-56b4-32bc 1000       BAGG4                    578   D    
+192.168.10.227  0050-56b4-d3f3 1000       BAGG4                    526   D    
+192.168.10.230  0050-56b4-8ac7 1000       BAGG4                    732   D    
+192.168.10.231  0050-56b4-dfdf 1000       BAGG4                    236   D    
+192.168.10.233  0050-56b4-90f8 1000       BAGG4                    586   D    
+192.168.10.234  0050-56b4-c11f 1000       BAGG4                    637   D    
+192.168.10.236  0050-56b4-1956 1000       BAGG4                    782   D    
+192.168.10.237  286e-d488-c692 1000       BAGG4                    1134  D    
+192.168.10.238  286e-d488-c693 1000       BAGG4                    1134  D    
+192.168.10.239  0050-56b4-d3de 1000       BAGG4                    1134  D    
+192.168.10.240  0050-56b4-6ced 1000       BAGG4                    1134  D    
+192.168.10.241  0050-56b4-5c8e 1000       BAGG4                    873   D    
+192.168.10.242  0050-56b4-90f8 1000       BAGG4                    480   D    
+192.168.10.243  0050-56b4-32bc 1000       BAGG4                    877   D    
+192.168.10.244  0050-56b4-e519 1000       BAGG4                    878   D    
+192.168.10.245  286e-d488-c692 1000       BAGG4                    1134  D    
+192.168.10.246  0050-56b4-a048 1000       BAGG4                    868   D    
+192.168.10.248  0050-56b4-5e12 1000       BAGG4                    129   D    
+192.168.10.249  0050-56b4-c09d 1000       BAGG4                    437   D    
+192.168.10.250  0050-56b4-e819 1000       BAGG4                    732   D    
+192.168.10.1    40f2-e9de-d1d2 1000       BAGG2                    607   D    
+192.168.10.3    40f2-e995-518a 1000       BAGG2                    607   D    
+192.168.10.9    40f2-e995-17ca 1000       BAGG2                    608   D    
+192.168.10.46   40f2-e92d-b2e2 1000       BAGG2                    700   D    
+192.168.10.47   40f2-e9de-a7ea 1000       BAGG2                    692   D    
+192.168.10.48   40f2-e9dd-1dda 1000       BAGG2                    38    D    
+192.168.10.58   0894-ef10-924c 1000       BAGG2                    387   D    
+192.168.10.59   0050-56b4-5893 1000       BAGG2                    683   D    
+192.168.10.87   98be-9445-9292 1000       BAGG2                    1196  D    
+192.168.10.97   78e3-b5c8-59f9 1000       BAGG2                    1192  D    
+192.168.10.99   78e3-b5bc-2ed4 1000       BAGG2                    1171  D    
+192.168.10.111  1418-7746-b036 1000       BAGG2                    566   D    
+192.168.10.112  1418-7746-8076 1000       BAGG2                    686   D    
+192.168.10.118  98be-942b-154a 1000       BAGG2                    880   D    
+192.168.10.121  1418-7748-6774 1000       BAGG2                    1181  D    
+192.168.10.123  1418-7746-7ef2 1000       BAGG2                    1167  D    
+192.168.10.124  1418-7746-73d0 1000       BAGG2                    1139  D    
+192.168.10.125  1418-7749-dc2f 1000       BAGG2                    207   D    
+192.168.10.131  1866-da71-e170 1000       BAGG2                    968   D    
+192.168.10.135  1866-daea-c534 1000       BAGG2                    1154  D    
+192.168.10.136  1866-daea-ca4c 1000       BAGG2                    1154  D    
+192.168.10.140  00ff-c0a8-fa8c 1000       BAGG2                    1192  D    
+192.168.10.141  00e0-702f-5464 1000       BAGG2                    576   D    
+192.168.10.142  00e0-702f-541c 1000       BAGG2                    650   D    
+192.168.10.163  78e3-b5bc-1d89 1000       BAGG2                    185   D    
+192.168.10.175  ac1f-6bd1-0a54 1000       BAGG2                    715   D    
+192.168.10.176  ac1f-6bd1-0994 1000       BAGG2                    1134  D    
+192.168.10.177  ac1f-6bd1-0a54 1000       BAGG2                    1134  D    
+192.168.10.200  98be-9445-96d2 1000       BAGG2                    649   D    
+192.168.10.201  0894-ef3c-8ca2 1000       BAGG2                    218   D    
+192.168.10.202  0894-ef3c-8c72 1000       BAGG2                    576   D    
+192.168.10.203  40f2-e995-464a 1000       BAGG2                    196   D    
+192.168.10.213  3c97-0e4a-a30d 1000       BAGG2                    1132  D    
+192.168.10.220  5480-2858-5fbf 1000       BAGG2                    1117  D    
+192.168.10.88   0050-56b4-0777 1000       XGE2/0/5                 1142  D    
+192.168.10.229  0050-56b4-ef3a 1000       XGE2/0/5                 220   D    
+192.168.10.55   0050-5695-1aa9 1000       XGE2/0/6                 1195  D    
+192.168.10.228  0050-56b4-ca8a 1000       XGE2/0/6                 79    D    
+192.168.10.235  0050-56b4-4100 1000       XGE2/0/6                 874   D    
+<QRCHERY-SC-SW>   dis acl a
+Basic IPv4 ACL 2000, 9 rules,
+ACL's step is 5, start ID is 0
+ rule 10 permit source 192.168.6.18 0 (54 times matched)
+ rule 11 permit source 192.168.6.56 0
+ rule 12 permit source 192.168.6.208 0
+ rule 15 permit vpn-instance Management source 192.168.6.56 0
+ rule 20 permit vpn-instance Management source 192.168.6.208 0 (1824314 times matched)
+ rule 25 permit vpn-instance Management source 192.168.6.18 0 (481 times matched)
+ rule 30 permit vpn-instance Management source 192.168.6.166 0
+ rule 31 permit vpn-instance Management source 192.168.6.167 0
+ rule 32 permit vpn-instance Management source 192.168.6.168 0
+
+Basic IPv4 ACL 2001, 4 rules,
+vty-acl
+ACL's step is 5, start ID is 0
+ rule 5 permit source 192.168.6.18 0
+ rule 10 permit source 192.168.5.234 0
+ rule 15 permit source 192.168.6.56 0
+ rule 20 deny
+               
+Basic IPv4 ACL 2008, 2 rules,
+snmp-acl
+ACL's step is 5, start ID is 0
+ rule 5 permit source 192.168.6.208 0
+ rule 10 deny
+
+<QRCHERY-SC-SW>  dis mac-address
+MAC Address      VLAN ID    State            Port/Nickname            Aging
+001f-290d-cd1f   40         Learned          BAGG3                    Y
+d89d-67f5-94cc   40         Learned          BAGG3                    Y
+d89d-67f5-b4ae   40         Learned          BAGG3                    Y
+e41f-1365-2940   40         Learned          BAGG3                    Y
+5098-b8d6-d15a   160        Learned          XGE1/0/35                Y
+000e-1e6d-f470   1000       Learned          BAGG4                    Y
+000e-1e6e-0020   1000       Learned          BAGG4                    Y
+000e-1e6e-0050   1000       Learned          BAGG4                    Y
+0050-5695-3ea4   1000       Learned          BAGG4                    Y
+0050-5695-40b0   1000       Learned          BAGG4                    Y
+0050-5695-5626   1000       Learned          BAGG4                    Y
+0050-5695-5a7a   1000       Learned          BAGG4                    Y
+0050-5695-8668   1000       Learned          BAGG4                    Y
+0050-5695-ad85   1000       Learned          XGE1/0/5                 Y
+0050-5695-c491   1000       Learned          BAGG4                    Y
+0050-5695-e501   1000       Learned          BAGG4                    Y
+0050-56b4-09eb   1000       Learned          BAGG4                    Y
+0050-56b4-09fd   1000       Learned          BAGG4                    Y
+0050-56b4-0ab9   1000       Learned          BAGG4                    Y
+0050-56b4-1319   1000       Learned          BAGG4                    Y
+0050-56b4-1938   1000       Learned          BAGG4                    Y
+0050-56b4-1956   1000       Learned          BAGG4                    Y
+0050-56b4-32bc   1000       Learned          BAGG4                    Y
+0050-56b4-35d7   1000       Learned          BAGG4                    Y
+0050-56b4-362f   1000       Learned          BAGG4                    Y
+0050-56b4-3819   1000       Learned          BAGG4                    Y
+0050-56b4-3926   1000       Learned          XGE1/0/6                 Y
+0050-56b4-39ea   1000       Learned          XGE1/0/6                 Y
+0050-56b4-3dc2   1000       Learned          BAGG4                    Y
+0050-56b4-4057   1000       Learned          BAGG4                    Y
+0050-56b4-52e7   1000       Learned          BAGG4                    Y
+0050-56b4-52fc   1000       Learned          BAGG4                    Y
+0050-56b4-58d7   1000       Learned          BAGG4                    Y
+0050-56b4-58d8   1000       Learned          BAGG4                    Y
+0050-56b4-5a15   1000       Learned          BAGG4                    Y
+0050-56b4-5c8e   1000       Learned          BAGG4                    Y
+0050-56b4-5c9d   1000       Learned          BAGG4                    Y
+0050-56b4-5e12   1000       Learned          BAGG4                    Y
+0050-56b4-5eeb   1000       Learned          BAGG4                    Y
+0050-56b4-65e4   1000       Learned          XGE1/0/6                 Y
+0050-56b4-6ced   1000       Learned          BAGG4                    Y
+0050-56b4-6d30   1000       Learned          BAGG4                    Y
+0050-56b4-6db7   1000       Learned          BAGG4                    Y
+0050-56b4-76a5   1000       Learned          BAGG4                    Y
+0050-56b4-7718   1000       Learned          BAGG4                    Y
+0050-56b4-7a85   1000       Learned          BAGG4                    Y
+0050-56b4-8063   1000       Learned          BAGG4                    Y
+0050-56b4-87c3   1000       Learned          BAGG4                    Y
+0050-56b4-8864   1000       Learned          BAGG4                    Y
+0050-56b4-8a08   1000       Learned          BAGG4                    Y
+0050-56b4-8ac7   1000       Learned          BAGG4                    Y
+0050-56b4-90f8   1000       Learned          BAGG4                    Y
+0050-56b4-9465   1000       Learned          XGE1/0/6                 Y
+0050-56b4-9586   1000       Learned          BAGG4                    Y
+0050-56b4-95e7   1000       Learned          BAGG4                    Y
+0050-56b4-9ea7   1000       Learned          BAGG4                    Y
+0050-56b4-9f7b   1000       Learned          BAGG4                    Y
+0050-56b4-a048   1000       Learned          BAGG4                    Y
+0050-56b4-a916   1000       Learned          BAGG4                    Y
+0050-56b4-adf1   1000       Learned          BAGG4                    Y
+0050-56b4-b049   1000       Learned          BAGG4                    Y
+0050-56b4-b07e   1000       Learned          BAGG4                    Y
+0050-56b4-b773   1000       Learned          BAGG4                    Y
+0050-56b4-bca9   1000       Learned          BAGG4                    Y
+0050-56b4-c09d   1000       Learned          BAGG4                    Y
+0050-56b4-c11f   1000       Learned          BAGG4                    Y
+0050-56b4-c624   1000       Learned          BAGG4                    Y
+0050-56b4-c8c3   1000       Learned          BAGG4                    Y
+0050-56b4-cd6c   1000       Learned          BAGG4                    Y
+0050-56b4-cd81   1000       Learned          BAGG4                    Y
+0050-56b4-d3de   1000       Learned          BAGG4                    Y
+0050-56b4-d3f3   1000       Learned          BAGG4                    Y
+0050-56b4-d613   1000       Learned          BAGG4                    Y
+0050-56b4-dea0   1000       Learned          BAGG4                    Y
+0050-56b4-dfdf   1000       Learned          BAGG4                    Y
+0050-56b4-e251   1000       Learned          BAGG4                    Y
+0050-56b4-e519   1000       Learned          BAGG4                    Y
+0050-56b4-e819   1000       Learned          BAGG4                    Y
+0050-56b4-e9e6   1000       Learned          BAGG4                    Y
+0050-56b4-f1e1   1000       Learned          BAGG4                    Y
+0050-56b4-f41b   1000       Learned          BAGG4                    Y
+0050-56b4-f6fe   1000       Learned          XGE1/0/5                 Y
+0050-56b4-f766   1000       Learned          BAGG4                    Y
+0050-56b4-fa16   1000       Learned          BAGG4                    Y
+0050-56b4-fafe   1000       Learned          BAGG4                    Y
+0050-56b4-fec6   1000       Learned          BAGG4                    Y
+0050-56b8-0463   1000       Learned          BAGG4                    Y
+0050-56b8-1f58   1000       Learned          XGE1/0/6                 Y
+0050-56b8-296d   1000       Learned          BAGG4                    Y
+0050-56b8-2c71   1000       Learned          BAGG4                    Y
+0050-56b8-349f   1000       Learned          BAGG4                    Y
+0050-56b8-3622   1000       Learned          BAGG4                    Y
+0050-56b8-3c09   1000       Learned          BAGG4                    Y
+0050-56b8-3c14   1000       Learned          BAGG4                    Y
+0050-56b8-3dc2   1000       Learned          BAGG4                    Y
+0050-56b8-4817   1000       Learned          BAGG4                    Y
+0050-56b8-5204   1000       Learned          BAGG4                    Y
+0050-56b8-52f7   1000       Learned          BAGG4                    Y
+0050-56b8-5902   1000       Learned          BAGG4                    Y
+0050-56b8-5978   1000       Learned          BAGG4                    Y
+0050-56b8-5efe   1000       Learned          BAGG4                    Y
+0050-56b8-602c   1000       Learned          BAGG4                    Y
+0050-56b8-6042   1000       Learned          BAGG4                    Y
+0050-56b8-7065   1000       Learned          BAGG4                    Y
+0050-56b8-715d   1000       Learned          BAGG4                    Y
+0050-56b8-7f06   1000       Learned          BAGG4                    Y
+0050-56b8-7fd3   1000       Learned          BAGG4                    Y
+0050-56b8-9d8b   1000       Learned          BAGG4                    Y
+0050-56b8-af39   1000       Learned          BAGG4                    Y
+0050-56b8-b20e   1000       Learned          BAGG4                    Y
+0050-56b8-b59d   1000       Learned          BAGG4                    Y
+0050-56b8-bd07   1000       Learned          BAGG4                    Y
+0050-56b8-c749   1000       Learned          BAGG4                    Y
+0050-56b8-c84e   1000       Learned          BAGG4                    Y
+0050-56b8-d148   1000       Learned          BAGG4                    Y
+0050-56b8-e8e4   1000       Learned          BAGG4                    Y
+0050-56b8-e925   1000       Learned          BAGG4                    Y
+0050-56b8-f8d2   1000       Learned          BAGG4                    Y
+0060-169b-38d9   1000       Learned          BAGG4                    Y
+00e0-702f-541c   1000       Learned          BAGG2                    Y
+00e0-702f-5464   1000       Learned          BAGG2                    Y
+00ff-c0a8-fa8c   1000       Learned          BAGG2                    Y
+0894-ef3c-8c72   1000       Learned          BAGG2                    Y
+1418-7746-73d0   1000       Learned          BAGG2                    Y
+1418-7746-7ef2   1000       Learned          BAGG2                    Y
+1418-7746-8076   1000       Learned          BAGG2                    Y
+1418-7746-b036   1000       Learned          BAGG2                    Y
+1418-7748-6774   1000       Learned          BAGG2                    Y
+1418-7749-dc2f   1000       Learned          BAGG2                    Y
+1866-da71-e170   1000       Learned          BAGG2                    Y
+1866-daea-c534   1000       Learned          BAGG2                    Y
+1866-daea-ca4c   1000       Learned          BAGG2                    Y
+286e-d488-c674   1000       Learned          BAGG4                    Y
+286e-d488-c686   1000       Learned          BAGG4                    Y
+286e-d488-c687   1000       Learned          BAGG4                    Y
+286e-d488-c688   1000       Learned          BAGG4                    Y
+286e-d488-c689   1000       Learned          BAGG4                    Y
+286e-d488-c68a   1000       Learned          BAGG4                    Y
+286e-d488-c68b   1000       Learned          BAGG4                    Y
+286e-d488-c68c   1000       Learned          BAGG4                    Y
+286e-d488-c692   1000       Learned          BAGG4                    Y
+286e-d488-c693   1000       Learned          BAGG4                    Y
+3c97-0e4a-a30d   1000       Learned          BAGG2                    Y
+40f2-e92d-b2e2   1000       Learned          BAGG2                    Y
+40f2-e995-17ca   1000       Learned          BAGG2                    Y
+40f2-e995-464a   1000       Learned          BAGG2                    Y
+40f2-e995-518a   1000       Learned          BAGG2                    Y
+40f2-e995-54c2   1000       Learned          BAGG4                    Y
+40f2-e9dd-1dda   1000       Learned          BAGG2                    Y
+40f2-e9de-a7ea   1000       Learned          BAGG2                    Y
+40f2-e9de-d1d2   1000       Learned          BAGG2                    Y
+5098-b8d5-77bd   1000       Learned          XGE1/0/34                Y
+5098-b8d6-d15b   1000       Learned          XGE1/0/33                Y
+5480-2858-5fbf   1000       Learned          BAGG2                    Y
+6c92-bf13-5bd0   1000       Learned          XGE1/0/3                 Y
+7485-c419-4109   1000       Learned          BAGG4                    Y
+78e3-b5bc-1d89   1000       Learned          BAGG2                    Y
+78e3-b5bc-2ed4   1000       Learned          BAGG2                    Y
+78e3-b5c8-59f9   1000       Learned          BAGG2                    Y
+88df-9e30-b3c2   1000       Learned          BAGG4                    Y
+98be-942b-154a   1000       Learned          BAGG2                    Y
+98be-9445-9292   1000       Learned          BAGG2                    Y
+98be-9445-96d2   1000       Learned          BAGG2                    Y
+ac1f-6bd1-0994   1000       Learned          BAGG2                    Y
+ac1f-6bd1-0a54   1000       Learned          BAGG2                    Y
+943b-b0bc-75e7   1          Learned          XGE2/0/45                Y
+5098-b8d5-77bc   160        Learned          XGE2/0/36                Y
+0050-5695-1aa9   1000       Learned          XGE2/0/6                 Y
+0050-56b4-0777   1000       Learned          XGE2/0/5                 Y
+0050-56b4-4100   1000       Learned          XGE2/0/6                 Y
+0050-56b4-ca8a   1000       Learned          XGE2/0/6                 Y
+0050-56b4-ef3a   1000       Learned          XGE2/0/5                 Y
+<QRCHERY-SC-SW>          dis cu 
+#
+ version 7.1.070, Release 2612P06
+#
+ sysname QRCHERY-SC-SW
+#
+ clock timezone bjtime add 08:00:00
+ clock protocol none
+#
+ip vpn-instance Management
+ route-distinguisher 100:1
+ vpn-target 100:1 import-extcommunity
+ vpn-target 100:1 export-extcommunity
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 10
+ irf member 2 priority 5
+ irf member 1 description SC-SW-1
+ irf member 2 description SC-SW-2
+#
+ospf 1
+ import-route static type 1
+ area 0.0.0.0
+  network 192.168.4.0 0.0.0.255
+  network 192.168.10.0 0.0.0.255
+  network 192.168.15.0 0.0.0.255
+  network 192.168.168.2 0.0.0.0
+#
+ mirroring-group 1 local
+#
+ lldp global enable
+#
+ system-working-mode standard
+ hardware-resource switch-mode 0
+ hardware-resource routing-mode ipv6-64
+ hardware-resource vxlan l2gw
+ password-recovery enable
+#              
+vlan 1
+#
+vlan 10
+#
+vlan 15
+ description net_192.168.15.0
+#
+vlan 40
+ description net_192.168.4.0
+#
+vlan 160
+#
+vlan 999
+ description MAD
+#
+vlan 1000
+ description net_192.168.10.0
+#
+irf-port 1/1   
+ port group interface Ten-GigabitEthernet1/0/47
+ port group interface Ten-GigabitEthernet1/0/48
+#
+irf-port 2/2
+ port group interface Ten-GigabitEthernet2/0/47
+ port group interface Ten-GigabitEthernet2/0/48
+#
+ stp instance 0 priority 0
+ stp timer-factor 10
+ stp bpdu-protection
+ stp global enable
+#
+interface Bridge-Aggregation2
+ description TO_SC-SW-NET10
+ port access vlan 1000
+#
+interface Bridge-Aggregation3
+ description TO_SC-SW-NET4
+ port link-type trunk
+ port trunk permit vlan all
+#
+interface Bridge-Aggregation4
+ port access vlan 1000
+#
+interface Route-Aggregation1
+ description TO_HX-SW
+ ip address 192.168.168.2 255.255.255.252
+ ospf network-type p2p
+#
+interface NULL0
+#
+interface Vlan-interface1
+ dhcp client identifier ascii 943bb0bc75e6-VLAN0001
+#
+interface Vlan-interface15
+ ip address 192.168.15.254 255.255.255.0
+#
+interface Vlan-interface40
+ ip address 192.168.4.254 255.255.255.0
+#
+interface Vlan-interface999
+ mad bfd enable
+ mad ip address 3.3.3.1 255.255.255.252 member 1
+ mad ip address 3.3.3.2 255.255.255.252 member 2
+#
+interface Vlan-interface1000
+ ip address 192.168.10.254 255.255.255.0
+#
+interface FortyGigE1/0/49
+ port link-mode bridge
+#
+interface FortyGigE1/0/50
+ port link-mode bridge
+#
+interface FortyGigE1/0/51
+ port link-mode bridge
+#              
+interface FortyGigE1/0/52
+ port link-mode bridge
+#
+interface FortyGigE1/0/53
+ port link-mode bridge
+#
+interface FortyGigE1/0/54
+ port link-mode bridge
+#
+interface FortyGigE2/0/49
+ port link-mode bridge
+#
+interface FortyGigE2/0/50
+ port link-mode bridge
+#
+interface FortyGigE2/0/51
+ port link-mode bridge
+#
+interface FortyGigE2/0/52
+ port link-mode bridge
+#
+interface FortyGigE2/0/53
+ port link-mode bridge
+#
+interface FortyGigE2/0/54
+ port link-mode bridge
+#
+interface M-GigabitEthernet0/0/0
+ description Management
+ ip binding vpn-instance Management
+ ip address 192.168.6.165 255.255.255.0
+ dhcp client identifier hex 02943bb0bc75e6
+#
+interface M-GigabitEthernet0/0/1
+ dhcp client identifier hex 02943bb0bc75e6
+#
+interface Ten-GigabitEthernet1/0/1
+ port link-mode route
+ port link-aggregation group 1
+#
+interface Ten-GigabitEthernet2/0/1
+ port link-mode route
+ port link-aggregation group 1
+#
+interface Ten-GigabitEthernet1/0/2
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/3
+ port link-mode bridge
+ port access vlan 1000
+#
+interface Ten-GigabitEthernet1/0/4
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/5
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 40 to 1000
+#
+interface Ten-GigabitEthernet1/0/6
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 40 to 1000
+#
+interface Ten-GigabitEthernet1/0/7
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/8
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/9
+ port link-mode bridge
+ port access vlan 40
+#
+interface Ten-GigabitEthernet1/0/10
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/11
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/12
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/13
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/14
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/15
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/16
+ port link-mode bridge
+ mirroring-group 1 monitor-port
+#
+interface Ten-GigabitEthernet1/0/17
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/18
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/19
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/20
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/21
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/22
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet1/0/23
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/24
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/27
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/28
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/31
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/32
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/33
+ port link-mode bridge
+ port access vlan 1000
+#
+interface Ten-GigabitEthernet1/0/34
+ port link-mode bridge
+ port access vlan 1000
+#              
+interface Ten-GigabitEthernet1/0/35
+ port link-mode bridge
+ port access vlan 160
+#
+interface Ten-GigabitEthernet1/0/36
+ port link-mode bridge
+ port access vlan 160
+#
+interface Ten-GigabitEthernet1/0/37
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/38
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/39
+ port link-mode bridge
+ port access vlan 1000
+#
+interface Ten-GigabitEthernet1/0/40
+ port link-mode bridge
+ port access vlan 1000
+#
+interface Ten-GigabitEthernet1/0/41
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/42
+ port link-mode bridge
+ port access vlan 1000
+ port link-aggregation group 4
+#
+interface Ten-GigabitEthernet1/0/43
+ port link-mode bridge
+ port access vlan 1000
+ port link-aggregation group 2
+#
+interface Ten-GigabitEthernet1/0/44
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 3
+#
+interface Ten-GigabitEthernet1/0/45
+ port link-mode bridge
+ port access vlan 999
+ undo stp enable
+#
+interface Ten-GigabitEthernet1/0/46
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/2
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/3
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/4
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/5
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 40 to 1000
+ mirroring-group 1 mirroring-port both
+#
+interface Ten-GigabitEthernet2/0/6
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 40 to 1000
+#
+interface Ten-GigabitEthernet2/0/7
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/8
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/9
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/10
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/11
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/12
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/13
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/14
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/15
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/16
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/17
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/18
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/19
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/20
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/21
+ port link-mode bridge
+#              
+interface Ten-GigabitEthernet2/0/22
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/23
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/24
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/25
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/26
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/27
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/28
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/29
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/30
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/31
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/32
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/33
+ port link-mode bridge
+ port access vlan 1000
+#
+interface Ten-GigabitEthernet2/0/34
+ port link-mode bridge
+ port access vlan 1000
+#
+interface Ten-GigabitEthernet2/0/35
+ port link-mode bridge
+ port access vlan 160
+#
+interface Ten-GigabitEthernet2/0/36
+ port link-mode bridge
+ port access vlan 160
+#
+interface Ten-GigabitEthernet2/0/37
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/38
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/39
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/40
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/41
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet2/0/42
+ port link-mode bridge
+ port access vlan 1000
+ port link-aggregation group 4
+#
+interface Ten-GigabitEthernet2/0/43
+ port link-mode bridge
+ port access vlan 1000
+ port link-aggregation group 2
+#
+interface Ten-GigabitEthernet2/0/44
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan all
+ port link-aggregation group 3
+#
+interface Ten-GigabitEthernet2/0/45
+ port link-mode bridge
+ undo stp enable
+#
+interface Ten-GigabitEthernet2/0/46
+ port link-mode bridge
+#
+interface Ten-GigabitEthernet1/0/47
+#
+interface Ten-GigabitEthernet1/0/48
+#
+interface Ten-GigabitEthernet2/0/47
+#
+interface Ten-GigabitEthernet2/0/48
+#              
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 0 1
+ user-role network-admin
+#
+line vty 0 4
+ authentication-mode scheme
+ user-role level-15
+ user-role network-admin
+ user-role network-operator
+ protocol inbound ssh
+ idle-timeout 20 0
+ screen-length 20
+ history-command max-size 100
+#
+line vty 5 63
+ authentication-mode scheme
+ user-role network-admin
+ user-role network-operator
+ protocol inbound ssh
+ idle-timeout 20 0
+ screen-length 20
+ history-command max-size 100
+#
+ ip route-static 2.0.0.0 16 192.168.10.140
+ ip route-static 2.0.7.0 24 192.168.10.109
+ ip route-static 2.1.0.0 16 192.168.10.140
+#
+ info-center loghost 192.168.6.227
+#
+ snmp-agent
+ snmp-agent local-engineid 800063A280943BB0BC75E700000001
+ snmp-agent community write cipher $c$3$kvyLjbWmlSKwrzucXApMupaVQJujkEvRyqSk62vK acl 2008
+ snmp-agent community read cipher $c$3$O5jupuLWkO2/kXA3DmpFUU6Mds1R7WaxrFyWaFgc acl 2000
+ snmp-agent sys-info version v2c v3 
+#
+ ssh server enable
+ ssh server acl 2000
+#
+ ntp-service enable
+ ntp-service unicast-server 192.168.6.10
+#
+acl number 2000
+ rule 10 permit source 192.168.6.18 0
+ rule 11 permit source 192.168.6.56 0
+ rule 12 permit source 192.168.6.208 0
+ rule 15 permit vpn-instance Management source 192.168.6.56 0
+ rule 20 permit vpn-instance Management source 192.168.6.208 0
+ rule 25 permit vpn-instance Management source 192.168.6.18 0
+ rule 30 permit vpn-instance Management source 192.168.6.166 0
+ rule 31 permit vpn-instance Management source 192.168.6.167 0
+ rule 32 permit vpn-instance Management source 192.168.6.168 0
+#
+acl number 2001
+ description vty-acl
+ rule 5 permit source 192.168.6.18 0
+ rule 10 permit source 192.168.5.234 0
+ rule 15 permit source 192.168.6.56 0
+ rule 20 deny
+#
+acl number 2008
+ description snmp-acl
+ rule 5 permit source 192.168.6.208 0
+ rule 10 deny
+#
+ header login %
+%Warning: Unauthorized access are forbidden!!!
+Your behavior will be recorded.
+All right reserved.%
+#              
+radius scheme system
+ user-name-format without-domain
+#
+domain system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#              
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user admin class manage
+ password hash $h$6$4KmD1ekYStveaCid$Cr6ddY8XynuJICjndczMsGWRyt0rRsNOSk6CDuRg3Hs19m3PWtgIGWzqpeuj8cTJaDGEHRfxzzqXgH6cBkTKZA==
+ service-type telnet terminal
+ authorization-attribute user-role network-operator
+#
+local-user snake class manage
+ password hash $h$6$dNQPXVCCXQGlHN62$xIFn7ammmpX9uaeMt42pYIorg6RLxxw6n0JHPE/+23USQxz2anVswiIQwhHiS3crP2QHOz3sJ3uCjgvyEQQOBg==
+ service-type ssh terminal
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+return

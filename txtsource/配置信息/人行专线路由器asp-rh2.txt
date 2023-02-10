@@ -1,0 +1,156 @@
+﻿<asp-rh2>dis cu 
+#
+ version 7.1.064, Release 0615P13
+#
+ sysname asp-rh2
+#
+ clock protocol none
+#
+ip vpn-instance mgmt
+#
+track 1 nqa entry renhang 1 reaction 1
+#
+ospf 100 router-id 192.168.6.84
+ import-route direct
+ import-route static cost 100
+ area 0.0.0.0
+  network 10.10.83.2 0.0.0.0
+#
+ dns proxy enable
+#
+ password-recovery enable
+#
+vlan 1
+#
+<asp-rh2>dis arp
+   Type: S-Static    D-Dynamic    O-Openflow   R-Rule   I-Invalid
+IP address      MAC address    SVLAN/VSI  Interface/Link ID        Aging Type 
+10.10.83.1      7057-bf1f-8191 --         RAGG2                    16    D    
+192.168.6.7     62ec-ba03-0304 --         GE0/2                    20    D    
+192.168.6.10    0050-56b8-96dd --         GE0/2                    14    D    
+192.168.6.11    286e-d488-c678 --         GE0/2                    19    D    
+192.168.6.12    f010-9079-dfd7 --         GE0/2                    5     D    
+192.168.6.14    0001-d7e6-2b81 --         GE0/2                    9     D    
+192.168.6.18    a08c-fdea-ac73 --         GE0/2                    20    D    
+192.168.6.20    f010-9079-dfe3 --         GE0/2                    10    D    
+192.168.6.24    8465-695b-1541 --         GE0/2                    5     D    
+192.168.6.41    3221-b1b3-4ba1 --         GE0/2                    19    D    
+192.168.6.56    0050-56b8-aa18 --         GE0/2                    20    D    
+192.168.6.57    0050-5695-053b --         GE0/2                    14    D    
+192.168.6.58    0050-5695-cd42 --         GE0/2                    6     D    
+192.168.6.59    f010-9079-dfd8 --         GE0/2                    20    D    
+192.168.6.63    f010-9079-dfe4 --         GE0/2                    17    D    
+192.168.6.64    0050-5695-f070 --         GE0/2                    7     D    
+192.168.6.65    0050-5695-6d9a --         GE0/2                    7     D    
+192.168.6.66    0050-5695-6d9a --         GE0/2                    20    D    
+192.168.6.67    0050-5695-bdb9 --         GE0/2                    20    D    
+192.168.6.71    7c1e-06fe-26a9 --         GE0/2                    9     D    
+192.168.6.72    7c1e-06fe-2603 --         GE0/2                    7     D    
+<asp-rh2>      
+<asp-rh2>
+<asp-rh2>
+<asp-rh2>
+<asp-rh2>#
+<asp-rh2>dis cu 
+#
+ version 7.1.064, Release 0615P13
+#
+ sysname asp-rh2
+#
+ clock protocol none
+#
+ip vpn-instance mgmt
+#
+track 1 nqa entry renhang 1 reaction 1
+#
+ospf 100 router-id 192.168.6.84
+ import-route direct
+ import-route static cost 100
+ area 0.0.0.0
+  network 10.10.83.2 0.0.0.0
+#
+ dns proxy enable
+#
+ password-recovery enable
+#
+vlan 1
+#
+<asp-rh2>dis int br
+Brief information on interfaces in route mode:
+Link: ADM - administratively down; Stby - standby
+Protocol: (s) - spoofing
+Interface            Link Protocol Primary IP      Description                
+Aux0                 UP   --       --              
+GE0/0                UP   UP       --              TO_asp-sw01_G1/0/14
+GE0/1                UP   UP       --              TO_asp-sw02_G2/0/14
+GE0/2                UP   UP       192.168.6.84    MGT
+InLoop0              UP   UP(s)    --              
+NULL0                UP   UP(s)    --              
+REG0                 UP   --       --              
+RAGG2                UP   UP       10.10.83.2      TO_asp-sw
+Ser6/0:0             DOWN DOWN     9.128.62.206    TO_RenHang
+Ser6/1:0             DOWN DOWN     --              
+
+Brief information on interfaces in bridge mode:
+Link: ADM - administratively down; Stby - standby
+Speed: (a) - auto
+Duplex: (a)/A - auto; H - half; F - full
+Type: A - access; T - trunk; H - hybrid
+Interface            Link Speed     Duplex Type PVID Description                
+GE5/0                DOWN auto      A      A    1    
+GE5/1                DOWN auto      A      A    1    
+<asp-rh2>#     
+<asp-rh2>dis ip int br
+*down: administratively down
+(s): spoofing  (l): loopback
+Interface                Physical Protocol IP Address      Description 
+Aux0                     up       down     --              --
+GE0/0                    up       up       --              TO_asp-sw01_G1...
+GE0/1                    up       up       --              TO_asp-sw02_G2...
+GE0/2                    up       up       192.168.6.84    MGT
+RAGG2                    up       up       10.10.83.2      TO_asp-sw
+Ser6/0:0                 down     down     9.128.62.206    TO_RenHang
+Ser6/1:0                 down     down     --              --
+<asp-rh2>#
+<asp-rh2>dis ip routing
+
+Destinations : 131      Routes : 131
+
+Destination/Mask   Proto   Pre Cost        NextHop         Interface
+0.0.0.0/32         Direct  0   0           127.0.0.1       InLoop0
+2.0.0.0/16         O_ASE2  150 1           10.10.83.1      RAGG2
+9.128.46.192/28    O_ASE2  150 1           10.10.83.1      RAGG2
+9.128.47.0/24      O_ASE2  150 10          10.10.83.1      RAGG2
+9.128.62.200/30    O_ASE2  150 1           10.10.83.1      RAGG2
+10.5.219.160/30    O_ASE2  150 1           10.10.83.1      RAGG2
+10.5.220.160/30    O_ASE2  150 1           10.10.83.1      RAGG2
+10.10.81.0/29      O_INTRA 10  2           10.10.83.1      RAGG2
+10.10.82.0/30      O_INTRA 10  2           10.10.83.1      RAGG2
+10.10.83.0/30      Direct  0   0           10.10.83.2      RAGG2
+10.10.83.0/32      Direct  0   0           10.10.83.2      RAGG2
+10.10.83.2/32      Direct  0   0           127.0.0.1       InLoop0
+10.10.83.3/32      Direct  0   0           10.10.83.2      RAGG2
+10.10.84.0/30      O_INTRA 10  2           10.10.83.1      RAGG2
+10.10.85.0/30      O_INTRA 10  2           10.10.83.1      RAGG2
+10.10.94.0/30      O_INTRA 10  3           10.10.83.1      RAGG2
+10.10.95.0/30      O_INTRA 10  3           10.10.83.1      RAGG2
+10.10.96.0/30      O_ASE2  150 1           10.10.83.1      RAGG2
+10.10.98.0/30      O_INTRA 10  3           10.10.83.1      RAGG2
+<asp-rh2>dis acl a
+Basic IPv4 ACL 2000, 6 rules,
+ACL's step is 5
+ rule 10 permit vpn-instance mgmt source 192.168.6.18 0 (42 times matched)
+ rule 11 permit vpn-instance mgmt source 192.168.6.56 0
+ rule 15 permit vpn-instance mgmt source 192.168.6.166 0
+ rule 16 permit vpn-instance mgmt source 192.168.6.167 0
+ rule 17 permit vpn-instance mgmt source 192.168.6.168 0
+ rule 50 deny
+
+Basic IPv4 ACL 2100, 2 rules,
+ACL's step is 5
+ rule 5 permit vpn-instance mgmt source 192.168.6.208 0
+ rule 50 deny
+
+<asp-rh2>#
+<asp-rh2>dis mac-address
+MAC Address      VLAN ID    State            Port/Nickname            Aging

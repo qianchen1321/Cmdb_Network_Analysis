@@ -1,0 +1,181 @@
+rev13back_Logger [temptestrev13.py 33] interface GigabitEthernet1/2/0/4
+ port link-mode route
+ description yidongzhuanxian
+ ip address 10.10.210.2 255.255.255.252
+ packet-filter 3333 inbound
+ mirroring-group 6 mirroring-port both
+#
+interface GigabitEthernet2/2/0/4
+ port link-mode route
+ description CNC_to_hefei_service
+ ip address 10.10.220.2 255.255.255.252
+ packet-filter 3333 inbound
+ mirroring-group 6 mirroring-port both
+#
+interface GigabitEthernet1/2/0/1
+ port link-mode bridge
+ description TO_EXT-FW-1
+ port access vlan 80
+ mirroring-group 5 mirroring-port both
+#
+interface GigabitEthernet1/2/0/2
+ port link-mode bridge
+ description TO-bangongServer-fw2
+ port access vlan 50
+ undo stp enable
+#
+interface GigabitEthernet1/2/0/3
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/5
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/6
+ port link-mode bridge
+ description mirroring_beijing_office_lan
+ mirroring-group 1 monitor-port
+#
+interface GigabitEthernet1/2/0/7
+ port link-mode bridge
+ description mirroring_wuhu_office_lan
+ mirroring-group 2 monitor-port
+#
+interface GigabitEthernet1/2/0/8
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/9
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/10
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/11
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/12
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/13
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/14
+ port link-mode bridge
+#              
+interface GigabitEthernet1/2/0/15
+ port link-mode bridge
+ description mirroring_hefei_net
+ mirroring-group 6 monitor-port
+#
+interface GigabitEthernet1/2/0/16
+ port link-mode bridge
+ description mirroring_ASP_10NET_lan
+ mirroring-group 5 monitor-port
+#
+interface GigabitEthernet1/2/0/17
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/18
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/19
+ port link-mode bridge
+#              
+interface GigabitEthernet1/2/0/20
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/21
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/22
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/23
+ port link-mode bridge
+#
+interface GigabitEthernet1/2/0/24
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/1
+ port link-mode bridge
+ description TO_EXT-FW-2
+ port access vlan 80
+ mirroring-group 5 mirroring-port both
+#
+interface GigabitEthernet2/2/0/2
+ port link-mode bridge
+ description TO-bangongServer-fw2
+ port access vlan 50
+ undo stp enable
+#
+interface GigabitEthernet2/2/0/3
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/5
+ port link-mode bridge
+ description link_ZaibeiJuniper
+ port access vlan 140
+#
+interface GigabitEthernet2/2/0/6
+ port link-mode bridge
+ description link_Test-FW
+ port access vlan 56
+ undo stp enable
+#
+interface GigabitEthernet2/2/0/7
+ port link-mode bridge
+ description mirroring_beijing_ser_lan
+ mirroring-group 3 monitor-port
+#
+interface GigabitEthernet2/2/0/8
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/9
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/10
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/11
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/12
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/13
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/14
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/15
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/16
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/17
+ port link-mode bridge
+#              
+interface GigabitEthernet2/2/0/18
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/19
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/20
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/21
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/22
+ port link-mode bridge
+#
+interface GigabitEthernet2/2/0/23
+ port link-mode bridge
+ stp edged-port
+#              
+interface GigabitEthernet2/2/0/24
+ port link-mode bridge
+#
+

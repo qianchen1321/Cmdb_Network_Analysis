@@ -1,0 +1,1149 @@
+﻿<QRCHERY-DMZHJ-SW>dis int br
+PHY: Physical
+*down: administratively down
+^down: standby
+(l): loopback
+(s): spoofing
+(b): BFD down
+(e): ETHOAM down
+(d): Dampening Suppressed
+(p): port alarm down
+(dl): DLDP down
+(c): CFM down
+InUti/OutUti: input utility rate/output utility rate
+Interface                  PHY      Protocol  InUti OutUti   inErrors  outErrors
+10GE1/0/2                  down     down         0%     0%          0          0
+10GE1/0/3                  down     down         0%     0%          0          0
+10GE1/0/4                  down     down         0%     0%          0          0
+10GE1/0/5                  down     down         0%     0%          0          0
+10GE1/0/6                  down     down         0%     0%          0          0
+10GE1/0/7                  down     down         0%     0%          0          0
+10GE1/0/8                  up       up        0.01%  0.01%          0          0
+10GE1/0/9                  down     down         0%     0%          0          0
+10GE1/0/10                 down     down         0%     0%          0          0
+10GE1/0/11                 down     down         0%     0%          0          0
+10GE1/0/12                 down     down         0%     0%          0          0
+10GE1/0/13                 down     down         0%     0%          0          0
+10GE1/0/14                 down     down         0%     0%          0          0
+10GE1/0/15                 down     down         0%     0%          0          0
+10GE1/0/16                 down     down         0%     0%          0          0
+10GE1/0/17                 down     down         0%     0%          0          0
+10GE1/0/18                 down     down         0%     0%          0          0
+10GE1/0/19                 down     down         0%     0%          0          0
+10GE1/0/20                 down     down         0%     0%          0          0
+10GE1/0/21                 down     down         0%     0%          0          0
+10GE1/0/22                 down     down         0%     0%          0          0
+10GE1/0/23                 down     down         0%     0%          0          0
+10GE1/0/24                 down     down         0%     0%          0          0
+10GE1/0/25                 down     down         0%     0%          0          0
+10GE1/0/26                 down     down         0%     0%          0          0
+10GE1/0/27                 down     down         0%     0%          0          0
+10GE1/0/28                 down     down         0%     0%          0          0
+10GE1/0/29                 down     down         0%     0%          0          0
+10GE1/0/30                 down     down         0%     0%          0          0
+10GE1/0/31                 down     down         0%     0%          0          0
+10GE1/0/32                 down     down         0%     0%          0          0
+10GE1/0/35                 down     down         0%     0%          0          0
+10GE1/0/36                 down     down         0%     0%          0          0
+10GE1/0/37                 up       up        0.01%  0.01%          0          0
+10GE1/0/38                 up       up        0.01%  0.01%          0          0
+10GE1/0/39                 down     down         0%     0%          0          0
+10GE1/0/40                 down     down         0%     0%          0          0
+10GE1/0/41                 down     down         0%     0%          0          0
+10GE1/0/42                 down     down         0%     0%          0          0
+10GE1/0/43                 down     down         0%     0%          0          0
+10GE1/0/44                 down     down         0%     0%          0          0
+10GE1/0/45                 down     down         0%     0%          0          0
+10GE1/0/46                 down     down         0%     0%          0          0
+10GE2/0/2                  down     down         0%     0%          0          0
+10GE2/0/3                  down     down         0%     0%          0          0
+10GE2/0/4                  down     down         0%     0%          0          0
+10GE2/0/5                  down     down         0%     0%          0          0
+10GE2/0/6                  down     down         0%     0%          0          0
+10GE2/0/7                  down     down         0%     0%          0          0
+10GE2/0/8                  down     down         0%     0%          0          0
+10GE2/0/9                  down     down         0%     0%          0          0
+10GE2/0/10                 down     down         0%     0%          0          0
+10GE2/0/11                 down     down         0%     0%          0          0
+10GE2/0/12                 down     down         0%     0%          0          0
+10GE2/0/13                 down     down         0%     0%          0          0
+10GE2/0/14                 down     down         0%     0%          0          0
+10GE2/0/15                 down     down         0%     0%          0          0
+10GE2/0/16                 down     down         0%     0%          0          0
+10GE2/0/17                 down     down         0%     0%          0          0
+10GE2/0/18                 down     down         0%     0%          0          0
+10GE2/0/19                 down     down         0%     0%          0          0
+10GE2/0/20                 down     down         0%     0%          0          0
+10GE2/0/21                 down     down         0%     0%          0          0
+10GE2/0/22                 down     down         0%     0%          0          0
+10GE2/0/23                 down     down         0%     0%          0          0
+10GE2/0/24                 down     down         0%     0%          0          0
+10GE2/0/25                 down     down         0%     0%          0          0
+10GE2/0/26                 down     down         0%     0%          0          0
+10GE2/0/27                 down     down         0%     0%          0          0
+10GE2/0/28                 down     down         0%     0%          0          0
+10GE2/0/29                 down     down         0%     0%          0          0
+10GE2/0/30                 down     down         0%     0%          0          0
+10GE2/0/31                 down     down         0%     0%          0          0
+10GE2/0/32                 down     down         0%     0%          0          0
+10GE2/0/35                 down     down         0%     0%          0          0
+10GE2/0/36                 down     down         0%     0%          0          0
+10GE2/0/37                 up       up        0.01%  0.01%          0          0
+10GE2/0/38                 up       up        0.01%  0.01%          0          0
+10GE2/0/39                 down     down         0%     0%          0          0
+10GE2/0/40                 down     down         0%     0%          0          0
+10GE2/0/41                 down     down         0%     0%          0          0
+10GE2/0/42                 down     down         0%     0%          0          0
+10GE2/0/43                 down     down         0%     0%          0          0
+10GE2/0/44                 down     down         0%     0%          0          0
+10GE2/0/45                 down     down         0%     0%          0          0
+10GE2/0/46                 down     down         0%     0%          0          0
+40GE1/0/1                  down     down         0%     0%          0          0
+40GE1/0/2                  down     down         0%     0%          0          0
+40GE1/0/3                  down     down         0%     0%          0          0
+40GE1/0/4                  down     down         0%     0%          0          0
+40GE2/0/1                  down     down         0%     0%          0          0
+40GE2/0/2                  down     down         0%     0%          0          0
+40GE2/0/3                  down     down         0%     0%          0          0
+40GE2/0/4                  down     down         0%     0%          0          0
+Eth-Trunk1                 up       up        0.06%  0.08%          0          0
+  10GE1/0/33               up       up        0.05%  0.11%          0          0
+  10GE2/0/33               up       up        0.07%  0.05%          0          0
+Eth-Trunk2                 up       up        0.07%  0.05%          0          0
+  10GE1/0/34               up       up        0.11%  0.04%          0          0
+  10GE2/0/34               up       up        0.03%  0.06%          0          0
+Eth-Trunk3                 up       up        0.32%  0.31%          0          0
+  10GE1/0/1                up       up        0.28%  0.39%          0          0
+  10GE2/0/1                up       up        0.37%  0.23%          0          0
+MEth0/0/0                  down     down         0%     0%          0          0
+NULL0                      up       up(s)        0%     0%          0          0
+Stack-Port1/1              up       up        0.01%  0.01%          0          0
+  10GE1/0/47               up       up        0.01%  0.01%          0          0
+  10GE1/0/48               up       up        0.01%  0.01%          0          0
+Stack-Port2/1              up       up        0.01%  0.01%          0          0
+  10GE2/0/47               up       up        0.01%  0.01%          0          0
+  10GE2/0/48               up       up        0.01%  0.01%          0          0
+Vlanif14                   up       up           --     --          0          0
+Vlanif1200                 up       up           --     --          0          0
+Vlanif1724                 up       up           --     --          0          0
+Vlanif1729                 up       up           --     --          0          0
+Vlanif2000                 down     down         --     --          0          0
+<QRCHERY-DMZHJ-SW>                  dis ospf peer
+<QRCHERY-DMZHJ-SW>dis ospf peer
+<QRCHERY-DMZHJ-SW>dis ip int br
+*down: administratively down
+!down: FIB overload down
+^down: standby
+(l): loopback
+(s): spoofing
+(d): Dampening Suppressed
+The number of interface that is UP in Physical is 6
+The number of interface that is DOWN in Physical is 2
+The number of interface that is UP in Protocol is 6
+The number of interface that is DOWN in Protocol is 2
+Interface                   IP Address/Mask    Physical Protocol VPN           
+Eth-Trunk1                  192.168.168.18/30  up       up       --            
+MEth0/0/0                   192.168.6.164/24   down     down     Management    
+NULL0                       unassigned         up       up(s)    --            
+Vlanif14                    192.168.14.254/24  up       up       --            
+Vlanif1200                  192.168.12.254/24  up       up       --            
+Vlanif1724                  172.19.4.254/24    up       up       --            
+Vlanif1729                  172.19.0.1/22      up       up       --            
+Vlanif2000                  unassigned         down     down     --            
+<QRCHERY-DMZHJ-SW>      dis ip routing
+Proto: Protocol        Pre: Preference
+Route Flags: R - relay, D - download to fib, T - to vpn-instance, B - black hole route
+------------------------------------------------------------------------------
+Routing Table : _public_
+         Destinations : 20       Routes : 20        
+
+Destination/Mask    Proto   Pre  Cost        Flags NextHop         Interface
+
+        0.0.0.0/0   Static  60   0             RD  192.168.168.17  Eth-Trunk1
+      127.0.0.0/8   Direct  0    0             D   127.0.0.1       InLoopBack0
+      127.0.0.1/32  Direct  0    0             D   127.0.0.1       InLoopBack0
+127.255.255.255/32  Direct  0    0             D   127.0.0.1       InLoopBack0
+     172.19.0.0/22  Direct  0    0             D   172.19.0.1      Vlanif1729
+     172.19.0.1/32  Direct  0    0             D   127.0.0.1       Vlanif1729
+   172.19.3.255/32  Direct  0    0             D   127.0.0.1       Vlanif1729
+     172.19.4.0/24  Direct  0    0             D   172.19.4.254    Vlanif1724
+   172.19.4.254/32  Direct  0    0             D   127.0.0.1       Vlanif1724
+   172.19.4.255/32  Direct  0    0             D   127.0.0.1       Vlanif1724
+   192.168.12.0/24  Direct  0    0             D   192.168.12.254  Vlanif1200
+ 192.168.12.254/32  Direct  0    0             D   127.0.0.1       Vlanif1200
+ 192.168.12.255/32  Direct  0    0             D   127.0.0.1       Vlanif1200
+   192.168.14.0/24  Direct  0    0             D   192.168.14.254  Vlanif14
+ 192.168.14.254/32  Direct  0    0             D   127.0.0.1       Vlanif14
+ 192.168.14.255/32  Direct  0    0             D   127.0.0.1       Vlanif14
+ 192.168.168.16/30  Direct  0    0             D   192.168.168.18  Eth-Trunk1
+ 192.168.168.18/32  Direct  0    0             D   127.0.0.1       Eth-Trunk1
+ 192.168.168.19/32  Direct  0    0             D   127.0.0.1       Eth-Trunk1
+255.255.255.255/32  Direct  0    0             D   127.0.0.1       InLoopBack0
+<QRCHERY-DMZHJ-SW>       dis arp
+ARP Entry Types: D - Dynamic, S - Static, I - Interface, O - OpenFlow
+EXP: Expire-time
+
+IP ADDRESS      MAC ADDRESS    EXP(M) TYPE/VLAN INTERFACE       VPN-INSTANCE
+------------------------------------------------------------------------------
+192.168.6.164   244c-0789-d610        I         MEth0/0/0        Management
+192.168.168.18  244c-0789-d611        I         Eth-Trunk1       
+192.168.168.17  943b-b0bc-9ccc    6   D         Eth-Trunk1       
+192.168.14.254  244c-0789-d612        I         Vlanif14         
+192.168.12.254  244c-0789-d61c        I         Vlanif1200       
+192.168.12.18   0050-56b4-c9c5    3   D/1200    Eth-Trunk2       
+192.168.12.23   0050-56b4-739f   16   D/1200    Eth-Trunk2       
+192.168.12.25   0050-56b4-3f93   11   D/1200    Eth-Trunk2       
+192.168.12.26   0050-5695-48f7   20   D/1200    Eth-Trunk2       
+192.168.12.27   0050-56b4-c058   17   D/1200    Eth-Trunk2       
+192.168.12.28   0050-5695-813b   19   D/1200    Eth-Trunk2       
+192.168.12.30   0050-56b4-117f   18   D/1200    Eth-Trunk2       
+192.168.12.31   0050-5695-9d6c   12   D/1200    Eth-Trunk2       
+192.168.12.32   0050-56b4-b287   13   D/1200    Eth-Trunk2       
+192.168.12.33   0050-56b4-4258   17   D/1200    Eth-Trunk2       
+192.168.12.34   0050-56b4-fa75   16   D/1200    Eth-Trunk2       
+192.168.12.35   0050-56b4-5c23    5   D/1200    Eth-Trunk2       
+192.168.12.36   0050-56b4-81f6    4   D/1200    Eth-Trunk2       
+192.168.12.37   0050-56b4-0b3e    5   D/1200    Eth-Trunk2       
+192.168.12.38   0050-56b4-19f6   20   D/1200    Eth-Trunk2       
+192.168.12.41   0050-56b4-3733    5   D/1200    Eth-Trunk2       
+192.168.12.42   0050-56b4-dba4   14   D/1200    Eth-Trunk2       
+192.168.12.43   0050-56b4-5185   15   D/1200    Eth-Trunk2       
+192.168.12.44   0050-56b4-1d4a    1   D/1200    Eth-Trunk2       
+192.168.12.45   0050-56b4-8bde    2   D/1200    Eth-Trunk2       
+192.168.12.46   0050-56b4-81b8    8   D/1200    Eth-Trunk2       
+192.168.12.47   0050-56b4-39f1    9   D/1200    Eth-Trunk2       
+192.168.12.48   0050-56b4-7a77   20   D/1200    Eth-Trunk2       
+192.168.12.49   0050-5695-1bc0   11   D/1200    Eth-Trunk2       
+192.168.12.51   0050-5695-fac6    7   D/1200    Eth-Trunk2       
+192.168.12.52   0050-5695-e810   17   D/1200    Eth-Trunk2       
+192.168.12.53   0050-56b4-7491   16   D/1200    Eth-Trunk2       
+192.168.12.54   0050-56b4-6ac8   20   D/1200    Eth-Trunk2       
+192.168.12.55   000e-a961-1bb5   20   D/1200    Eth-Trunk3       
+192.168.12.56   000e-a961-1ba0   20   D/1200    Eth-Trunk3       
+192.168.12.57   000e-a961-143e   20   D/1200    Eth-Trunk3       
+192.168.12.58   000e-a961-00cd   12   D/1200    Eth-Trunk3       
+192.168.12.59   000e-a900-f955    3   D/1200    Eth-Trunk3       
+192.168.12.60   000e-a900-f956   17   D/1200    Eth-Trunk3       
+192.168.12.61   40f2-e995-56d2   20   D/1200    Eth-Trunk3       
+192.168.12.62   0050-56b4-6609   20   D/1200    Eth-Trunk2       
+192.168.12.63   0050-56b4-c929    4   D/1200    Eth-Trunk2       
+192.168.12.64   0050-56b4-d09e    4   D/1200    Eth-Trunk2       
+192.168.12.66   0050-56b4-1d36    2   D/1200    Eth-Trunk2       
+192.168.12.67   286e-d488-c65d   18   D/1200    Eth-Trunk2       
+192.168.12.68   0050-56b4-99c6   10   D/1200    Eth-Trunk2       
+192.168.12.71   0050-56b8-a9b1   19   D/1200    Eth-Trunk2       
+192.168.12.73   0050-56b4-68e6   12   D/1200    Eth-Trunk2       
+192.168.12.76   1418-7749-117a    3   D/1200    Eth-Trunk3       
+192.168.12.77   0050-56b4-1c3b    1   D/1200    Eth-Trunk2       
+192.168.12.80   0050-56b4-07ca   18   D/1200    Eth-Trunk2       
+192.168.12.81   0050-56b4-210b    1   D/1200    Eth-Trunk2       
+192.168.12.82   0050-5695-b63d   20   D/1200    Eth-Trunk2       
+192.168.12.83   0050-5695-51dd   20   D/1200    Eth-Trunk2       
+192.168.12.84   0050-5695-aae6   20   D/1200    Eth-Trunk2       
+192.168.12.85   0050-5695-257b   20   D/1200    Eth-Trunk2       
+192.168.12.86   0050-5695-f26b   19   D/1200    Eth-Trunk2       
+192.168.12.100  Incomplete        1   D         Vlanif1200       
+192.168.12.101  Incomplete        1   D         Vlanif1200       
+192.168.12.120  000e-1e6e-0050   16   D/1200    Eth-Trunk2       
+192.168.12.121  0050-56b4-394e    8   D/1200    Eth-Trunk2       
+192.168.12.127  000e-1e6d-f470   17   D/1200    Eth-Trunk2       
+192.168.12.128  000e-1e6e-0050    2   D/1200    Eth-Trunk2       
+192.168.12.129  000e-1e6e-0020   10   D/1200    Eth-Trunk2       
+192.168.12.130  0050-5695-76bf   20   D/1200    Eth-Trunk2       
+192.168.12.131  0050-5695-f9a7   20   D/1200    Eth-Trunk2       
+192.168.12.132  0050-5695-e4ad   20   D/1200    Eth-Trunk2       
+192.168.12.133  0050-5695-916b   19   D/1200    Eth-Trunk2       
+192.168.12.134  0050-5695-1e79   20   D/1200    Eth-Trunk2       
+192.168.12.135  0050-5695-7878   20   D/1200    Eth-Trunk2       
+192.168.12.136  0050-5695-6fc7   19   D/1200    Eth-Trunk2       
+192.168.12.137  0050-5695-3187   20   D/1200    Eth-Trunk2       
+192.168.12.138  0050-5695-6fc8   20   D/1200    Eth-Trunk2       
+192.168.12.139  0050-5695-ed7e   20   D/1200    Eth-Trunk2       
+192.168.12.140  0050-5695-e03a   20   D/1200    Eth-Trunk2       
+192.168.12.141  0050-5695-f529   20   D/1200    Eth-Trunk2       
+192.168.12.142  0050-5695-e03a    6   D/1200    Eth-Trunk2       
+192.168.12.143  0050-5695-6fc8   14   D/1200    Eth-Trunk2       
+192.168.12.144  0050-5695-2e8c   20   D/1200    Eth-Trunk2       
+192.168.12.145  0050-5695-6b33   20   D/1200    Eth-Trunk2       
+192.168.12.146  0050-5695-a7cc   20   D/1200    Eth-Trunk2       
+192.168.12.147  0050-5695-6b33    7   D/1200    Eth-Trunk2       
+192.168.12.148  0050-5695-0bc2   19   D/1200    Eth-Trunk2       
+192.168.12.149  0050-5695-07d1   20   D/1200    Eth-Trunk2       
+192.168.12.150  0050-5695-07d1    2   D/1200    Eth-Trunk2       
+192.168.12.151  0050-5695-69bf   20   D/1200    Eth-Trunk2       
+192.168.12.152  0050-5695-bcfa   20   D/1200    Eth-Trunk2       
+192.168.12.153  0050-5695-69bf   15   D/1200    Eth-Trunk2       
+192.168.12.154  0050-5695-5b72   20   D/1200    Eth-Trunk2       
+192.168.12.155  0050-5695-52a2   20   D/1200    Eth-Trunk2       
+192.168.12.156  0050-5695-5b72   11   D/1200    Eth-Trunk2       
+192.168.12.157  0050-5695-bc47   20   D/1200    Eth-Trunk2       
+192.168.12.158  0050-5695-1099   20   D/1200    Eth-Trunk2       
+192.168.12.159  0050-5695-179d   20   D/1200    Eth-Trunk2       
+192.168.12.160  0050-5695-2a05   20   D/1200    Eth-Trunk2       
+192.168.12.161  0050-5695-179d    2   D/1200    Eth-Trunk2       
+192.168.12.162  0050-5695-e633   20   D/1200    Eth-Trunk2       
+192.168.12.163  0050-5695-5bef   20   D/1200    Eth-Trunk2       
+192.168.12.164  0050-5695-e633    1   D/1200    Eth-Trunk2       
+192.168.12.165  0050-5695-0b86   20   D/1200    Eth-Trunk2       
+192.168.12.166  0050-5695-6ed7   20   D/1200    Eth-Trunk2       
+192.168.12.167  0050-5695-0b86   14   D/1200    Eth-Trunk2       
+192.168.12.168  0050-5695-a9f0   19   D/1200    Eth-Trunk2       
+192.168.12.169  0050-5695-6aba   20   D/1200    Eth-Trunk2       
+192.168.12.170  0050-5695-0222   15   D/1200    Eth-Trunk2       
+192.168.12.171  0050-5695-4697   18   D/1200    Eth-Trunk2       
+192.168.12.172  0050-5695-5e4e   11   D/1200    Eth-Trunk2       
+192.168.12.173  0050-5695-e6e2   11   D/1200    Eth-Trunk2       
+192.168.12.174  0050-5695-31a0   17   D/1200    Eth-Trunk2       
+192.168.12.175  0050-5695-3965   17   D/1200    Eth-Trunk2       
+192.168.12.176  0050-5695-3301   15   D/1200    Eth-Trunk2       
+192.168.12.177  0050-5695-ba8e   13   D/1200    Eth-Trunk2       
+192.168.12.178  0050-5695-f842    9   D/1200    Eth-Trunk2       
+192.168.12.179  0050-5695-d5ca   15   D/1200    Eth-Trunk2       
+192.168.12.180  0050-5695-ad56   19   D/1200    Eth-Trunk2       
+192.168.12.181  0050-5695-6117   19   D/1200    Eth-Trunk2       
+192.168.12.182  0050-5695-12b1   20   D/1200    Eth-Trunk2       
+192.168.12.183  0050-5695-8402   17   D/1200    Eth-Trunk2       
+192.168.12.184  0050-5695-981b   14   D/1200    Eth-Trunk2       
+192.168.12.190  0050-5695-cb59   18   D/1200    Eth-Trunk2       
+192.168.12.200  0050-56b4-1ccc    2   D/1200    Eth-Trunk2       
+192.168.12.201  0050-56b4-ef18   20   D/1200    Eth-Trunk2       
+192.168.12.220  5480-2858-5fbe   19   D/1200    Eth-Trunk3       
+172.19.0.1      244c-0789-d619        I         Vlanif1729       
+172.19.0.55     e286-7339-2e8a   20   D/1729    10GE1/0/38       
+172.19.3.64     a6f9-d33c-3736   20   D/1729    10GE1/0/38       
+172.19.3.65     6661-5b3c-7d7c   20   D/1729    10GE1/0/38       
+172.19.3.66     9a0e-e7ba-4cf5   20   D/1729    10GE1/0/38       
+172.19.3.67     025f-4903-25c8   20   D/1729    10GE1/0/38       
+172.19.3.68     82b9-d222-ea26   20   D/1729    10GE1/0/38       
+172.19.3.69     5238-b710-7bcc   19   D/1729    10GE1/0/37       
+172.19.3.70     3ac9-21a2-c451   19   D/1729    10GE1/0/37       
+172.19.3.71     de87-25a6-3352   19   D/1729    10GE1/0/38       
+172.19.3.72     22ae-24b0-d340   20   D/1729    10GE1/0/38       
+172.19.3.73     8e6e-1319-eac4   20   D/1729    10GE1/0/37       
+172.19.3.74     0ac6-3389-939a   20   D/1729    10GE1/0/37       
+172.19.3.76     c6df-843e-de46   20   D/1729    10GE1/0/38       
+172.19.3.77     0a55-f4cd-4c87   20   D/1729    10GE1/0/38       
+172.19.3.87     16f7-4f27-fb00   20   D/1729    10GE1/0/38       
+172.19.3.88     1657-d0dd-9b68   19   D/1729    10GE1/0/38       
+172.19.3.89     72cb-ea7f-39c5   20   D/1729    10GE1/0/38       
+172.19.3.91     5262-96bf-6f05   20   D/1729    10GE1/0/38       
+172.19.3.92     7ae2-9ab0-87c3   20   D/1729    10GE1/0/37       
+172.19.3.96     b202-0835-b91e   20   D/1729    10GE1/0/37       
+172.19.3.97     863b-b44a-6627   20   D/1729    10GE1/0/38       
+172.19.3.98     86e7-0fea-97bf   20   D/1729    10GE1/0/37       
+172.19.3.100    060f-ca67-c729   20   D/1729    10GE1/0/37       
+172.19.3.108    a2cd-584f-8d8e   20   D/1729    10GE1/0/37       
+172.19.3.110    2a0a-6578-2558   18   D/1729    10GE1/0/38       
+172.19.3.112    2a5d-52b8-5fa0   18   D/1729    10GE1/0/37       
+172.19.3.114    d2b9-a8c1-5cd5   20   D/1729    10GE1/0/37       
+172.19.3.115    ae34-310b-0331   20   D/1729    10GE1/0/38       
+172.19.3.116    be54-bd0a-2045   20   D/1729    10GE1/0/38       
+172.19.3.118    8698-c7a5-16c6   20   D/1729    10GE1/0/37       
+172.19.3.119    3aa0-cae0-a351   20   D/1729    10GE1/0/37       
+172.19.3.120    da1e-0d1c-ef61   20   D/1729    10GE1/0/37       
+172.19.3.121    8ad3-5c35-72f8   18   D/1729    10GE1/0/37       
+172.19.3.122    5211-0f39-1c88   19   D/1729    10GE1/0/38       
+172.19.3.123    2683-5363-9105   19   D/1729    10GE1/0/38       
+172.19.3.125    463c-14c9-77a3   20   D/1729    10GE1/0/38       
+172.19.3.126    aab7-45c8-e0dc   17   D/1729    10GE1/0/38       
+172.19.3.127    063e-50a5-1b12   20   D/1729    10GE1/0/38       
+172.19.3.128    ce00-136b-a752   20   D/1729    10GE1/0/37       
+172.19.3.129    46d5-f67a-5d97   20   D/1729    10GE1/0/37       
+172.19.3.130    2678-944d-98f6   12   D/1729    10GE1/0/37       
+172.19.3.131    dabb-5f4d-c5ec   19   D/1729    10GE1/0/37       
+172.19.3.137    3e20-d45c-8e72   18   D/1729    10GE1/0/38       
+172.19.3.139    cab7-d87a-4ec1   20   D/1729    10GE1/0/38       
+172.19.3.140    5e26-c9b8-d98e   20   D/1729    10GE1/0/38       
+172.19.3.141    a695-159b-5b04   20   D/1729    10GE1/0/38       
+172.19.3.143    ce04-3b22-a828   19   D/1729    10GE1/0/38       
+172.19.3.145    e6dd-2335-0c93   18   D/1729    10GE1/0/37       
+172.19.3.146    7e0f-7e81-99f6   19   D/1729    10GE1/0/38       
+172.19.3.147    6679-7292-0753   20   D/1729    10GE1/0/37       
+172.19.3.148    4a3a-7692-44d5   19   D/1729    10GE1/0/37       
+172.19.3.151    3a2b-848f-9045   20   D/1729    10GE1/0/37       
+172.19.3.153    5e6d-0886-4388   17   D/1729    10GE1/0/38       
+172.19.3.155    b25d-8fe1-089c   20   D/1729    10GE1/0/37       
+172.19.3.156    5213-5603-1dee   19   D/1729    10GE1/0/37       
+172.19.3.157    8206-43d8-31a4   20   D/1729    10GE1/0/37       
+172.19.3.158    aa2d-feca-3666   20   D/1729    10GE1/0/37       
+172.19.3.159    ea4b-9d6f-aac9   20   D/1729    10GE1/0/37       
+172.19.3.160    3e8d-756f-522c   20   D/1729    10GE1/0/37       
+172.19.3.161    06ca-cdca-66f2   20   D/1729    10GE1/0/37       
+172.19.3.162    7e7d-05bd-30e0   20   D/1729    10GE1/0/38       
+172.19.3.163    46c5-ac71-1568   20   D/1729    10GE1/0/37       
+172.19.3.164    128a-7563-4003   18   D/1729    10GE1/0/38       
+172.19.3.165    164b-3fb4-167d   20   D/1729    10GE1/0/38       
+172.19.3.166    f679-3499-35ee   20   D/1729    10GE1/0/37       
+172.19.3.169    ae7f-e117-7fe0   15   D/1729    10GE1/0/37       
+172.19.3.170    7273-8bce-9c79   20   D/1729    10GE1/0/38       
+172.19.3.171    f68f-723a-1694   20   D/1729    10GE1/0/37       
+172.19.3.172    ce6f-b0c3-3de4   20   D/1729    10GE1/0/37       
+172.19.3.173    e24a-2e2e-d586   19   D/1729    10GE1/0/37       
+172.19.3.174    eaf1-d807-3691   17   D/1729    10GE1/0/38       
+172.19.3.175    66f3-9ad8-6be9   19   D/1729    10GE1/0/38       
+172.19.3.176    e664-6521-d61c   20   D/1729    10GE1/0/38       
+172.19.3.177    fa53-ce02-dd60   18   D/1729    10GE1/0/37       
+172.19.3.179    aa3d-6757-9d41   20   D/1729    10GE1/0/38       
+172.19.3.180    9e81-0468-254f   20   D/1729    10GE1/0/37       
+172.19.3.181    e6a9-8029-0a65   15   D/1729    10GE1/0/37       
+172.19.3.182    3674-7801-b47a   19   D/1729    10GE1/0/37       
+172.19.3.184    ce8f-6ba8-18cf   20   D/1729    10GE1/0/37       
+172.19.3.190    36a6-44d1-4fa8   19   D/1729    10GE1/0/38       
+172.19.3.192    96ea-15df-1faa   20   D/1729    10GE1/0/37       
+172.19.3.193    baf9-f9d8-a800   20   D/1729    10GE1/0/38       
+172.19.3.194    32f8-daf0-2e04   20   D/1729    10GE1/0/38       
+172.19.3.195    f27c-e699-fadf   20   D/1729    10GE1/0/38       
+172.19.3.196    3e25-d43a-2dba   20   D/1729    10GE1/0/37       
+172.19.3.197    4e57-7a90-d7ff   20   D/1729    10GE1/0/38       
+172.19.3.198    de97-f931-b142   17   D/1729    10GE1/0/37       
+172.19.3.199    ce84-32c6-556c   16   D/1729    10GE1/0/37       
+172.19.3.200    5e03-0a85-26d7   20   D/1729    10GE1/0/37       
+172.19.3.201    3edb-0cf0-35b2   18   D/1729    10GE1/0/38       
+172.19.3.202    5e5f-fc73-6e3a   18   D/1729    10GE1/0/37       
+172.19.3.203    323e-333c-0705   20   D/1729    10GE1/0/38       
+172.19.3.204    0a2a-9aa2-ae97   20   D/1729    10GE1/0/38       
+172.19.3.205    fa7b-3e31-d9e3   20   D/1729    10GE1/0/37       
+172.19.3.210    9605-f913-fae1   19   D/1729    10GE1/0/37       
+172.19.3.218    4ccc-6a17-0146   20   D/1729    10GE1/0/8        
+172.19.3.239    320f-7776-05c9   19   D/1729    10GE1/0/37       
+172.19.3.240    924c-527b-f4bb   20   D/1729    10GE1/0/38       
+172.19.3.241    82b8-3510-2beb   20   D/1729    10GE1/0/37       
+172.19.3.242    ce14-d6e8-2dc8    1   D/1729    10GE1/0/37       
+172.19.3.243    b652-bdf6-59d7   19   D/1729    10GE1/0/37       
+172.19.3.244    a235-281a-684c   13   D/1729    10GE1/0/38       
+172.19.3.247    9e75-59c9-80f3   20   D/1729    10GE1/0/38       
+172.19.3.248    eaf3-5ad3-888e   20   D/1729    10GE1/0/37       
+172.19.3.249    f226-e686-55b0   19   D/1729    10GE1/0/37       
+172.19.3.250    a235-281a-684c   20   D/1729    10GE1/0/38       
+172.19.3.251    ce14-d6e8-2dc8   19   D/1729    10GE1/0/37       
+172.19.4.254    244c-0789-d614        I         Vlanif1724       
+----------------------------------------------------------------------------------------
+Total:232         Dynamic:226       Static:0    Interface:6    OpenFlow:0
+<QRCHERY-DMZHJ-SW>    dis acl a
+ Total nonempty ACL number is 4
+
+Basic ACL 2000, 6 rules
+ACL's step is 5
+ rule 10 permit source 192.168.6.18 0 (388 times matched)
+ rule 11 permit source 192.168.6.56 0 (0 times matched)
+ rule 12 permit source 192.168.6.208 0 (926663 times matched)
+ rule 20 permit source 192.168.6.166 0 (0 times matched)
+ rule 21 permit source 192.168.6.167 0 (3 times matched)
+ rule 22 permit source 192.168.6.168 0 (0 times matched)
+
+Basic ACL 2001, 3 rules
+ACL's step is 5
+ rule 5 permit source 192.168.6.18 0 (0 times matched)
+ rule 10 permit source 192.168.5.234 0 (0 times matched)
+ rule 15 permit source 192.168.6.56 0 (0 times matched)
+
+Basic ACL 2002, 2 rules
+ACL's step is 5
+ rule 10 permit source 192.168.6.208 0 (1853498 times matched)
+ rule 20 deny (24 times matched)
+
+Basic ACL 2008, 2 rules
+ACL's step is 5
+ rule 5 permit source 192.168.6.208 0 (0 times matched)
+ rule 10 deny (0 times matched)
+<QRCHERY-DMZHJ-SW>      dis mac-address
+Flags: * - Backup  
+BD   : bridge-domain   Age : dynamic MAC learned time in seconds
+-------------------------------------------------------------------------------
+MAC Address    VLAN/VSI      Learned-From        Type                Age
+-------------------------------------------------------------------------------
+000e-1e6d-f470 1200/-/-      Eth-Trunk2          dynamic             219
+000e-1e6e-0020 1200/-/-      Eth-Trunk2          dynamic            2171
+000e-1e6e-0050 1200/-/-      Eth-Trunk2          dynamic            1477
+000e-a900-f955 1200/-/-      Eth-Trunk3          dynamic           28241
+000e-a900-f956 1200/-/-      Eth-Trunk3          dynamic           32972
+000e-a961-00cd 1200/-/-      Eth-Trunk3          dynamic             506
+000e-a961-143e 1200/-/-      Eth-Trunk3          dynamic        40731049
+000e-a961-1ba0 1200/-/-      Eth-Trunk3          dynamic        40731051
+000e-a961-1bb5 1200/-/-      Eth-Trunk3          dynamic        40731049
+0050-5695-0222 1200/-/-      Eth-Trunk2          dynamic             495
+0050-5695-07d1 1200/-/-      Eth-Trunk2          dynamic         1859379
+0050-5695-0b86 1200/-/-      Eth-Trunk2          dynamic         2322350
+0050-5695-0bc2 1200/-/-      Eth-Trunk2          dynamic         1910624
+0050-5695-1099 1200/-/-      Eth-Trunk2          dynamic         1901526
+0050-5695-12b1 1200/-/-      Eth-Trunk2          dynamic          558573
+0050-5695-179d 1200/-/-      Eth-Trunk2          dynamic         1996510
+0050-5695-187f 1200/-/-      Eth-Trunk2          dynamic         2171998
+0050-5695-1bc0 1200/-/-      Eth-Trunk2          dynamic        18482240
+0050-5695-1e79 1200/-/-      Eth-Trunk2          dynamic         2223806
+0050-5695-257b 1200/-/-      Eth-Trunk2          dynamic         2241690
+0050-5695-2a05 1200/-/-      Eth-Trunk2          dynamic         1989296
+0050-5695-2e8c 1200/-/-      Eth-Trunk2          dynamic         1989836
+0050-5695-3187 1200/-/-      Eth-Trunk2          dynamic         2325891
+0050-5695-31a0 1200/-/-      Eth-Trunk2          dynamic            1483
+0050-5695-3301 1200/-/-      Eth-Trunk2          dynamic           26990
+0050-5695-3965 1200/-/-      Eth-Trunk2          dynamic         2173916
+0050-5695-4697 1200/-/-      Eth-Trunk2          dynamic         2324762
+0050-5695-48f7 1200/-/-      Eth-Trunk2          dynamic          206688
+0050-5695-51dd 1200/-/-      Eth-Trunk2          dynamic         2242685
+0050-5695-52a2 1200/-/-      Eth-Trunk2          dynamic         1904260
+0050-5695-5b72 1200/-/-      Eth-Trunk2          dynamic         1904260
+0050-5695-5bef 1200/-/-      Eth-Trunk2          dynamic         2329861
+0050-5695-5e4e 1200/-/-      Eth-Trunk2          dynamic            1636
+0050-5695-6117 1200/-/-      Eth-Trunk2          dynamic          423818
+0050-5695-69bf 1200/-/-      Eth-Trunk2          dynamic         2316868
+0050-5695-6aba 1200/-/-      Eth-Trunk2          dynamic            8096
+0050-5695-6b33 1200/-/-      Eth-Trunk2          dynamic         1937368
+0050-5695-6ed7 1200/-/-      Eth-Trunk2          dynamic         2005896
+0050-5695-6fc7 1200/-/-      Eth-Trunk2          dynamic         1902485
+0050-5695-6fc8 1200/-/-      Eth-Trunk2          dynamic         1907606
+0050-5695-76bf 1200/-/-      Eth-Trunk2          dynamic         2017769
+0050-5695-7878 1200/-/-      Eth-Trunk2          dynamic         1936163
+0050-5695-813b 1200/-/-      Eth-Trunk2          dynamic           67190
+0050-5695-8402 1200/-/-      Eth-Trunk2          dynamic           52562
+0050-5695-8552 1200/-/-      Eth-Trunk2          dynamic           26990
+0050-5695-916b 1200/-/-      Eth-Trunk2          dynamic         1975157
+0050-5695-981b 1200/-/-      Eth-Trunk2          dynamic         1375135
+0050-5695-9d6c 1200/-/-      Eth-Trunk2          dynamic           28196
+0050-5695-a7cc 1200/-/-      Eth-Trunk2          dynamic         1916062
+0050-5695-a9f0 1200/-/-      Eth-Trunk2          dynamic           38608
+0050-5695-aae6 1200/-/-      Eth-Trunk2          dynamic         2241690
+0050-5695-ad56 1200/-/-      Eth-Trunk2          dynamic            8096
+0050-5695-b63d 1200/-/-      Eth-Trunk2          dynamic         2241126
+0050-5695-ba8e 1200/-/-      Eth-Trunk2          dynamic           25438
+0050-5695-bc47 1200/-/-      Eth-Trunk2          dynamic         1813386
+0050-5695-bcfa 1200/-/-      Eth-Trunk2          dynamic         2037872
+0050-5695-cb59 1200/-/-      Eth-Trunk2          dynamic          107391
+0050-5695-d5ca 1200/-/-      Eth-Trunk2          dynamic           48296
+0050-5695-e03a 1200/-/-      Eth-Trunk2          dynamic         2156465
+0050-5695-e4ad 1200/-/-      Eth-Trunk2          dynamic         2327174
+0050-5695-e633 1200/-/-      Eth-Trunk2          dynamic         1999129
+0050-5695-e6e2 1200/-/-      Eth-Trunk2          dynamic            1662
+0050-5695-e810 1200/-/-      Eth-Trunk2          dynamic         1053250
+0050-5695-ed7e 1200/-/-      Eth-Trunk2          dynamic         1899118
+0050-5695-f26b 1200/-/-      Eth-Trunk2          dynamic         1291144
+0050-5695-f529 1200/-/-      Eth-Trunk2          dynamic         1914731
+0050-5695-f842 1200/-/-      Eth-Trunk2          dynamic          645287
+0050-5695-f9a7 1200/-/-      Eth-Trunk2          dynamic         2329092
+0050-5695-fac6 1200/-/-      Eth-Trunk2          dynamic         2581417
+0050-56b4-07ca 1200/-/-      Eth-Trunk2          dynamic        24604095
+0050-56b4-117f 1200/-/-      Eth-Trunk2          dynamic             276
+0050-56b4-19f6 1200/-/-      Eth-Trunk2          dynamic           45501
+0050-56b4-1d36 1200/-/-      Eth-Trunk2          dynamic        40736027
+0050-56b4-1d4a 1200/-/-      Eth-Trunk2          dynamic        19710538
+0050-56b4-3733 1200/-/-      Eth-Trunk2          dynamic        19374706
+0050-56b4-394e 1200/-/-      Eth-Trunk2          dynamic             767
+0050-56b4-39f1 1200/-/-      Eth-Trunk2          dynamic        28538190
+0050-56b4-3f93 1200/-/-      Eth-Trunk2          dynamic            2074
+0050-56b4-4258 1200/-/-      Eth-Trunk2          dynamic           45460
+0050-56b4-5185 1200/-/-      Eth-Trunk2          dynamic        28768381
+0050-56b4-5c23 1200/-/-      Eth-Trunk2          dynamic        33544458
+0050-56b4-6609 1200/-/-      Eth-Trunk2          dynamic        40735912
+0050-56b4-68e6 1200/-/-      Eth-Trunk2          dynamic        40724981
+0050-56b4-6ac8 1200/-/-      Eth-Trunk2          dynamic         5065651
+0050-56b4-739f 1200/-/-      Eth-Trunk2          dynamic            9578
+0050-56b4-7491 1200/-/-      Eth-Trunk2          dynamic          187849
+0050-56b4-7a77 1200/-/-      Eth-Trunk2          dynamic        26753249
+0050-56b4-81b8 1200/-/-      Eth-Trunk2          dynamic        23501374
+0050-56b4-81f6 1200/-/-      Eth-Trunk2          dynamic        33545256
+0050-56b4-8bde 1200/-/-      Eth-Trunk2          dynamic        19711193
+0050-56b4-99c6 1200/-/-      Eth-Trunk2          dynamic        19696066
+0050-56b4-b287 1200/-/-      Eth-Trunk2          dynamic             524
+0050-56b4-c058 1200/-/-      Eth-Trunk2          dynamic         2294325
+0050-56b4-c929 1200/-/-      Eth-Trunk2          dynamic        40735891
+0050-56b4-c9c5 1200/-/-      Eth-Trunk2          dynamic          219025
+0050-56b4-d09e 1200/-/-      Eth-Trunk2          dynamic        40735904
+0050-56b4-dba4 1200/-/-      Eth-Trunk2          dynamic        28784988
+0050-56b4-ef18 1200/-/-      Eth-Trunk2          dynamic         2851990
+0050-56b4-fa75 1200/-/-      Eth-Trunk2          dynamic           26990
+0050-56b8-a9b1 1200/-/-      Eth-Trunk2          dynamic        40736053
+1418-7749-117a 1200/-/-      Eth-Trunk3          dynamic        40736181
+286e-d488-c65d 1200/-/-      Eth-Trunk2          dynamic           28784
+40f2-e995-56d2 1200/-/-      Eth-Trunk3          dynamic        40731026
+5480-2858-5fbe 1200/-/-      Eth-Trunk3          dynamic         1904861
+025f-4903-25c8 1729/-/-      10GE1/0/38          dynamic           20651
+060f-ca67-c729 1729/-/-      10GE1/0/37          dynamic        18055461
+063e-50a5-1b12 1729/-/-      10GE1/0/38          dynamic          201191
+06ca-cdca-66f2 1729/-/-      10GE1/0/37          dynamic         1065138
+0a2a-9aa2-ae97 1729/-/-      10GE1/0/38          dynamic         6847810
+0a55-f4cd-4c87 1729/-/-      10GE1/0/38          dynamic         3719654
+0ac6-3389-939a 1729/-/-      10GE1/0/37          dynamic           87731
+128a-7563-4003 1729/-/-      10GE1/0/38          dynamic        18517820
+164b-3fb4-167d 1729/-/-      10GE1/0/38          dynamic           28456
+1657-d0dd-9b68 1729/-/-      10GE1/0/38          dynamic        16088967
+16f7-4f27-fb00 1729/-/-      10GE1/0/38          dynamic        13756262
+22ae-24b0-d340 1729/-/-      10GE1/0/38          dynamic          348918
+2678-944d-98f6 1729/-/-      10GE1/0/37          dynamic        19209085
+2683-5363-9105 1729/-/-      10GE1/0/38          dynamic           28456
+2a0a-6578-2558 1729/-/-      10GE1/0/38          dynamic           28515
+2a5d-52b8-5fa0 1729/-/-      10GE1/0/37          dynamic           28512
+320f-7776-05c9 1729/-/-      10GE1/0/37          dynamic        32574721
+323e-333c-0705 1729/-/-      10GE1/0/38          dynamic         7857872
+32f8-daf0-2e04 1729/-/-      10GE1/0/38          dynamic           28325
+3674-7801-b47a 1729/-/-      10GE1/0/37          dynamic         4992535
+36a6-44d1-4fa8 1729/-/-      10GE1/0/38          dynamic         3361457
+3a1d-0071-1942 1729/-/-      10GE1/0/38          dynamic        33369971
+3a2b-848f-9045 1729/-/-      10GE1/0/37          dynamic        33803855
+3aa0-cae0-a351 1729/-/-      10GE1/0/37          dynamic        10914659
+3ac9-21a2-c451 1729/-/-      10GE1/0/37          dynamic            2639
+3e20-d45c-8e72 1729/-/-      10GE1/0/38          dynamic           28326
+3e25-d43a-2dba 1729/-/-      10GE1/0/37          dynamic          460451
+3e8d-756f-522c 1729/-/-      10GE1/0/37          dynamic        33945859
+3edb-0cf0-35b2 1729/-/-      10GE1/0/38          dynamic         7867169
+463c-14c9-77a3 1729/-/-      10GE1/0/38          dynamic        13841968
+46c5-ac71-1568 1729/-/-      10GE1/0/37          dynamic           28381
+46d5-f67a-5d97 1729/-/-      10GE1/0/37          dynamic        28257641
+4a3a-7692-44d5 1729/-/-      10GE1/0/37          dynamic           28385
+4ccc-6a17-0146 1729/-/-      10GE1/0/8           dynamic        31965320
+4e57-7a90-d7ff 1729/-/-      10GE1/0/38          dynamic         5817116
+5211-0f39-1c88 1729/-/-      10GE1/0/38          dynamic           28456
+5213-5603-1dee 1729/-/-      10GE1/0/37          dynamic           28515
+5238-b710-7bcc 1729/-/-      10GE1/0/37          dynamic           22756
+5262-96bf-6f05 1729/-/-      10GE1/0/38          dynamic        18057985
+5e03-0a85-26d7 1729/-/-      10GE1/0/37          dynamic        34826157
+5e26-c9b8-d98e 1729/-/-      10GE1/0/38          dynamic           28275
+5e5f-fc73-6e3a 1729/-/-      10GE1/0/37          dynamic         7102439
+5e6d-0886-4388 1729/-/-      10GE1/0/38          dynamic           28392
+6661-5b3c-7d7c 1729/-/-      10GE1/0/38          dynamic           20775
+6679-7292-0753 1729/-/-      10GE1/0/37          dynamic           28441
+66f3-9ad8-6be9 1729/-/-      10GE1/0/38          dynamic           28325
+7273-8bce-9c79 1729/-/-      10GE1/0/38          dynamic         4942764
+72cb-ea7f-39c5 1729/-/-      10GE1/0/38          dynamic        18159030
+7ae2-9ab0-87c3 1729/-/-      10GE1/0/37          dynamic        18058521
+7e0f-7e81-99f6 1729/-/-      10GE1/0/38          dynamic        18851137
+7e7d-05bd-30e0 1729/-/-      10GE1/0/38          dynamic           28518
+8206-43d8-31a4 1729/-/-      10GE1/0/37          dynamic           28320
+82b8-3510-2beb 1729/-/-      10GE1/0/37          dynamic        35583328
+82b9-d222-ea26 1729/-/-      10GE1/0/38          dynamic           20749
+863b-b44a-6627 1729/-/-      10GE1/0/38          dynamic         5441008
+8698-c7a5-16c6 1729/-/-      10GE1/0/37          dynamic         1052844
+86e7-0fea-97bf 1729/-/-      10GE1/0/37          dynamic         7285962
+8ad3-5c35-72f8 1729/-/-      10GE1/0/37          dynamic         4175585
+8e6e-1319-eac4 1729/-/-      10GE1/0/37          dynamic          101646
+924c-527b-f4bb 1729/-/-      10GE1/0/38          dynamic        19033949
+9605-f913-fae1 1729/-/-      10GE1/0/37          dynamic        34902059
+96ea-15df-1faa 1729/-/-      10GE1/0/37          dynamic        17481128
+9a0e-e7ba-4cf5 1729/-/-      10GE1/0/38          dynamic           85238
+9e75-59c9-80f3 1729/-/-      10GE1/0/38          dynamic        18576464
+9e81-0468-254f 1729/-/-      10GE1/0/37          dynamic           28446
+a235-281a-684c 1729/-/-      10GE1/0/38          dynamic        19033935
+a2cd-584f-8d8e 1729/-/-      10GE1/0/37          dynamic         2439117
+a695-159b-5b04 1729/-/-      10GE1/0/38          dynamic           28397
+a6f9-d33c-3736 1729/-/-      10GE1/0/38          dynamic           20648
+aa2d-feca-3666 1729/-/-      10GE1/0/37          dynamic           28446
+aa3d-6757-9d41 1729/-/-      10GE1/0/38          dynamic           28397
+aab7-45c8-e0dc 1729/-/-      10GE1/0/38          dynamic         2355740
+ae34-310b-0331 1729/-/-      10GE1/0/38          dynamic         7372381
+ae7f-e117-7fe0 1729/-/-      10GE1/0/37          dynamic           28382
+b202-0835-b91e 1729/-/-      10GE1/0/37          dynamic           28448
+b25d-8fe1-089c 1729/-/-      10GE1/0/37          dynamic           28326
+b652-bdf6-59d7 1729/-/-      10GE1/0/37          dynamic        19052212
+baf9-f9d8-a800 1729/-/-      10GE1/0/38          dynamic         2434966
+be54-bd0a-2045 1729/-/-      10GE1/0/38          dynamic        17567514
+c6df-843e-de46 1729/-/-      10GE1/0/38          dynamic          430630
+cab7-d87a-4ec1 1729/-/-      10GE1/0/38          dynamic        15743472
+ce00-136b-a752 1729/-/-      10GE1/0/37          dynamic         5558071
+ce04-3b22-a828 1729/-/-      10GE1/0/38          dynamic        19033913
+ce14-d6e8-2dc8 1729/-/-      10GE1/0/37          dynamic        35588559
+ce6f-b0c3-3de4 1729/-/-      10GE1/0/37          dynamic           28379
+ce84-32c6-556c 1729/-/-      10GE1/0/37          dynamic           28327
+ce8f-6ba8-18cf 1729/-/-      10GE1/0/37          dynamic           28518
+d2b9-a8c1-5cd5 1729/-/-      10GE1/0/37          dynamic          583405
+da1e-0d1c-ef61 1729/-/-      10GE1/0/37          dynamic         3052461
+dabb-5f4d-c5ec 1729/-/-      10GE1/0/37          dynamic           28379
+de87-25a6-3352 1729/-/-      10GE1/0/38          dynamic          348914
+de97-f931-b142 1729/-/-      10GE1/0/37          dynamic           28449
+e24a-2e2e-d586 1729/-/-      10GE1/0/37          dynamic           28517
+e286-7339-2e8a 1729/-/-      10GE1/0/38          dynamic         1065286
+e664-6521-d61c 1729/-/-      10GE1/0/38          dynamic           28334
+e6a9-8029-0a65 1729/-/-      10GE1/0/37          dynamic           28383
+e6dd-2335-0c93 1729/-/-      10GE1/0/37          dynamic           28322
+ea4b-9d6f-aac9 1729/-/-      10GE1/0/37          dynamic           28446
+eaf1-d807-3691 1729/-/-      10GE1/0/38          dynamic           28326
+eaf3-5ad3-888e 1729/-/-      10GE1/0/37          dynamic        35588428
+f226-e686-55b0 1729/-/-      10GE1/0/37          dynamic        35588506
+f27c-e699-fadf 1729/-/-      10GE1/0/38          dynamic        17394619
+f679-3499-35ee 1729/-/-      10GE1/0/37          dynamic           28445
+f68f-723a-1694 1729/-/-      10GE1/0/37          dynamic           28385
+fa53-ce02-dd60 1729/-/-      10GE1/0/37          dynamic           28331
+fa7b-3e31-d9e3 1729/-/-      10GE1/0/37          dynamic         5891018
+-------------------------------------------------------------------------------
+Total items: 210
+<QRCHERY-DMZHJ-SW>      dis cu 
+!Software Version V200R005C10SPC800
+!Last configuration was updated at 2020-08-10 16:51:42+08:00 by snake
+!Last configuration was saved at 2021-02-07 16:09:00+08:00 by snake
+#
+clock timezone GMC add 08:00:00
+#
+sysname QRCHERY-DMZHJ-SW
+#
+info-center loghost 192.168.6.227
+#
+device board 1 board-type CE6810-32T16S4Q-LI
+device board 2 board-type CE6810-32T16S4Q-LI
+#
+drop-profile default
+#
+dcb pfc
+#
+dcb ets-profile default
+#
+ntp ipv6 server disable
+ntp unicast-server 192.168.6.10
+#
+vlan batch 14 1200 1724 1729 2000
+#
+stp instance 0 priority 0
+stp timer-factor 10
+stp bpdu-protection
+#
+dhcp enable
+#
+telnet server disable
+telnet ipv6 server disable
+#
+diffserv domain default
+#
+ip vpn-instance Management
+ ipv4-family
+  route-distinguisher 100:1
+#               
+vlan 14
+ name 14net
+#
+ip pool pool1729
+ gateway-list 172.19.0.1 
+ network 172.19.0.0 mask 255.255.252.0
+ excluded-ip-address 172.19.3.200 172.19.3.254
+ lease day 2 hour 0 minute 0
+ dns-list 192.168.50.56 192.168.50.55 
+#
+ip pool pool1724
+ gateway-list 172.19.4.254 
+ network 172.19.4.0 mask 255.255.255.0
+ dns-list 192.168.50.56 192.168.50.55 
+ nbns-list 192.168.50.56 
+#
+ip pool pool14
+ gateway-list 192.168.14.254 
+ network 192.168.14.0 mask 255.255.255.0
+ dns-list 192.168.50.56 192.168.50.55 
+ nbns-list 192.168.50.56 
+#
+acl number 2000
+ rule 10 permit source 192.168.6.18 0
+ rule 11 permit source 192.168.6.56 0
+ rule 12 permit source 192.168.6.208 0
+ rule 20 permit source 192.168.6.166 0
+ rule 21 permit source 192.168.6.167 0
+ rule 22 permit source 192.168.6.168 0
+#
+acl number 2001
+ rule 5 permit source 192.168.6.18 0
+ rule 10 permit source 192.168.5.234 0
+ rule 15 permit source 192.168.6.56 0
+#
+acl number 2002
+ rule 10 permit source 192.168.6.208 0
+ rule 20 deny   
+#
+acl number 2008
+ rule 5 permit source 192.168.6.208 0
+ rule 10 deny
+#
+aaa
+ undo local-user policy security-enhance
+ local-user admin password irreversible-cipher $1c$c2qdS3.2:>$LChPHO_==.UBp`2@158!6'`tIyO,^5em~c:;'Pt!$
+ local-user admin service-type terminal telnet ssh
+ local-user admin level 3
+ local-user snake password irreversible-cipher $1c$+Fr4"aiU/#$Xa|0%o7=*L%oa&"u!1@TIm(>;|bV}#a4%/W,7@t:$
+ local-user snake service-type terminal ssh
+ local-user snake level 3
+ #
+ authentication-scheme default
+ #
+ authorization-scheme default
+ #
+ accounting-scheme default
+ #
+ domain default
+ #
+ domain default_admin
+#
+stack
+ #
+ stack member 1 domain 10
+ stack member 1 priority 150
+ #
+ stack member 2 domain 10
+ stack member 2 priority 120
+#
+interface Vlanif14
+ ip address 192.168.14.254 255.255.255.0
+#
+interface Vlanif1200
+ ip address 192.168.12.254 255.255.255.0
+#               
+interface Vlanif1724
+ ip address 172.19.4.254 255.255.255.0
+#
+interface Vlanif1729
+ ip address 172.19.0.1 255.255.252.0
+#
+interface Vlanif2000
+#
+interface MEth0/0/0
+ description Management
+ ip binding vpn-instance Management
+ ip address 192.168.6.164 255.255.255.0
+#
+interface Eth-Trunk1
+ undo portswitch
+ description TO_InternetHJ-SW
+ ip address 192.168.168.18 255.255.255.252
+#
+interface Eth-Trunk2
+ description Link_ce680-sw
+ port default vlan 1200
+#
+interface Eth-Trunk3
+ port default vlan 1200
+#
+interface Stack-Port1/1
+#
+interface Stack-Port2/1
+#
+interface 10GE1/0/1
+ description link_dmzjr-sw-1/0/45
+ eth-trunk 3
+#
+interface 10GE1/0/2
+#
+interface 10GE1/0/3
+#
+interface 10GE1/0/4
+#
+interface 10GE1/0/5
+#
+interface 10GE1/0/6
+#
+interface 10GE1/0/7
+ port default vlan 1729
+ speed auto 1000
+#
+interface 10GE1/0/8
+ port default vlan 1729
+#
+interface 10GE1/0/9
+ port default vlan 1729
+#
+interface 10GE1/0/10
+ port default vlan 1729
+#
+interface 10GE1/0/11
+ port default vlan 1729
+#
+interface 10GE1/0/12
+ port default vlan 1200
+ speed auto 1000
+#
+interface 10GE1/0/13
+#
+interface 10GE1/0/14
+#
+interface 10GE1/0/15
+#
+interface 10GE1/0/16
+#
+interface 10GE1/0/17
+#
+interface 10GE1/0/18
+#
+interface 10GE1/0/19
+#
+interface 10GE1/0/20
+#
+interface 10GE1/0/21
+#
+interface 10GE1/0/22
+#
+interface 10GE1/0/23
+#
+interface 10GE1/0/24
+#
+interface 10GE1/0/25
+#
+interface 10GE1/0/26
+#
+interface 10GE1/0/27
+#
+interface 10GE1/0/28
+#               
+interface 10GE1/0/29
+#
+interface 10GE1/0/30
+#
+interface 10GE1/0/31
+ negotiation disable
+ speed 1000
+#
+interface 10GE1/0/32
+#
+interface 10GE1/0/33
+ description TO_InternetHJ-SW1_10GE1/1/0/3
+ eth-trunk 1
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/34
+ description link_ce6800-sw 10GE1/0/34
+ eth-trunk 2
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/35
+ description link_ltm1-1.3
+ port default vlan 1200
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/36
+ description gtm1-1.3
+ port default vlan 1200
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/37
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/38
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/39
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/40
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/41
+ port default vlan 1200
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/42
+#
+interface 10GE1/0/43
+#
+interface 10GE1/0/44
+#
+interface 10GE1/0/45
+ port mode stack 
+ port crc-statistics trigger error-down
+#
+interface 10GE1/0/46
+ port mode stack 
+ port crc-statistics trigger error-down
+#
+interface 10GE1/0/47
+ port mode stack 
+ stack-port 1/1
+ port crc-statistics trigger error-down
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE1/0/48
+ port mode stack 
+ stack-port 1/1
+ port crc-statistics trigger error-down
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/1
+ description link_dmzjr-sw-1/0/46
+ eth-trunk 3
+#
+interface 10GE2/0/2
+#
+interface 10GE2/0/3
+#
+interface 10GE2/0/4
+#
+interface 10GE2/0/5
+#
+interface 10GE2/0/6
+#
+interface 10GE2/0/7
+#
+interface 10GE2/0/8
+#
+interface 10GE2/0/9
+#
+interface 10GE2/0/10
+#
+interface 10GE2/0/11
+#
+interface 10GE2/0/12
+#
+interface 10GE2/0/13
+#
+interface 10GE2/0/14
+#
+interface 10GE2/0/15
+#
+interface 10GE2/0/16
+#               
+interface 10GE2/0/17
+#
+interface 10GE2/0/18
+#
+interface 10GE2/0/19
+#
+interface 10GE2/0/20
+#
+interface 10GE2/0/21
+#
+interface 10GE2/0/22
+#
+interface 10GE2/0/23
+#
+interface 10GE2/0/24
+#
+interface 10GE2/0/25
+#
+interface 10GE2/0/26
+#
+interface 10GE2/0/27
+#
+interface 10GE2/0/28
+#
+interface 10GE2/0/29
+#
+interface 10GE2/0/30
+#
+interface 10GE2/0/31
+#
+interface 10GE2/0/32
+#
+interface 10GE2/0/33
+ description TO_InternetHJ-SW2_10GE1/1/0/3
+ eth-trunk 1
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/34
+ description link_ce6800-sw 10GE2/0/34
+ eth-trunk 2
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/35
+ description link_ltm2-1.3
+ port default vlan 1200
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/36
+ description link_gtm2-1.3
+ port default vlan 1200
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/37
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#               
+interface 10GE2/0/38
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/39
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/40
+ port link-type trunk
+ port trunk allow-pass vlan 14 to 1729
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/41
+#
+interface 10GE2/0/42
+#               
+interface 10GE2/0/43
+#
+interface 10GE2/0/44
+#
+interface 10GE2/0/45
+ port mode stack 
+ port crc-statistics trigger error-down
+#
+interface 10GE2/0/46
+ port mode stack 
+ port crc-statistics trigger error-down
+#
+interface 10GE2/0/47
+ port mode stack 
+ stack-port 2/1
+ port crc-statistics trigger error-down
+ device transceiver 10GBASE-FIBER
+#
+interface 10GE2/0/48
+ port mode stack 
+ stack-port 2/1
+ port crc-statistics trigger error-down
+ device transceiver 10GBASE-FIBER
+#
+interface 40GE1/0/1
+#
+interface 40GE1/0/2
+#
+interface 40GE1/0/3
+#
+interface 40GE1/0/4
+#
+interface 40GE2/0/1
+#
+interface 40GE2/0/2
+#
+interface 40GE2/0/3
+#               
+interface 40GE2/0/4
+#
+interface NULL0
+#
+ip route-static 0.0.0.0 0.0.0.0 192.168.168.17
+#
+snmp-agent
+snmp-agent acl 2002
+snmp-agent local-engineid 800007DB03244C0789D611
+snmp-agent community read cipher %^%#`n:CD2`XUM,BWKG}5Do+Mt\x!I!*$/&fHkCsLg|(]d"HFbAIE>7;|d4J#J\#+7d8M!|WD3v]&x5s:m_9%^%# acl 2000
+#
+snmp-agent sys-info version all
+#
+lldp enable
+#
+stelnet server enable
+ssh server acl 2000
+ssh authorization-type default aaa
+#               
+ssh server cipher aes256_ctr aes128_ctr
+ssh server hmac sha2_256_96 sha2_256 sha1_96
+ssh server key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521 sm2_kep
+#
+ssh server dh-exchange min-len 2048
+#
+ssh client first-time enable
+#
+ssh client cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr aes256_cbc aes128_cbc 3des_cbc
+#
+user-interface con 0
+ authentication-mode password
+ set authentication password cipher $1c$bN.w(6=lKB$JHx+0}6E>#pKUi"F!@nP#dAw,mXQX2lsi5/O*%5@$
+#
+user-interface vty 0 4
+ authentication-mode aaa
+ user privilege level 3
+ history-command max-size 100
+ idle-timeout 20 0
+ screen-length 20
+ protocol inbound ssh
+#
+vm-manager
+#
+return

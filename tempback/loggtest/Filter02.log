@@ -1,0 +1,15 @@
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+%(asctime)-15s %(name)s %(levelname)s [%(filename)s %(lineno)d] %(message)s
+2022-04-21 17:13:00,531 Filter_Test02 INFO [logging_Filter_Test02.log.py 42] info message
+2022-04-21 17:13:00,531 Filter_Test02 WARNING [logging_Filter_Test02.log.py 43] warn message
+2022-04-21 17:13:00,532 Filter_Test02 ERROR [logging_Filter_Test02.log.py 44] error message
+2022-04-21 17:13:00,532 Filter_Test02 ERROR [logging_Filter_Test02.log.py 45] debug message

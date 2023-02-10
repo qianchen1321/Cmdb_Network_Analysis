@@ -1,0 +1,16 @@
+2022-09-24 17:59:35,052 - WARNING: this is test
+2022-09-24 18:09:08,109 - DEBUG: haha!
+2022-09-24 18:09:08,109 - DEBUG: func call ('logger is now',){}
+2022-09-24 18:09:08,109 - DEBUG: func return logger is nowtest
+2022-09-24 18:13:08,019 - DEBUG: haha!
+2022-09-24 18:13:08,020 - DEBUG: func call ('logger is now',){}
+2022-09-24 18:13:08,020 - DEBUG: func return logger is now test
+2022-09-24 18:14:46,023 - DEBUG: haha!
+2022-09-24 18:14:46,023 - DEBUG: func call (2,){}
+2022-09-24 18:14:46,023 - DEBUG: func return 4 test
+2022-09-24 18:16:19,347 - DEBUG: haha!
+2022-09-24 18:16:19,347 - DEBUG: func call (2,){'key': 'myc'}
+2022-09-24 18:16:19,348 - DEBUG: func return 4 test
+2022-10-05 17:32:44,565 - DEBUG: haha!
+2022-10-05 17:32:44,565 - DEBUG: func call (2,){'key': 'myc'}
+2022-10-05 17:32:44,566 - DEBUG: func return 4 test
